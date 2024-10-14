@@ -1,0 +1,1195 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACC_O_W	DPU/DPU_pkg.vhd	/^  CONSTANT ACC_O_W               : NATURAL                              := 2 * DPU_IN_WIDTH;$/;"	c
+ACC_SOFTMAX	DPU/DPU_pkg.vhd	/^  CONSTANT ACC_SOFTMAX           : INTEGER                              := 25; -- out0 = in0 + (acc)$/;"	c
+ACC_SOFTMAX	top_consts_types_package.vhd	/^  CONSTANT ACC_SOFTMAX             : INTEGER                              := 26; -- (out0 & out1), (dpureg0 & dpureg1) = in0 + (dpureg0 & dpureg1) $/;"	c
+ADD	DPU/DPU_pkg.vhd	/^  CONSTANT ADD                   : INTEGER                              := 1; -- out0 = in0 + in1 , out1 = in2 + in3$/;"	c
+ADD	top_consts_types_package.vhd	/^  CONSTANT ADD                     : INTEGER                              := 1;  -- out0 = in0 + in1 , out1 = in2 + in3$/;"	c
+ADDR_COUNTER_BIT	top_consts_types_package.vhd	/^  CONSTANT ADDR_COUNTER_BIT            : INTEGER := 16;$/;"	c
+ADDR_COUNTER_WIDTH	top_consts_types_package.vhd	/^  CONSTANT ADDR_COUNTER_WIDTH          : INTEGER := 6;$/;"	c
+ADDR_OFFSET_BIT	top_consts_types_package.vhd	/^  CONSTANT ADDR_OFFSET_BIT             : INTEGER := 21;$/;"	c
+ADDR_OFFSET_SIGN_WIDTH	top_consts_types_package.vhd	/^  CONSTANT ADDR_OFFSET_SIGN_WIDTH      : INTEGER := 1;$/;"	c
+ADDR_OFFSET_WIDTH	top_consts_types_package.vhd	/^  CONSTANT ADDR_OFFSET_WIDTH           : INTEGER := 6;$/;"	c
+ADDR_OFFSET_WIDTH_BLOCK	top_consts_types_package.vhd	/^  CONSTANT ADDR_OFFSET_WIDTH_BLOCK     : INTEGER := REG_FILE_MEM_ADDR_WIDTH;$/;"	c
+ADD_3	top_consts_types_package.vhd	/^  CONSTANT ADD_3                   : INTEGER                              := 2;  -- out0 = in0 + in1 + 1n2$/;"	c
+ADD_ACC	top_consts_types_package.vhd	/^  CONSTANT ADD_ACC                 : INTEGER                              := 3;  -- out0 = in0 + acc0 , out1 = in2 + acc1$/;"	c
+ADD_CONST	DPU/DPU_pkg.vhd	/^  CONSTANT ADD_CONST             : INTEGER                              := 3; -- out0 = in0 + dpureg0 , out1 = in2 + dpureg1$/;"	c
+ADD_CONST	top_consts_types_package.vhd	/^  CONSTANT ADD_CONST               : INTEGER                              := 4;  -- out0 = in0 + dpureg0 , out1 = in2 + dpureg1$/;"	c
+ADD_C_W	DPU/DPU_pkg.vhd	/^  CONSTANT ADD_C_W               : NATURAL                              := SLICES;$/;"	c
+ADD_I_W	DPU/DPU_pkg.vhd	/^  CONSTANT ADD_I_W               : NATURAL                              := MUL_O_W;$/;"	c
+ADD_NUM	top_consts_types_package.vhd	/^  CONSTANT ADD_NUM                 : INTEGER                              := 2;$/;"	c
+ADD_O_W	DPU/DPU_pkg.vhd	/^  CONSTANT ADD_O_W               : NATURAL                              := ADD_I_W;$/;"	c
+AGU	AGU.vhd	/^ENTITY AGU IS$/;"	e
+AGU_INST_TYPE	tb_instructions.vhd	/^    TYPE AGU_INST_TYPE IS ARRAY (0 TO number_of_sram_instruction_parts) OF std_logic_vector (INSTR_WIDTH DOWNTO 0);$/;"	t
+AGU_RFblock	AGU_RFblock.vhd	/^ENTITY AGU_RFblock IS$/;"	e
+AXPY	DPU/DPU_pkg.vhd	/^  CONSTANT AXPY                  : INTEGER                              := 12; -- out0 = (in0 * const) + in1 , out1 = (in2 * const) + in3$/;"	c
+BITWIDTH	top_consts_types_package.vhd	/^  CONSTANT BITWIDTH                              : NATURAL                                          := HW_BITWIDTH;       --! h_bus bitwidth$/;"	c
+BRANCH	tb_instructions.vhd	/^    FUNCTION BRANCH (brnch_mode, brnch_false_addr : INTEGER)$/;"	f
+BRANCH	top_consts_types_package.vhd	/^  CONSTANT BRANCH                                : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "1011";                                                               --! Instruction code BRANCH, used 11.$/;"	c
+BRANCH_instr_type	isa.vhd	/^    TYPE BRANCH_instr_type IS RECORD$/;"	t
+BR_FALSE_ADDRS_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT BR_FALSE_ADDRS_RANGE_BASE             : NATURAL                                          := BR_MODE_RANGE_END - 1;$/;"	c
+BR_FALSE_ADDRS_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT BR_FALSE_ADDRS_RANGE_END              : NATURAL                                          := BR_FALSE_ADDRS_RANGE_BASE - (BR_FALSE_ADDRS_SIZE - 1);$/;"	c
+BR_FALSE_ADDRS_SIZE	top_consts_types_package.vhd	/^  CONSTANT BR_FALSE_ADDRS_SIZE                   : NATURAL                                          := PC_SIZE;$/;"	c
+BR_FALSE_ADDRS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT BR_FALSE_ADDRS_VECTOR_SIZE            : NATURAL                                          := BR_FALSE_ADDRS_RANGE_BASE - BR_FALSE_ADDRS_RANGE_END + 1;$/;"	c
+BR_MODE	top_consts_types_package.vhd	/^  CONSTANT BR_MODE                               : NATURAL                                          := 2;$/;"	c
+BR_MODE_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT BR_MODE_RANGE_BASE                    : NATURAL                                          := INSTR_CODE_RANGE_END - 1;$/;"	c
+BR_MODE_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT BR_MODE_RANGE_END                     : NATURAL                                          := BR_MODE_RANGE_BASE - (BR_MODE - 1);$/;"	c
+BR_MODE_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT BR_MODE_VECTOR_SIZE                   : NATURAL                                          := BR_MODE_RANGE_BASE - BR_MODE_RANGE_END + 1;$/;"	c
+BR_UNUSED	top_consts_types_package.vhd	/^  CONSTANT BR_UNUSED                             : NATURAL                                          := INSTR_WIDTH - BR_MODE - BR_FALSE_ADDRS_SIZE - INSTR_CODE_RANGE_VECTOR_SIZE;$/;"	c
+BR_UNUSED_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT BR_UNUSED_RANGE_BASE                  : NATURAL                                          := BR_FALSE_ADDRS_RANGE_END - 1;$/;"	c
+BR_UNUSED_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT BR_UNUSED_RANGE_END                   : NATURAL                                          := BR_UNUSED_RANGE_BASE - (BR_UNUSED - 1);$/;"	c
+BR_UNUSED_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT BR_UNUSED_VECTOR_SIZE                 : NATURAL                                          := BR_UNUSED_RANGE_BASE - BR_UNUSED_RANGE_END + 1;$/;"	c
+BW_CONFIG	top_consts_types_package.vhd	/^  CONSTANT BW_CONFIG                             : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "1001";                                                               --! Configuration of the arithmetic operation BW$/;"	c
+Branch_instr_ty	top_consts_types_package.vhd	/^  TYPE Branch_instr_ty IS RECORD$/;"	t
+CHANGE_Q	top_consts_types_package.vhd	/^  CONSTANT CHANGE_Q                : INTEGER                              := 30; -- q_reg = const$/;"	c
+COLUMNS	top_consts_types_package.vhd	/^  CONSTANT COLUMNS                               : NATURAL                                          := HW_COLUMNS; -- $/;"	c
+COLUMN_WIDTH	tb_instructions.vhd	/^    CONSTANT COLUMN_WIDTH           : INTEGER := INTEGER(log2(NATURAL(COLUMNS)));$/;"	c
+CONFIG_WIDTH	top_consts_types_package.vhd	/^  CONSTANT CONFIG_WIDTH                : NATURAL := 40;$/;"	c
+CONSTANT_ONE	DPU/DPU_pkg.vhd	/^  FUNCTION CONSTANT_ONE (fb, Nb : NATURAL) RETURN signed IS$/;"	f
+DELAY	tb_instructions.vhd	/^    FUNCTION DELAY ($/;"	f
+DELAY	top_consts_types_package.vhd	/^  CONSTANT DELAY                                 : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "0111";                                                               --! Instruction code DELAY, used 7.$/;"	c
+DIMARCH_MODE_BIT	top_consts_types_package.vhd	/^  CONSTANT DIMARCH_MODE_BIT                      : NATURAL                                          := FFT_END_STAGE_RANGE_END - 1;$/;"	c
+DIV	DPU/DPU_pkg.vhd	/^  CONSTANT DIV                   : INTEGER                              := 24; -- out0 = in0\/in1 , out1 = in0 % in1$/;"	c
+DIV	top_consts_types_package.vhd	/^  CONSTANT DIV                     : INTEGER                              := 25; -- out0 = in0\/in1 , out1 = in0 % in1$/;"	c
+DIV_I_W	DPU/DPU_pkg.vhd	/^  CONSTANT DIV_I_W               : NATURAL                              := ACC_O_W;$/;"	c
+DIV_NUM	top_consts_types_package.vhd	/^  CONSTANT DIV_NUM                 : INTEGER                              := 1; --! DIV_NUM must be >= SOFTMAX_NUM, <= OUT_NUM$/;"	c
+DIV_O_W	DPU/DPU_pkg.vhd	/^  CONSTANT DIV_O_W               : NATURAL                              := ACC_O_W;$/;"	c
+DIV_PIPE_NUM	DPU/DPU_pkg.vhd	/^  CONSTANT DIV_PIPE_NUM          : INTEGER                              := 3;$/;"	c
+DIV_SOFTMAX	top_consts_types_package.vhd	/^  CONSTANT DIV_SOFTMAX             : INTEGER                              := 27; -- out0 = in0\/(dpureg0 & dpureg1) , out1 = none$/;"	c
+DIV_SYN_SIM_N	DPU/DPU_pkg.vhd	/^  CONSTANT DIV_SYN_SIM_N         : STD_LOGIC                            := '1';$/;"	c
+DIV_SYN_SIM_N	DPU/divider_pipe.vhd	/^  CONSTANT DIV_SYN_SIM_N               : STD_LOGIC := '1';$/;"	c
+DLY_CYCLES	top_consts_types_package.vhd	/^  CONSTANT DLY_CYCLES                            : NATURAL                                          := 15;$/;"	c
+DLY_CYCLES_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT DLY_CYCLES_RANGE_BASE                 : NATURAL                                          := INSTR_CODE_RANGE_END - 2; -- one bit for static or dynamic selection$/;"	c
+DLY_CYCLES_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT DLY_CYCLES_RANGE_END                  : NATURAL                                          := DLY_CYCLES_RANGE_BASE - (DLY_CYCLES - 1);$/;"	c
+DLY_CYCLES_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT DLY_CYCLES_VECTOR_SIZE                : NATURAL                                          := DLY_CYCLES_RANGE_BASE - DLY_CYCLES_RANGE_END;$/;"	c
+DLY_UNUSED_BITS	top_consts_types_package.vhd	/^  CONSTANT DLY_UNUSED_BITS                       : NATURAL                                          := 7;$/;"	c
+DLY_UNUSED_BITS_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT DLY_UNUSED_BITS_RANGE_BASE            : NATURAL                                          := DLY_CYCLES_RANGE_END - 1;$/;"	c
+DLY_UNUSED_BITS_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT DLY_UNUSED_BITS_RANGE_END             : NATURAL                                          := DLY_UNUSED_BITS_RANGE_BASE - (DLY_UNUSED_BITS - 1);$/;"	c
+DLY_UNUSED_BITS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT DLY_UNUSED_BITS_VECTOR_SIZE           : NATURAL                                          := DLY_UNUSED_BITS_RANGE_BASE - DLY_UNUSED_BITS_RANGE_END;$/;"	c
+DOWN_COUNT	top_consts_types_package.vhd	/^  CONSTANT DOWN_COUNT              : INTEGER RANGE 0 TO 2 ** DPU_IN_WIDTH := 4;$/;"	c
+DPU	DPU/DPU.vhd	/^ENTITY DPU IS$/;"	e
+DPU	tb_instructions.vhd	/^    FUNCTION DPU ($/;"	f
+DPU	top_consts_types_package.vhd	/^  CONSTANT DPU                                   : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "0100";                                                               --! Instruction code DPU, used 4.$/;"	c
+DPU_ACC_CLEAR_BIT	top_consts_types_package.vhd	/^  CONSTANT DPU_ACC_CLEAR_BIT                     : NATURAL                                          := HW_DPU_CONSTANT_WIDTH;$/;"	c
+DPU_ACC_CLEAR_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT DPU_ACC_CLEAR_RANGE_BASE              : NATURAL                                          := DPU_OUTP_B_RANGE_END - 3; --one is for acc_clear_sd; one bit for acc_clear_rst$/;"	c
+DPU_ACC_CLEAR_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT DPU_ACC_CLEAR_RANGE_END               : NATURAL                                          := DPU_ACC_CLEAR_RANGE_BASE - (DPU_ACC_CLEAR_BIT - 1);$/;"	c
+DPU_ACC_CLEAR_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT DPU_ACC_CLEAR_VECTOR_SIZE             : NATURAL                                          := DPU_ACC_CLEAR_RANGE_BASE - DPU_ACC_CLEAR_RANGE_END + 1;$/;"	c
+DPU_ACC_CLEAR_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT DPU_ACC_CLEAR_WIDTH   : INTEGER                              := DPU_ACC_CLEAR_VECTOR_SIZE;$/;"	c
+DPU_ACC_CLEAR_WIDTH	top_consts_types_package.vhd	/^  CONSTANT DPU_ACC_CLEAR_WIDTH     : INTEGER                              := DPU_ACC_CLEAR_VECTOR_SIZE;$/;"	c
+DPU_BITWIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT DPU_BITWIDTH          : NATURAL                              := BITWIDTH; --! DPU in-out bitwidth$/;"	c
+DPU_CONS_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT DPU_CONS_WIDTH        : INTEGER                              := DPU_ACC_CLEAR_WIDTH; --! @TODO connect to higher level package$/;"	c
+DPU_CTRL_OUT_WIDTH	top_consts_types_package.vhd	/^  CONSTANT DPU_CTRL_OUT_WIDTH      : INTEGER                              := 2;$/;"	c
+DPU_IN_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT DPU_IN_WIDTH          : INTEGER                              := DPU_BITWIDTH;$/;"	c
+DPU_IN_WIDTH	top_consts_types_package.vhd	/^  CONSTANT DPU_IN_WIDTH            : INTEGER                              := BITWIDTH;$/;"	c
+DPU_IO_CONF_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT DPU_IO_CONF_WIDTH     : INTEGER                              := 2;$/;"	c
+DPU_MODE_CFG_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT DPU_MODE_CFG_WIDTH    : INTEGER                              := DPU_MODE_SEL;$/;"	c
+DPU_MODE_CFG_WIDTH	top_consts_types_package.vhd	/^  CONSTANT DPU_MODE_CFG_WIDTH      : INTEGER                              := DPU_MODE_SEL; --5$/;"	c
+DPU_MODE_SEL	top_consts_types_package.vhd	/^  CONSTANT DPU_MODE_SEL                          : NATURAL                                          := 5;$/;"	c
+DPU_MODE_SEL_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT DPU_MODE_SEL_RANGE_BASE               : NATURAL                                          := INSTR_CODE_RANGE_END - 1;$/;"	c
+DPU_MODE_SEL_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT DPU_MODE_SEL_RANGE_END                : NATURAL                                          := DPU_MODE_SEL_RANGE_BASE - (DPU_MODE_SEL - 1);$/;"	c
+DPU_MODE_SEL_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT DPU_MODE_SEL_VECTOR_SIZE              : NATURAL                                          := DPU_MODE_SEL_RANGE_BASE - DPU_MODE_SEL_RANGE_END + 1;$/;"	c
+DPU_OP_CONF_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT DPU_OP_CONF_WIDTH     : INTEGER                              := 2;$/;"	c
+DPU_OUTP_A	top_consts_types_package.vhd	/^  CONSTANT DPU_OUTP_A                            : NATURAL                                          := 2;$/;"	c
+DPU_OUTP_A_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT DPU_OUTP_A_RANGE_BASE                 : NATURAL                                          := DPU_SATURAT_RANGE_END - 1;$/;"	c
+DPU_OUTP_A_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT DPU_OUTP_A_RANGE_END                  : NATURAL                                          := DPU_OUTP_A_RANGE_BASE - (DPU_OUTP_A - 1);$/;"	c
+DPU_OUTP_A_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT DPU_OUTP_A_VECTOR_SIZE                : NATURAL                                          := DPU_OUTP_A_RANGE_BASE - DPU_OUTP_A_RANGE_END + 1;$/;"	c
+DPU_OUTP_B	top_consts_types_package.vhd	/^  CONSTANT DPU_OUTP_B                            : NATURAL                                          := 2;$/;"	c
+DPU_OUTP_B_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT DPU_OUTP_B_RANGE_BASE                 : NATURAL                                          := DPU_OUTP_A_RANGE_END - 1;$/;"	c
+DPU_OUTP_B_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT DPU_OUTP_B_RANGE_END                  : NATURAL                                          := DPU_OUTP_B_RANGE_BASE - (DPU_OUTP_B - 1);$/;"	c
+DPU_OUTP_B_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT DPU_OUTP_B_VECTOR_SIZE                : NATURAL                                          := DPU_OUTP_B_RANGE_BASE - DPU_OUTP_B_RANGE_END + 1;$/;"	c
+DPU_OUT_MAX_VALUE	DPU/Sat_n_round.vhd	/^  CONSTANT DPU_OUT_MAX_VALUE   : SIGNED(OUT_BITS - 1 DOWNTO 0)        := get_max_val(OUT_BITS);$/;"	c
+DPU_OUT_MAX_VALUE_2	DPU/Sat_n_round.vhd	/^  CONSTANT DPU_OUT_MAX_VALUE_2 : SIGNED(OUT_SLICE_BIT_2 - 1 DOWNTO 0) := get_max_val(OUT_SLICE_BIT_2);$/;"	c
+DPU_OUT_MAX_VALUE_4	DPU/Sat_n_round.vhd	/^  CONSTANT DPU_OUT_MAX_VALUE_4 : SIGNED(OUT_SLICE_BIT_4 - 1 DOWNTO 0) := get_max_val(OUT_SLICE_BIT_4);$/;"	c
+DPU_OUT_MIN_VALUE	DPU/Sat_n_round.vhd	/^  CONSTANT DPU_OUT_MIN_VALUE   : SIGNED(OUT_BITS - 1 DOWNTO 0)        := get_min_val(OUT_BITS);$/;"	c
+DPU_OUT_MIN_VALUE_2	DPU/Sat_n_round.vhd	/^  CONSTANT DPU_OUT_MIN_VALUE_2 : SIGNED(OUT_SLICE_BIT_2 - 1 DOWNTO 0) := get_min_val(OUT_SLICE_BIT_2);$/;"	c
+DPU_OUT_MIN_VALUE_4	DPU/Sat_n_round.vhd	/^  CONSTANT DPU_OUT_MIN_VALUE_4 : SIGNED(OUT_SLICE_BIT_4 - 1 DOWNTO 0) := get_min_val(OUT_SLICE_BIT_4);$/;"	c
+DPU_OUT_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT DPU_OUT_WIDTH         : INTEGER                              := DPU_BITWIDTH;$/;"	c
+DPU_OUT_WIDTH	top_consts_types_package.vhd	/^  CONSTANT DPU_OUT_WIDTH           : INTEGER                              := BITWIDTH;$/;"	c
+DPU_PROCESS_INOUT	top_consts_types_package.vhd	/^  CONSTANT DPU_PROCESS_INOUT                     : NATURAL                                          := 2;$/;"	c
+DPU_PROCESS_INOUT_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT DPU_PROCESS_INOUT_RANGE_BASE          : NATURAL                                          := DPU_ACC_CLEAR_RANGE_END - 1;$/;"	c
+DPU_PROCESS_INOUT_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT DPU_PROCESS_INOUT_RANGE_END           : NATURAL                                          := DPU_PROCESS_INOUT_RANGE_BASE - (DPU_PROCESS_INOUT - 1);$/;"	c
+DPU_PROCESS_INOUT_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT DPU_PROCESS_INOUT_VECTOR_SIZE         : NATURAL                                          := DPU_PROCESS_INOUT_RANGE_BASE - DPU_PROCESS_INOUT_RANGE_END + 1;$/;"	c
+DPU_PROCESS_INOUT_WIDTH	top_consts_types_package.vhd	/^  CONSTANT DPU_PROCESS_INOUT_WIDTH : INTEGER                              := 2;$/;"	c
+DPU_Q_FORMAT	top_consts_types_package.vhd	/^  CONSTANT DPU_Q_FORMAT            : INTEGER                              := 0;  --! # of fractional bits$/;"	c
+DPU_SATURAT	top_consts_types_package.vhd	/^  CONSTANT DPU_SATURAT                           : NATURAL                                          := 2;$/;"	c
+DPU_SATURAT_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT DPU_SATURAT_RANGE_BASE                : NATURAL                                          := DPU_MODE_SEL_RANGE_END - 1;$/;"	c
+DPU_SATURAT_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT DPU_SATURAT_RANGE_END                 : NATURAL                                          := DPU_SATURAT_RANGE_BASE - (DPU_SATURAT - 1);$/;"	c
+DPU_SATURAT_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT DPU_SATURAT_VECTOR_SIZE               : NATURAL                                          := DPU_SATURAT_RANGE_BASE - DPU_SATURAT_RANGE_END + 1;$/;"	c
+DPU_SAT_CTRL_WIDTH	top_consts_types_package.vhd	/^  CONSTANT DPU_SAT_CTRL_WIDTH      : INTEGER                              := DPU_SATURAT;$/;"	c
+DPU_instr_type	isa.vhd	/^    TYPE DPU_instr_type IS RECORD$/;"	t
+DPU_pkg	DPU/DPU_pkg.vhd	/^PACKAGE BODY DPU_pkg IS$/;"	P
+DPU_pkg	DPU/DPU_pkg.vhd	/^PACKAGE DPU_pkg IS$/;"	P
+DUT_data	testbench/tb_pkg_dpu.vhd	/^    DUT_data : STD_LOGIC_VECTOR(bit_width - 1 DOWNTO 0);$/;"	r
+Delay_instr_ty	top_consts_types_package.vhd	/^  TYPE Delay_instr_ty IS RECORD$/;"	t
+DestinCol	tb_instructions.vhd	/^    CONSTANT DestinCol              : INTEGER := COLUMN_WIDTH;$/;"	c
+DestinRow	tb_instructions.vhd	/^    CONSTANT DestinRow              : INTEGER := DiMArch_Row_Width;$/;"	c
+DiMArch_Row_Width	top_consts_types_package.vhd	/^  CONSTANT DiMArch_Row_Width                     : NATURAL                                          := log2(DiMArch_Rows + 1); -- Removed +1 outside log2 - Guido Baccelli 21\/03\/2019$/;"	c
+DiMArch_Rows	top_consts_types_package.vhd	/^  CONSTANT DiMArch_Rows                          : NATURAL                                          := HW_DIMARCH_ROWS;$/;"	c
+Dpu_instr_ty	top_consts_types_package.vhd	/^  TYPE Dpu_instr_ty IS RECORD$/;"	t
+ELU	top_consts_types_package.vhd	/^  CONSTANT ELU                     : INTEGER                              := 24; -- out0 = in0 if in0 > 0, else a*(in1-1) , out1 = in2 if in2 > 0, else a*(in3-1)$/;"	c
+ELU_NUM	top_consts_types_package.vhd	/^  CONSTANT ELU_NUM                 : INTEGER                              := 1;$/;"	c
+EXPON	DPU/DPU_pkg.vhd	/^  CONSTANT EXPON                 : INTEGER                              := 21; -- out0 = exp(in0) , out1 = exp(in1) (if DIV_NUM = 2)$/;"	c
+EXPON	top_consts_types_package.vhd	/^  CONSTANT EXPON                   : INTEGER                              := 22; -- out0 = exp(in0) , out1 = exp(in1) (if DIV_NUM = 2)$/;"	c
+EXP_NUM	top_consts_types_package.vhd	/^  CONSTANT EXP_NUM                 : INTEGER                              := 1; --! EXP_NUM must be = DIV_NUM$/;"	c
+FFTStage	tb_instructions.vhd	/^    CONSTANT FFTStage               : INTEGER := 3;$/;"	c
+FFT_END_STAGE	top_consts_types_package.vhd	/^  CONSTANT FFT_END_STAGE                         : NATURAL                                          := 3;$/;"	c
+FFT_END_STAGE_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT FFT_END_STAGE_RANGE_BASE              : NATURAL                                          := REP_STEP_VALUE_EXT_RANGE_END - 1;$/;"	c
+FFT_END_STAGE_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT FFT_END_STAGE_RANGE_END               : NATURAL                                          := FFT_END_STAGE_RANGE_BASE - (FFT_END_STAGE - 1);$/;"	c
+FFT_END_STAGE_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT FFT_END_STAGE_VECTOR_SIZE             : NATURAL                                          := FFT_END_STAGE_RANGE_BASE - FFT_END_STAGE_RANGE_END + 1;$/;"	c
+FFT_STAGE_SEL	top_consts_types_package.vhd	/^  CONSTANT FFT_STAGE_SEL                         : NATURAL                                          := 3;$/;"	c
+FFT_STAGE_SEL_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT FFT_STAGE_SEL_RANGE_BASE              : NATURAL                                          := OUTPUT_CONTROL_RANGE_END - 1;$/;"	c
+FFT_STAGE_SEL_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT FFT_STAGE_SEL_RANGE_END               : NATURAL                                          := FFT_STAGE_SEL_RANGE_BASE - (FFT_STAGE_SEL - 1);$/;"	c
+FFT_STAGE_SEL_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT FFT_STAGE_SEL_VECTOR_SIZE             : NATURAL                                          := FFT_STAGE_SEL_RANGE_BASE - FFT_STAGE_SEL_RANGE_END + 1;$/;"	c
+FOR_END_PC	top_consts_types_package.vhd	/^  CONSTANT FOR_END_PC                            : NATURAL                                          := PC_SIZE;                                                --! # of bits. Label pointing to the PC of the loop. When the sequencer PC reaches this value, the auto-loop will increase the incrementor and check the end of loop, and modify the PC accordingly.$/;"	c
+FOR_EXTENDED	top_consts_types_package.vhd	/^  CONSTANT FOR_EXTENDED                          : NATURAL                                          := 1;                                                      --! Bit signify if the instruction is an extended instruction. If it is, then the following instruction in the sequencer should be treaded as an extension of this.$/;"	c
+FOR_EX_RELATED_LOOPS	top_consts_types_package.vhd	/^  CONSTANT FOR_EX_RELATED_LOOPS                  : NATURAL                                          := 4;                                                      --! Bits signifying if the loop has the same end-PC with other loops, and more specifically which loops share the same end-PC$/;"	c
+FOR_EX_STEP	top_consts_types_package.vhd	/^  CONSTANT FOR_EX_STEP                           : NATURAL                                          := 6;                                                      --! Bits signify if the STEP or the RACCU register if dynamic. $/;"	c
+FOR_EX_STEP_SD	top_consts_types_package.vhd	/^  CONSTANT FOR_EX_STEP_SD                        : NATURAL                                          := 1;                                                      --! Bit signify if the STEP is static or dynamic. $/;"	c
+FOR_EX_UNUSED	top_consts_types_package.vhd	/^  CONSTANT FOR_EX_UNUSED                         : NATURAL                                          := 16;                                                     --! Unused bits for the basic for-loop instruction.$/;"	c
+FOR_ITER	top_consts_types_package.vhd	/^  CONSTANT FOR_ITER                              : NATURAL                                          := 6;                                                      --!  Bit signify if the num of iterations is static or dynamic.$/;"	c
+FOR_ITER_SD	top_consts_types_package.vhd	/^  CONSTANT FOR_ITER_SD                           : NATURAL                                          := 1;                                                      --!  Bit signify if the num of iterations is static or dynamic.$/;"	c
+FOR_LOOP	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP                              : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "1000";                                                               --! Instruction code used for the new FOR-BASIC instruction [previously FOR_HEADER], used 8.$/;"	c
+FOR_LOOP_END_PC_BASE	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_END_PC_BASE                  : NATURAL                                          := FOR_LOOP_ID_END - 1;                                    --! Bit 19, start of the end PC.$/;"	c
+FOR_LOOP_END_PC_END	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_END_PC_END                   : NATURAL                                          := FOR_LOOP_END_PC_BASE - FOR_END_PC + 1;                  --! Bit 14, end of the end PC.$/;"	c
+FOR_LOOP_EXTENDED_BIT	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_EXTENDED_BIT                 : NATURAL                                          := INSTR_CODE_RANGE_END - FOR_EXTENDED;                    --! Bit 22, extended or not instruction.$/;"	c
+FOR_LOOP_EX_UNUSED_BASE	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_EX_UNUSED_BASE               : NATURAL                                          := FOR_LOOP_RELATED_LOOPS_END - 1;                         --! Bit 15, start of unused bits.$/;"	c
+FOR_LOOP_EX_UNUSED_END	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_EX_UNUSED_END                : NATURAL                                          := FOR_LOOP_EX_UNUSED_BASE - FOR_EX_UNUSED + 1;            --! Bit 0, end of the unused bits field.$/;"	c
+FOR_LOOP_ID	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_ID                           : NATURAL                                          := 2;                                                      --! # of bits. Can handle up to 4 iterations (can be increased depending on the remaining unused bits). $/;"	c
+FOR_LOOP_ID_BASE	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_ID_BASE                      : NATURAL                                          := FOR_LOOP_EXTENDED_BIT - 1;                              --! Bit 21, start of the loop ID.$/;"	c
+FOR_LOOP_ID_END	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_ID_END                       : NATURAL                                          := FOR_LOOP_ID_BASE - FOR_LOOP_ID + 1;                     --! Bit 20, end of the loop ID.$/;"	c
+FOR_LOOP_ITER_BASE	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_ITER_BASE                    : NATURAL                                          := FOR_LOOP_ITER_SD_BIT - 1;                               --! Bit 5, start of the number of iterations field.$/;"	c
+FOR_LOOP_ITER_END	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_ITER_END                     : NATURAL                                          := FOR_LOOP_ITER_BASE - FOR_ITER + 1;                      --! Bit 0, end of the number of iterations field.$/;"	c
+FOR_LOOP_ITER_SD_BIT	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_ITER_SD_BIT                  : NATURAL                                          := FOR_LOOP_START_END - FOR_ITER_SD;                       --! Bit 6, static or dynamic number of iterations.$/;"	c
+FOR_LOOP_RELATED_LOOPS_BASE	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_RELATED_LOOPS_BASE           : NATURAL                                          := FOR_LOOP_STEP_END - 1;                                  --! Bit 19, start of the related loops field $/;"	c
+FOR_LOOP_RELATED_LOOPS_END	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_RELATED_LOOPS_END            : NATURAL                                          := FOR_LOOP_RELATED_LOOPS_BASE - FOR_EX_RELATED_LOOPS + 1; --! Bit 16, end of the related loops field.$/;"	c
+FOR_LOOP_START_BASE	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_START_BASE                   : NATURAL                                          := FOR_LOOP_START_SD_BIT - 1;                              --! Bit 12, start of the START field.$/;"	c
+FOR_LOOP_START_END	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_START_END                    : NATURAL                                          := FOR_LOOP_START_BASE - FOR_START + 1;                    --! Bit 7, end of the START field.$/;"	c
+FOR_LOOP_START_SD_BIT	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_START_SD_BIT                 : NATURAL                                          := FOR_LOOP_END_PC_END - FOR_START_SD;                     --! Bit 13, static or dynamic START.$/;"	c
+FOR_LOOP_STEP_BASE	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_STEP_BASE                    : NATURAL                                          := FOR_LOOP_STEP_SD_BIT - 1;                               --! Bit 25, start of the loop ID.$/;"	c
+FOR_LOOP_STEP_END	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_STEP_END                     : NATURAL                                          := FOR_LOOP_STEP_BASE - FOR_EX_STEP + 1;                   --! Bit 20, end of the loop ID.$/;"	c
+FOR_LOOP_STEP_SD_BIT	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_STEP_SD_BIT                  : NATURAL                                          := INSTR_WIDTH - FOR_EX_STEP_SD;                           --! Bit 26, extended or not instruction.$/;"	c
+FOR_LOOP_UNUSED_BASE	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_UNUSED_BASE                  : NATURAL                                          := 0;                                                      --! No unused bits in this instruction$/;"	c
+FOR_LOOP_UNUSED_END	top_consts_types_package.vhd	/^  CONSTANT FOR_LOOP_UNUSED_END                   : NATURAL                                          := 0;                                                      --! No Unused bits in this instruction$/;"	c
+FOR_START	top_consts_types_package.vhd	/^  CONSTANT FOR_START                             : NATURAL                                          := 6;                                                      --! Bit signify if the start or the RACCU register if dynamic. $/;"	c
+FOR_START_SD	top_consts_types_package.vhd	/^  CONSTANT FOR_START_SD                          : NATURAL                                          := 1;                                                      --! Bit signify if the start is static or dynamic. $/;"	c
+FOR_UNUSED	top_consts_types_package.vhd	/^  CONSTANT FOR_UNUSED                            : NATURAL                                          := 0;                                                      --! Unused bits for the basic for-loop instruction.$/;"	c
+FROM_DESTINATION	top_consts_types_package.vhd	/^  CONSTANT FROM_DESTINATION       : STD_LOGIC := '0';$/;"	c
+FROM_SOURCE	top_consts_types_package.vhd	/^  CONSTANT FROM_SOURCE            : STD_LOGIC := '1';$/;"	c
+For_basic_instr_ty	top_consts_types_package.vhd	/^  TYPE For_basic_instr_ty IS RECORD$/;"	t
+For_conf_ty	top_consts_types_package.vhd	/^  TYPE For_conf_ty IS RECORD$/;"	t
+For_exp_instr_ty	top_consts_types_package.vhd	/^  TYPE For_exp_instr_ty IS RECORD$/;"	t
+For_instr_ty	top_consts_types_package.vhd	/^  TYPE For_instr_ty IS RECORD$/;"	t
+HALT	top_consts_types_package.vhd	/^  CONSTANT HALT                                  : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "0000";                                                               --! Halt instruction, used 0.$/;"	c
+HALT_instr_type	isa.vhd	/^    TYPE HALT_instr_type IS RECORD$/;"	t
+HC_OUT_BITS	top_consts_types_package.vhd	/^  CONSTANT HC_OUT_BITS                 : NATURAL := 4;$/;"	c
+HW_BITWIDTH	DPU/hw_setting.vhd	/^    CONSTANT HW_BITWIDTH           : NATURAL := 16; --! Bitwidth of the arithmetic units and busses$/;"	c
+HW_COLUMNS	DPU/hw_setting.vhd	/^    CONSTANT HW_COLUMNS        : NATURAL := 8;  --! Number of DRRA columns (TODO: due to address limitation keep max=8)$/;"	c
+HW_DIMARCH_ROWS	DPU/hw_setting.vhd	/^    CONSTANT HW_DIMARCH_ROWS   : NATURAL := 1;  --! Number of DiMArch rows$/;"	c
+HW_DPU_CONSTANT_WIDTH	DPU/hw_setting.vhd	/^    CONSTANT HW_DPU_CONSTANT_WIDTH : NATURAL := 8;  --! Size of DPU constant$/;"	c
+HW_INSTR_DEPTH	DPU/hw_setting.vhd	/^    CONSTANT HW_INSTR_DEPTH    : NATURAL := 64; --! Instruction memory depth (number of instructions)$/;"	c
+HW_INSTR_WIDTH	DPU/hw_setting.vhd	/^    CONSTANT HW_INSTR_WIDTH        : NATURAL := 27; --! Bitwidth of the instructions$/;"	c
+HW_MAX_NO_OF_RACCU_LOOPS	DPU/hw_setting.vhd	/^    CONSTANT HW_MAX_NO_OF_RACCU_LOOPS : NATURAL := 4;  --! Number of RACCU Loop registers$/;"	c
+HW_RACCU_REGFILE_DEPTH	DPU/hw_setting.vhd	/^    CONSTANT HW_RACCU_REGFILE_DEPTH   : NATURAL := 16; --! Number of RACCU registers (including the iterator registers for the loop)$/;"	c
+HW_RACCU_REG_BITWIDTH	DPU/hw_setting.vhd	/^    CONSTANT HW_RACCU_REG_BITWIDTH    : NATURAL := 7;  --! RACCU register bitwidth - To be able to access memory addresses 7$/;"	c
+HW_RAM_DEPTH	DPU/hw_setting.vhd	/^    CONSTANT HW_RAM_DEPTH      : NATURAL := 64; --! Depth of SRAM memory$/;"	c
+HW_REG_FILE_DEPTH	DPU/hw_setting.vhd	/^    CONSTANT HW_REG_FILE_DEPTH : NATURAL := 64; --! Register File depth$/;"	c
+HW_ROWS	DPU/hw_setting.vhd	/^    CONSTANT HW_ROWS           : NATURAL := 2;  --! Number of DRRA rows (keep 2)$/;"	c
+IDLE	DPU/DPU_pkg.vhd	/^  CONSTANT IDLE                  : INTEGER                              := 0; -- out0, out1 = none$/;"	c
+IDLE	top_consts_types_package.vhd	/^  CONSTANT IDLE                    : INTEGER                              := 0;  -- out0, out1 = none$/;"	c
+INCREMENT_OPTS	top_consts_types_package.vhd	/^  CONSTANT INCREMENT_OPTS                        : NATURAL                                          := 1;               -- Should be ceil2(log2(nr_of_increment_options)). In this case we have 2 options$/;"	c
+INCREMENT_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT INCREMENT_RANGE_BASE                  : NATURAL                                          := INSTR_WIDTH - 1; -- start of range declaration for the increment portion of the instruction$/;"	c
+INCREMENT_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT INCREMENT_RANGE_END                   : NATURAL                                          := INCREMENT_RANGE_BASE - (INCREMENT_OPTS - 1);$/;"	c
+INCREMENT_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT INCREMENT_VECTOR_SIZE                 : NATURAL                                          := INCREMENT_RANGE_BASE - INCREMENT_RANGE_END;$/;"	c
+INITIAL_DELAY_BIT	top_consts_types_package.vhd	/^  CONSTANT INITIAL_DELAY_BIT           : INTEGER := 31;$/;"	c
+INITIAL_DELAY_WIDTH	top_consts_types_package.vhd	/^  CONSTANT INITIAL_DELAY_WIDTH         : INTEGER := 6;$/;"	c
+INIT_DELAY	top_consts_types_package.vhd	/^  CONSTANT INIT_DELAY                            : NATURAL                                          := 6;                                                                    --! # of bits used to specify the initial delay.$/;"	c
+INIT_DELAY_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT INIT_DELAY_RANGE_BASE                 : NATURAL                                          := NR_OF_ADDRS_RANGE_END - 1;                                            --! Starting bit of the \\em INIT_DELAY field.$/;"	c
+INIT_DELAY_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT INIT_DELAY_RANGE_END                  : NATURAL                                          := INIT_DELAY_RANGE_BASE - (INIT_DELAY - 1);                             --! Ending bit of the \\em INIT_DELAY field.$/;"	c
+INIT_DELAY_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT INIT_DELAY_VECTOR_SIZE                : NATURAL                                          := INIT_DELAY_RANGE_BASE - INIT_DELAY_RANGE_END + 1;                     --! # of bits in the \\em INIT_DELAY field.$/;"	c
+INP_END	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  CONSTANT INP_END    : INTEGER := 10;                                  --! Number of generated inputs$/;"	c
+INP_W	DPU/DPU_pkg.vhd	/^  CONSTANT INP_W                 : NATURAL                              := DPU_IN_WIDTH;$/;"	c
+INSTR_CODE_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT INSTR_CODE_RANGE_BASE                 : NATURAL                                          := INSTR_WIDTH - 1;                                                      --! All instructions start with the instruction code.$/;"	c
+INSTR_CODE_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT INSTR_CODE_RANGE_END                  : NATURAL                                          := INSTR_CODE_RANGE_BASE - (NR_OF_INSTR_TYPES - 1);                      --! Bit number, where the instruction code bit ends.$/;"	c
+INSTR_CODE_RANGE_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT INSTR_CODE_RANGE_VECTOR_SIZE          : NATURAL                                          := INSTR_CODE_RANGE_BASE - INSTR_CODE_RANGE_END + 1;                     --! Size of the instruction code.$/;"	c
+INSTR_DEPTH	top_consts_types_package.vhd	/^  CONSTANT INSTR_DEPTH                           : NATURAL                                          := HW_INSTR_DEPTH;    --! Instruction memory depth (number of instruction words)$/;"	c
+INSTR_REG_DEPTH	top_consts_types_package.vhd	/^  CONSTANT INSTR_REG_DEPTH                       : NATURAL                                          := log2(INSTR_DEPTH);$/;"	c
+INSTR_WIDTH	top_consts_types_package.vhd	/^  CONSTANT INSTR_WIDTH                           : NATURAL                                          := HW_INSTR_WIDTH;    --! Instruction bitwidth$/;"	c
+InputMux	InputMux.vhd	/^ENTITY InputMux IS$/;"	e
+Instr_reg_ty	top_consts_types_package.vhd	/^  TYPE Instr_reg_ty IS ARRAY (0 TO INSTR_DEPTH - 1) OF STD_LOGIC_VECTOR(INSTR_WIDTH - 1 DOWNTO 0);$/;"	t
+JUMP	tb_instructions.vhd	/^    FUNCTION JUMP (true_addrs : INTEGER)$/;"	f
+JUMP	top_consts_types_package.vhd	/^  CONSTANT JUMP                                  : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "0110";                                                               --! Instruction code JUMP, used 6.$/;"	c
+JUMP_INSTR_ADDRESS_BASE	top_consts_types_package.vhd	/^  CONSTANT JUMP_INSTR_ADDRESS_BASE               : NATURAL                                          := OUTPORT_RANGE_END - 1;$/;"	c
+JUMP_INSTR_ADDRESS_END	top_consts_types_package.vhd	/^  CONSTANT JUMP_INSTR_ADDRESS_END                : NATURAL                                          := JUMP_INSTR_ADDRESS_BASE - (PC_SIZE - 1); -- changed PC_SIZE - 1 ==> PC_SIZE$/;"	c
+JUMP_INSTR_ADDRESS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT JUMP_INSTR_ADDRESS_VECTOR_SIZE        : NATURAL                                          := JUMP_INSTR_ADDRESS_BASE - JUMP_INSTR_ADDRESS_END;$/;"	c
+JUMP_UNUSED_BITS	top_consts_types_package.vhd	/^  CONSTANT JUMP_UNUSED_BITS                      : NATURAL                                          := INSTR_WIDTH - TRUE_ADDRS_SIZE - INSTR_CODE_RANGE_VECTOR_SIZE; -- 23-PC_SIZE;  -- instr_code:4 || true_addrs:6$/;"	c
+JUMP_UNUSED_BITS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT JUMP_UNUSED_BITS_VECTOR_SIZE          : NATURAL                                          := JUMP_UNUSED_RANGE_BASE - JUMP_UNUSED_RANGE_END + 1;$/;"	c
+JUMP_UNUSED_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT JUMP_UNUSED_RANGE_BASE                : NATURAL                                          := TRUE_ADDRS_RANGE_END - 1;$/;"	c
+JUMP_UNUSED_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT JUMP_UNUSED_RANGE_END                 : NATURAL                                          := JUMP_UNUSED_RANGE_BASE - (JUMP_UNUSED_BITS - 1);$/;"	c
+JUMP_instr_type	isa.vhd	/^    TYPE JUMP_instr_type IS RECORD$/;"	t
+Jump_instr_ty	top_consts_types_package.vhd	/^  TYPE Jump_instr_ty IS RECORD$/;"	t
+LATA	tb_instructions.vhd	/^    CONSTANT LATA                             : INTEGER            := 1;$/;"	c
+LD_ACC	DPU/DPU_pkg.vhd	/^  CONSTANT LD_ACC                : INTEGER                              := 27; -- ACC0 = in0 , ACC1 = in1$/;"	c
+LD_IR	DPU/DPU_pkg.vhd	/^  CONSTANT LD_IR                 : INTEGER                              := 11; -- IntReg0 = In0, IntReg1 = In1$/;"	c
+LD_REGS	top_consts_types_package.vhd	/^  CONSTANT LD_REGS                 : INTEGER                              := 28; -- dpureg0 = in0 , dpureg1 = in1$/;"	c
+LEVELS	autoloop.vhd	/^  CONSTANT LEVELS                        : NATURAL := log2(MAX_NO_OF_LOOPS);$/;"	c
+LEVELS	testbench/tb_priorityMux.vhd	/^    CONSTANT LEVELS : NATURAL := 2;$/;"	c
+LK_RELU	DPU/DPU_pkg.vhd	/^  CONSTANT LK_RELU               : INTEGER                              := 22; -- out0 = max(in0,0),  , out1 = max(in2,0)$/;"	c
+LK_RELU	top_consts_types_package.vhd	/^  CONSTANT LK_RELU                 : INTEGER                              := 23; -- out0 = max(const * in0, in0) , out1 = max(const * in1, in1) (const < 1)$/;"	c
+LOOP_instr_type	isa.vhd	/^    TYPE LOOP_instr_type IS RECORD$/;"	t
+LOW_BOUND	priorityMux.vhd	/^  CONSTANT LOW_BOUND         : NATURAL := NO_OF_COM_SEL_BIT * 2;               --! Low bound factor for select signals $/;"	c
+MAC	DPU/DPU_pkg.vhd	/^  CONSTANT MAC                   : INTEGER                              := 10; -- acc0 = (in0 * in1) + acc0  , acc1 = (in2 * in3) + acc1$/;"	c
+MAC	top_consts_types_package.vhd	/^  CONSTANT MAC                     : INTEGER                              := 11; -- out0 = (in0 * in1) + acc0  , out1 = (in2 * in3) + acc1$/;"	c
+MAC_CONST	top_consts_types_package.vhd	/^  CONSTANT MAC_CONST               : INTEGER                              := 13; -- out0 = (in0 * const) + acc0 , out1 = (in2 * const) + acc1$/;"	c
+MAC_NUM	top_consts_types_package.vhd	/^  CONSTANT MAC_NUM                 : INTEGER                              := 2; --! MAC_NUM must be <= min(MULT_NUM, ADD_NUM)$/;"	c
+MAC_inter	DPU/DPU_pkg.vhd	/^  CONSTANT MAC_inter             : INTEGER                              := 30; -- acc0 = in0*intReg0 + acc0, acc1 = in2*intReg1 +acc1$/;"	c
+MAC_nbits	DPU/MAC_test.vhd	/^ENTITY MAC_nbits IS$/;"	e
+MAC_nbits	testbench/MAC_test.vhd	/^ENTITY MAC_nbits IS$/;"	e
+MAX	top_consts_types_package.vhd	/^  CONSTANT MAX                     : INTEGER                              := 17; -- out0 = max(in0, in1) , out1 = max(in2, in3)$/;"	c
+MAXMIN_NUM	top_consts_types_package.vhd	/^  CONSTANT MAXMIN_NUM              : INTEGER                              := 2;$/;"	c
+MAX_2_SAT	DPU/DPU_pkg.vhd	/^  CONSTANT MAX_2_SAT             : SIGNED(SAT_SLICE_BIT_2 - 1 DOWNTO 0) := get_max_val(SAT_SLICE_BIT_2);$/;"	c
+MAX_4_SAT	DPU/DPU_pkg.vhd	/^  CONSTANT MAX_4_SAT             : SIGNED(SAT_SLICE_BIT_4 - 1 DOWNTO 0) := get_max_val(SAT_SLICE_BIT_4);$/;"	c
+MAX_ACC	top_consts_types_package.vhd	/^  CONSTANT MAX_ACC                 : INTEGER                              := 14; -- out0 = max(in0, acc0) , out1 = max(in1, acc1)$/;"	c
+MAX_CONST	top_consts_types_package.vhd	/^  CONSTANT MAX_CONST               : INTEGER                              := 15; -- out0 = max(in0, const) , out1 = max(in1, const)$/;"	c
+MAX_DELAY	top_consts_types_package.vhd	/^  CONSTANT MAX_DELAY              : INTEGER   := 512;$/;"	c
+MAX_FULL_SAT	DPU/DPU_pkg.vhd	/^  CONSTANT MAX_FULL_SAT          : SIGNED(SAT_OUT_BITS - 1 DOWNTO 0)    := get_max_val(SAT_OUT_BITS);$/;"	c
+MAX_HOPS	top_consts_types_package.vhd	/^  CONSTANT MAX_HOPS                              : INTEGER                                          := COLUMNS + DiMArch_Rows;$/;"	c
+MAX_INCR_DECR_VALUE	top_consts_types_package.vhd	/^  CONSTANT MAX_INCR_DECR_VALUE    : INTEGER   := 64;$/;"	c
+MAX_I_W	DPU/DPU_pkg.vhd	/^  CONSTANT MAX_I_W               : NATURAL                              := DPU_IN_WIDTH;$/;"	c
+MAX_MIN	DPU/DPU_pkg.vhd	/^  CONSTANT MAX_MIN               : INTEGER                              := 16; -- out0 = max(in0, in1) , out1 = min(in2, in3)$/;"	c
+MAX_MIN_ACC	DPU/DPU_pkg.vhd	/^  CONSTANT MAX_MIN_ACC           : INTEGER                              := 13; -- out0 = max(in0, acc0) , out1 = min(in1, acc1)$/;"	c
+MAX_MIN_CONST	DPU/DPU_pkg.vhd	/^  CONSTANT MAX_MIN_CONST         : INTEGER                              := 14; -- out0 = max(in0, const) , out1 = min(in1, const)$/;"	c
+MAX_NO_OF_LOOPS	top_consts_types_package.vhd	/^  CONSTANT MAX_NO_OF_LOOPS                       : NATURAL                                          := HW_MAX_NO_OF_RACCU_LOOPS;  --! Number of Loops that can be supported$/;"	c
+MAX_NR_OF_OUTP_N_HOPS	top_consts_types_package.vhd	/^  CONSTANT MAX_NR_OF_OUTP_N_HOPS       : INTEGER := 2 * NR_OF_HOPS + 1; -- Max # outps in NR_OF_HOPS range$/;"	c
+MAX_O_W	DPU/DPU_pkg.vhd	/^  CONSTANT MAX_O_W               : NATURAL                              := MAX_I_W;$/;"	c
+MAX_REPETITION	top_consts_types_package.vhd	/^  CONSTANT MAX_REPETITION         : INTEGER   := 512;$/;"	c
+MAX_VALUE	DPU/MAC_test.vhd	/^  CONSTANT MAX_VALUE    : signed(width * 2 - 1 DOWNTO 0) := "01111111111111111111111111111111";$/;"	c
+MAX_VALUE	DPU/Sat_n_round.vhd	/^  CONSTANT MAX_VALUE           : signed(DPU_OUT_WIDTH - 1 DOWNTO 0)   := DPU_OUT_MAX_VALUE;$/;"	c
+MAX_VALUE	DPU/Saturation_Unit.vhd	/^  CONSTANT MAX_VALUE    : signed(SAT_OUT_BITS - 1 DOWNTO 0)    := MAX_FULL_SAT;--, SAT_OUT_BITS);$/;"	c
+MAX_VALUE	testbench/MAC_test.vhd	/^  CONSTANT MAX_VALUE    : signed(width * 2 - 1 DOWNTO 0) := "01111111111111111111111111111111";$/;"	c
+MAX_VALUE	testbench/tb_nacu_recon.vhd	/^  CONSTANT MAX_VALUE     : signed(bit_width * 2 - 1 DOWNTO 0) := "01111111111111111111111111111111";$/;"	c
+MAX_VALUE_0	DPU/MAC_test.vhd	/^  CONSTANT MAX_VALUE_0  : signed(width - 1 DOWNTO 0)     := "0111111111111111";$/;"	c
+MAX_VALUE_0	DPU/Sat_n_round.vhd	/^  CONSTANT MAX_VALUE_0         : signed(DPU_OUT_WIDTH\/2 - 1 DOWNTO 0) := DPU_OUT_MAX_VALUE_2;$/;"	c
+MAX_VALUE_0	DPU/Saturation_Unit.vhd	/^  CONSTANT MAX_VALUE_0  : signed(SAT_SLICE_BIT_2 - 1 DOWNTO 0) := MAX_2_SAT;--, SAT_SLICE_BIT_2);$/;"	c
+MAX_VALUE_0	testbench/MAC_test.vhd	/^  CONSTANT MAX_VALUE_0  : signed(width - 1 DOWNTO 0)     := "0111111111111111";$/;"	c
+MAX_VALUE_0	testbench/tb_nacu_recon.vhd	/^  CONSTANT MAX_VALUE_0   : signed(bit_width - 1 DOWNTO 0)     := "0111111111111111";$/;"	c
+MAX_VALUE_00	DPU/MAC_test.vhd	/^  CONSTANT MAX_VALUE_00 : signed(width \/ 2 - 1 DOWNTO 0) := "01111111";$/;"	c
+MAX_VALUE_00	DPU/Sat_n_round.vhd	/^  CONSTANT MAX_VALUE_00        : signed(DPU_OUT_WIDTH\/4 - 1 DOWNTO 0) := DPU_OUT_MAX_VALUE_4;$/;"	c
+MAX_VALUE_00	DPU/Saturation_Unit.vhd	/^  CONSTANT MAX_VALUE_00 : signed(SAT_SLICE_BIT_4 - 1 DOWNTO 0) := MAX_4_SAT;--, SAT_SLICE_BIT_4);$/;"	c
+MAX_VALUE_00	testbench/MAC_test.vhd	/^  CONSTANT MAX_VALUE_00 : signed(width \/ 2 - 1 DOWNTO 0) := "01111111";$/;"	c
+MAX_VALUE_00	testbench/tb_nacu_recon.vhd	/^  CONSTANT MAX_VALUE_00  : signed(bit_width \/ 2 - 1 DOWNTO 0) := "01111111";$/;"	c
+MEM_BLOCK_SIZE	top_consts_types_package.vhd	/^  CONSTANT MEM_BLOCK_SIZE              : INTEGER := 16;$/;"	c
+MIN_2_SAT	DPU/DPU_pkg.vhd	/^  CONSTANT MIN_2_SAT             : SIGNED(SAT_SLICE_BIT_2 - 1 DOWNTO 0) := get_min_val(SAT_SLICE_BIT_2);$/;"	c
+MIN_4_SAT	DPU/DPU_pkg.vhd	/^  CONSTANT MIN_4_SAT             : SIGNED(SAT_SLICE_BIT_4 - 1 DOWNTO 0) := get_min_val(SAT_SLICE_BIT_4);$/;"	c
+MIN_ACC	top_consts_types_package.vhd	/^  CONSTANT MIN_ACC                 : INTEGER                              := 16; -- out0 = min(in0, acc0) , out1 = min(in1, acc1)$/;"	c
+MIN_FULL_SAT	DPU/DPU_pkg.vhd	/^  CONSTANT MIN_FULL_SAT          : SIGNED(SAT_OUT_BITS - 1 DOWNTO 0)    := get_min_val(SAT_OUT_BITS);$/;"	c
+MIN_VALUE	DPU/MAC_test.vhd	/^  CONSTANT MIN_VALUE    : signed(width * 2 - 1 DOWNTO 0) := "10000000000000000000000000000000";$/;"	c
+MIN_VALUE	DPU/Sat_n_round.vhd	/^  CONSTANT MIN_VALUE           : signed(DPU_OUT_WIDTH - 1 DOWNTO 0)   := DPU_OUT_MIN_VALUE;$/;"	c
+MIN_VALUE	DPU/Saturation_Unit.vhd	/^  CONSTANT MIN_VALUE    : signed(SAT_OUT_BITS - 1 DOWNTO 0)    := MIN_FULL_SAT;--, SAT_OUT_BITS);$/;"	c
+MIN_VALUE	testbench/MAC_test.vhd	/^  CONSTANT MIN_VALUE    : signed(width * 2 - 1 DOWNTO 0) := "10000000000000000000000000000000";$/;"	c
+MIN_VALUE	testbench/tb_nacu_recon.vhd	/^  CONSTANT MIN_VALUE     : signed(bit_width * 2 - 1 DOWNTO 0) := "10000000000000000000000000000000";$/;"	c
+MIN_VALUE_0	DPU/MAC_test.vhd	/^  CONSTANT MIN_VALUE_0  : signed(width - 1 DOWNTO 0)     := "1000000000000000";$/;"	c
+MIN_VALUE_0	DPU/Sat_n_round.vhd	/^  CONSTANT MIN_VALUE_0         : signed(DPU_OUT_WIDTH\/2 - 1 DOWNTO 0) := DPU_OUT_MIN_VALUE_2;$/;"	c
+MIN_VALUE_0	DPU/Saturation_Unit.vhd	/^  CONSTANT MIN_VALUE_0  : signed(SAT_SLICE_BIT_2 - 1 DOWNTO 0) := MIN_2_SAT;--, SAT_SLICE_BIT_2);$/;"	c
+MIN_VALUE_0	testbench/MAC_test.vhd	/^  CONSTANT MIN_VALUE_0  : signed(width - 1 DOWNTO 0)     := "1000000000000000";$/;"	c
+MIN_VALUE_0	testbench/tb_nacu_recon.vhd	/^  CONSTANT MIN_VALUE_0   : signed(bit_width - 1 DOWNTO 0)     := "1000000000000000";$/;"	c
+MIN_VALUE_00	DPU/MAC_test.vhd	/^  CONSTANT MIN_VALUE_00 : signed(width \/ 2 - 1 DOWNTO 0) := "10000000";$/;"	c
+MIN_VALUE_00	DPU/Sat_n_round.vhd	/^  CONSTANT MIN_VALUE_00        : signed(DPU_OUT_WIDTH\/4 - 1 DOWNTO 0) := DPU_OUT_MIN_VALUE_4;$/;"	c
+MIN_VALUE_00	DPU/Saturation_Unit.vhd	/^  CONSTANT MIN_VALUE_00 : signed(SAT_SLICE_BIT_4 - 1 DOWNTO 0) := MIN_4_SAT;--, SAT_SLICE_BIT_4);$/;"	c
+MIN_VALUE_00	testbench/MAC_test.vhd	/^  CONSTANT MIN_VALUE_00 : signed(width \/ 2 - 1 DOWNTO 0) := "10000000";$/;"	c
+MIN_VALUE_00	testbench/tb_nacu_recon.vhd	/^  CONSTANT MIN_VALUE_00  : signed(bit_width \/ 2 - 1 DOWNTO 0) := "10000000";$/;"	c
+MODE_15	DPU/DPU_pkg.vhd	/^  CONSTANT MODE_15               : INTEGER                              := 15;$/;"	c
+MODE_31	DPU/DPU_pkg.vhd	/^  CONSTANT MODE_31               : INTEGER                              := 31;$/;"	c
+MODE_6	DPU/DPU_pkg.vhd	/^  CONSTANT MODE_6                : INTEGER                              := 6;$/;"	c
+MODE_SEL	top_consts_types_package.vhd	/^  CONSTANT MODE_SEL                              : NATURAL                                          := 1;$/;"	c
+MODE_SEL_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT MODE_SEL_RANGE_BASE                   : NATURAL                                          := REPT_DELAY_RANGE_END - 1;$/;"	c
+MODE_SEL_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT MODE_SEL_RANGE_END                    : NATURAL                                          := MODE_SEL_RANGE_BASE - (MODE_SEL - 1);$/;"	c
+MODE_SEL_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT MODE_SEL_VECTOR_SIZE                  : NATURAL                                          := MODE_SEL_RANGE_BASE - MODE_SEL_RANGE_END + 1;$/;"	c
+MTRF_cell	MTRF_cell.vhd	/^ENTITY MTRF_cell IS$/;"	e
+MULT	DPU/DPU_pkg.vhd	/^  CONSTANT MULT                  : INTEGER                              := 7;  -- out0 = in0 * in1 , out1 = in2 * in3$/;"	c
+MULT	top_consts_types_package.vhd	/^  CONSTANT MULT                    : INTEGER                              := 8;  -- out0 = in0 * in1 , out1 = in2 * in3$/;"	c
+MULT_ADD	DPU/DPU_pkg.vhd	/^  CONSTANT MULT_ADD              : INTEGER                              := 8;  -- out0 = in0*in1+in2$/;"	c
+MULT_ADD	top_consts_types_package.vhd	/^  CONSTANT MULT_ADD                : INTEGER                              := 9;  -- out0 = in0*in1+in2$/;"	c
+MULT_CONST	DPU/DPU_pkg.vhd	/^  CONSTANT MULT_CONST            : INTEGER                              := 9;  -- out0 = in0 * dpureg0 , out1 = in2 * dpureg1$/;"	c
+MULT_CONST	top_consts_types_package.vhd	/^  CONSTANT MULT_CONST              : INTEGER                              := 10; -- out0 = in0 * dpureg0 , out1 = in2 * dpureg1$/;"	c
+MULT_NUM	top_consts_types_package.vhd	/^  CONSTANT MULT_NUM                : INTEGER                              := 2;$/;"	c
+MUL_I_W	DPU/DPU_pkg.vhd	/^  CONSTANT MUL_I_W               : NATURAL                              := DPU_IN_WIDTH;$/;"	c
+MUL_O_W	DPU/DPU_pkg.vhd	/^  CONSTANT MUL_O_W               : NATURAL                              := 2 * MUL_I_W;$/;"	c
+Maxmin_Unit	DPU/Maxmin_Unit.vhd	/^ENTITY Maxmin_Unit IS$/;"	e
+N	testbench/tb_priorityMux.vhd	/^    CONSTANT N      : NATURAL := 4;$/;"	c
+NACU	DPU/nacu.vhd	/^ENTITY NACU IS$/;"	e
+NO_OF_COM_SEL_BIT	priorityMux.vhd	/^  CONSTANT NO_OF_COM_SEL_BIT : NATURAL := N\/(2 ** (i + 1));                    --! Number of select inputs bits for the internal components of the layer$/;"	c
+NO_OF_INTER_ID	priorityMux.vhd	/^  CONSTANT NO_OF_INTER_ID    : NATURAL := 2 ** (i);                            --! Number of outputs from this layer to the next$/;"	c
+NR_OF_ADDRS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_ADDRS                           : NATURAL                                          := 6;                                                                    --! # of bits used to specify the number of addresses. $/;"	c
+NR_OF_ADDRS_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT NR_OF_ADDRS_RANGE_BASE                : NATURAL                                          := STARTING_ADDRS_RANGE_END - 1;                                         --! Starting bit of the \\em NR_OF_ADDRS field.$/;"	c
+NR_OF_ADDRS_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT NR_OF_ADDRS_RANGE_END                 : NATURAL                                          := NR_OF_ADDRS_RANGE_BASE - (NR_OF_ADDRS - 1);                           --! Ending bit of the \\em NR_OF_ADDRS field.$/;"	c
+NR_OF_ADDRS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT NR_OF_ADDRS_VECTOR_SIZE               : NATURAL                                          := NR_OF_ADDRS_RANGE_BASE - NR_OF_ADDRS_RANGE_END + 1;                   --! # of bits in the \\em NR_OF_ADDRS field.$/;"	c
+NR_OF_COL_INPS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_COL_INPS              : NATURAL := 12; -- # of inps in a column,$/;"	c
+NR_OF_COL_INPS_ONE_CELL	top_consts_types_package.vhd	/^  CONSTANT NR_OF_COL_INPS_ONE_CELL     : NATURAL := 6;$/;"	c
+NR_OF_DPU_IN_PORTS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_DPU_IN_PORTS      : NATURAL                              := 4;$/;"	c
+NR_OF_DPU_OUT_PORTS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_DPU_OUT_PORTS     : NATURAL                              := 2;$/;"	c
+NR_OF_HOPS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_HOPS                  : NATURAL := 2;                  --sliding window connectivity RANGE$/;"	c
+NR_OF_INSTRS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_INSTRS                          : NATURAL                                          := 2;                                                                    --! # of bits used to specify the number of REFI instructions following this one, to extend it .$/;"	c
+NR_OF_INSTRS_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT NR_OF_INSTRS_RANGE_BASE               : NATURAL                                          := NR_OF_REG_FILE_PORTS_RANGE_END - 1;                                   --! Starting bit of the \\em NR_OF_INSTRS field.$/;"	c
+NR_OF_INSTRS_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT NR_OF_INSTRS_RANGE_END                : NATURAL                                          := NR_OF_INSTRS_RANGE_BASE - (NR_OF_INSTRS - 1);                         --! Ending bit of the \\em NR_OF_INSTRS field.$/;"	c
+NR_OF_INSTRS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT NR_OF_INSTRS_VECTOR_SIZE              : NATURAL                                          := NR_OF_INSTRS_RANGE_BASE - NR_OF_INSTRS_RANGE_END + 1;                 --! # of bits in the \\em NR_OF_INSTRS field.$/;"	c
+NR_OF_INSTR_TYPES	top_consts_types_package.vhd	/^  CONSTANT NR_OF_INSTR_TYPES                     : NATURAL                                          := 4;$/;"	c
+NR_OF_OUTP	top_consts_types_package.vhd	/^  CONSTANT NR_OF_OUTP                  : NATURAL := 2;                  -- # of outp for Reg File\/DPU - 2$/;"	c
+NR_OF_OUTPORTS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_OUTPORTS                        : NATURAL                                          := 1;               -- should be ceil2(log2(nr_of_outports)). In this case we have 2 outports$/;"	c
+NR_OF_REG_FILE_IN_PORTS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_REG_FILE_IN_PORTS     : NATURAL := 2;$/;"	c
+NR_OF_REG_FILE_PORTS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_REG_FILE_PORTS                  : NATURAL                                          := 2;                                                                    --! # of bits used to specify the  register port to be configured.$/;"	c
+NR_OF_REG_FILE_PORTS_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT NR_OF_REG_FILE_PORTS_RANGE_BASE       : NATURAL                                          := INSTR_CODE_RANGE_END - 1;                                             --! Starting bit of the \\em NR_OF_REG_FILE_PORTS field.$/;"	c
+NR_OF_REG_FILE_PORTS_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT NR_OF_REG_FILE_PORTS_RANGE_END        : NATURAL                                          := NR_OF_REG_FILE_PORTS_RANGE_BASE - (NR_OF_REG_FILE_PORTS - 1);         --! Ending bit of the \\em NR_OF_REG_FILE_PORTS field.$/;"	c
+NR_OF_REG_FILE_PORTS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT NR_OF_REG_FILE_PORTS_VECTOR_SIZE      : NATURAL                                          := NR_OF_REG_FILE_PORTS_RANGE_BASE - NR_OF_REG_FILE_PORTS_RANGE_END + 1; --! # of bits in the \\em NR_OF_REG_FILE_PORTS field.$/;"	c
+NR_OF_VLANE_IN_PORTS	top_consts_types_package.vhd	/^  CONSTANT NR_OF_VLANE_IN_PORTS        : NATURAL := NR_OF_REG_FILE_IN_PORTS + NR_OF_DPU_IN_PORTS; --$/;"	c
+NR_REG_FILE_DATA_BLOCKS	top_consts_types_package.vhd	/^  CONSTANT NR_REG_FILE_DATA_BLOCKS     : INTEGER := REG_FILE_DEPTH\/WORDS_PER_BLOCK;$/;"	c
+NUM_OF_INSTRS_SEQ	tb_instructions.vhd	/^    CONSTANT NUM_OF_INSTRS_SEQ      : INTEGER := 4;$/;"	c
+NUM_OF_REG_BLOCKS	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REG_BLOCKS           : INTEGER := REG_FILE_DEPTH\/MEM_BLOCK_SIZE;$/;"	c
+NUM_OF_REPT	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REPT                           : NATURAL                                          := 5;$/;"	c
+NUM_OF_REPT_EXT	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REPT_EXT                       : NATURAL                                          := 1;$/;"	c
+NUM_OF_REPT_EXT_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REPT_EXT_RANGE_BASE            : NATURAL                                          := REG_FILE_MIDDLE_DELAY_EXT_RANGE_END - 1;$/;"	c
+NUM_OF_REPT_EXT_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REPT_EXT_RANGE_END             : NATURAL                                          := NUM_OF_REPT_EXT_RANGE_BASE - (NUM_OF_REPT_EXT - 1);$/;"	c
+NUM_OF_REPT_EXT_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REPT_EXT_VECTOR_SIZE           : NATURAL                                          := NUM_OF_REPT_EXT_RANGE_BASE - NUM_OF_REPT_EXT_RANGE_END + 1;$/;"	c
+NUM_OF_REPT_PORT_SIZE	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REPT_PORT_SIZE                 : NATURAL                                          := NUM_OF_REPT_VECTOR_SIZE + NUM_OF_REPT_EXT_VECTOR_SIZE;$/;"	c
+NUM_OF_REPT_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REPT_RANGE_BASE                : NATURAL                                          := REG_FILE_MIDDLE_DELAY_RANGE_END - 2;$/;"	c
+NUM_OF_REPT_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REPT_RANGE_END                 : NATURAL                                          := NUM_OF_REPT_RANGE_BASE - (NUM_OF_REPT - 1);$/;"	c
+NUM_OF_REPT_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT NUM_OF_REPT_VECTOR_SIZE               : NATURAL                                          := NUM_OF_REPT_RANGE_BASE - NUM_OF_REPT_RANGE_END + 1;$/;"	c
+N_OF_COMP	priorityMux.vhd	/^  CONSTANT N_OF_COMP         : NATURAL := NO_OF_INTER_ID;                      --! Number of internal components in this layer $/;"	c
+NoC_Bus_instr_width	top_consts_types_package.vhd	/^  CONSTANT NoC_Bus_instr_width                   : INTEGER                                          := sram_agu_width;$/;"	c
+OUTP0	top_consts_types_package.vhd	/^  CONSTANT OUTP0                       : NATURAL := 0;$/;"	c
+OUTP1	top_consts_types_package.vhd	/^  CONSTANT OUTP1                       : NATURAL := 1;$/;"	c
+OUTPORT_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT OUTPORT_RANGE_BASE                    : NATURAL                                          := INCREMENT_RANGE_END - 1;$/;"	c
+OUTPORT_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT OUTPORT_RANGE_END                     : NATURAL                                          := OUTPORT_RANGE_BASE - (NR_OF_OUTPORTS - 1);$/;"	c
+OUTPORT_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT OUTPORT_VECTOR_SIZE                   : NATURAL                                          := OUTPORT_RANGE_BASE - OUTPORT_RANGE_END;$/;"	c
+OUTPUT_CONTROL	tb_instructions.vhd	/^    CONSTANT OUTPUT_CONTROL                   : INTEGER            := 2;$/;"	c
+OUTPUT_CONTROL	top_consts_types_package.vhd	/^  CONSTANT OUTPUT_CONTROL                        : NATURAL                                          := 2;$/;"	c
+OUTPUT_CONTROL_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT OUTPUT_CONTROL_RANGE_BASE             : NATURAL                                          := MODE_SEL_RANGE_END - 1;$/;"	c
+OUTPUT_CONTROL_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT OUTPUT_CONTROL_RANGE_END              : NATURAL                                          := OUTPUT_CONTROL_RANGE_BASE - (OUTPUT_CONTROL - 1);$/;"	c
+OUTPUT_CONTROL_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT OUTPUT_CONTROL_VECTOR_SIZE            : NATURAL                                          := OUTPUT_CONTROL_RANGE_BASE - OUTPUT_CONTROL_RANGE_END + 1;$/;"	c
+OUT_BITS	DPU/Sat_n_round.vhd	/^  CONSTANT OUT_BITS            : NATURAL                              := DPU_OUT_WIDTH;$/;"	c
+OUT_BITS	DPU/scaler.vhd	/^  CONSTANT OUT_BITS        : NATURAL := DPU_OUT_WIDTH;$/;"	c
+OUT_BOTH	top_consts_types_package.vhd	/^  CONSTANT OUT_BOTH                : NATURAL                              := 3;$/;"	c
+OUT_LEFT	top_consts_types_package.vhd	/^  CONSTANT OUT_LEFT                : NATURAL                              := 2;$/;"	c
+OUT_NONE	top_consts_types_package.vhd	/^  CONSTANT OUT_NONE                : NATURAL                              := 0;$/;"	c
+OUT_NUM	top_consts_types_package.vhd	/^  CONSTANT OUT_NUM                 : INTEGER                              := NR_OF_DPU_OUT_PORTS;$/;"	c
+OUT_RIGHT	top_consts_types_package.vhd	/^  CONSTANT OUT_RIGHT               : NATURAL                              := 1;$/;"	c
+OUT_SLICE_BIT_2	DPU/Sat_n_round.vhd	/^  CONSTANT OUT_SLICE_BIT_2     : NATURAL                              := OUT_BITS\/2;$/;"	c
+OUT_SLICE_BIT_2	DPU/scaler.vhd	/^  CONSTANT OUT_SLICE_BIT_2 : NATURAL := OUT_BITS\/slice_0;$/;"	c
+OUT_SLICE_BIT_4	DPU/Sat_n_round.vhd	/^  CONSTANT OUT_SLICE_BIT_4     : NATURAL                              := OUT_BITS\/4;$/;"	c
+OUT_SLICE_BIT_4	DPU/scaler.vhd	/^  CONSTANT OUT_SLICE_BIT_4 : NATURAL := OUT_BITS\/slice_00;$/;"	c
+OUT_W	DPU/DPU_pkg.vhd	/^  CONSTANT OUT_W                 : NATURAL                              := DPU_OUT_WIDTH;$/;"	c
+PC_BASE_PROG	top_consts_types_package.vhd	/^  CONSTANT PC_BASE_PROG                          : NATURAL                                          := 0;               -- base pc value, where PC is "pc <= PC + 1" Set to pc as default in the sequencer$/;"	c
+PC_INCREM_WIDTH	top_consts_types_package.vhd	/^  CONSTANT PC_INCREM_WIDTH                       : NATURAL                                          := 2;               --$/;"	c
+PC_SIZE	top_consts_types_package.vhd	/^  CONSTANT PC_SIZE                               : NATURAL                                          := log2(INSTR_DEPTH);$/;"	c
+PORT_NUMBER_WIDTH	top_consts_types_package.vhd	/^  CONSTANT PORT_NUMBER_WIDTH           : INTEGER := 2;$/;"	c
+Q_format_n_to_one	DPU/Q_format_n_to_one.vhd	/^ENTITY Q_format_n_to_one IS$/;"	e
+Q_format_one_to_n	DPU/Q_format_one_to_n.vhd	/^ENTITY Q_format_one_to_n IS$/;"	e
+RA	tb_instructions.vhd	/^    CONSTANT RA                               : INTEGER            := 2;$/;"	c
+RACCU	RACCU.vhd	/^ENTITY RACCU IS$/;"	e
+RACCU	tb_instructions.vhd	/^    FUNCTION RACCU ($/;"	f
+RACCU	top_consts_types_package.vhd	/^  CONSTANT RACCU                                 : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "1010";                                                               --! Instruction code RACCU, used 10.$/;"	c
+RACCU_MODE_SEL	top_consts_types_package.vhd	/^  CONSTANT RACCU_MODE_SEL                        : NATURAL                                          := 3;$/;"	c
+RACCU_MODE_SEL_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT RACCU_MODE_SEL_RANGE_BASE             : NATURAL                                          := INSTR_CODE_RANGE_END - 1;$/;"	c
+RACCU_MODE_SEL_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT RACCU_MODE_SEL_RANGE_END              : NATURAL                                          := RACCU_MODE_SEL_RANGE_BASE - (RACCU_MODE_SEL - 1);$/;"	c
+RACCU_MODE_SEL_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT RACCU_MODE_SEL_VECTOR_SIZE            : NATURAL                                          := RACCU_MODE_SEL_RANGE_BASE - RACCU_MODE_SEL_RANGE_END + 1;$/;"	c
+RACCU_OPERAND	top_consts_types_package.vhd	/^  CONSTANT RACCU_OPERAND                         : NATURAL                                          := 7;$/;"	c
+RACCU_OPERAND1_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT RACCU_OPERAND1_RANGE_BASE             : NATURAL                                          := RACCU_MODE_SEL_RANGE_END - 2; --one to determine if it is constant or indirect address$/;"	c
+RACCU_OPERAND1_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT RACCU_OPERAND1_RANGE_END              : NATURAL                                          := RACCU_OPERAND1_RANGE_BASE - (RACCU_OPERAND - 1);$/;"	c
+RACCU_OPERAND1_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT RACCU_OPERAND1_VECTOR_SIZE            : NATURAL                                          := RACCU_OPERAND1_RANGE_BASE - RACCU_OPERAND1_RANGE_END + 1;$/;"	c
+RACCU_OPERAND2_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT RACCU_OPERAND2_RANGE_BASE             : NATURAL                                          := RACCU_OPERAND1_RANGE_END - 2;$/;"	c
+RACCU_OPERAND2_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT RACCU_OPERAND2_RANGE_END              : NATURAL                                          := RACCU_OPERAND2_RANGE_BASE - (RACCU_OPERAND - 1);$/;"	c
+RACCU_OPERAND2_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT RACCU_OPERAND2_VECTOR_SIZE            : NATURAL                                          := RACCU_OPERAND2_RANGE_BASE - RACCU_OPERAND2_RANGE_END + 1;$/;"	c
+RACCU_REGFILE_DEPTH	top_consts_types_package.vhd	/^  CONSTANT RACCU_REGFILE_DEPTH                   : NATURAL                                          := HW_RACCU_REGFILE_DEPTH;    --! Number of RACCU Registers, includes the Registers used for the Loop iterators$/;"	c
+RACCU_REG_ADDRS_WIDTH	top_consts_types_package.vhd	/^  CONSTANT RACCU_REG_ADDRS_WIDTH                 : NATURAL                                          := log2(RACCU_REGFILE_DEPTH); --! Address width for the RACCU register file$/;"	c
+RACCU_REG_BITWIDTH	top_consts_types_package.vhd	/^  CONSTANT RACCU_REG_BITWIDTH                    : NATURAL                                          := HW_RACCU_REG_BITWIDTH;     --! RACCU register bitwidth - To be able to access memory addresses 7$/;"	c
+RACCU_RESULT_ADDR	top_consts_types_package.vhd	/^  CONSTANT RACCU_RESULT_ADDR                     : NATURAL                                          := 4;$/;"	c
+RACCU_RESULT_ADDR_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT RACCU_RESULT_ADDR_RANGE_BASE          : NATURAL                                          := RACCU_OPERAND2_RANGE_END - 1;$/;"	c
+RACCU_RESULT_ADDR_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT RACCU_RESULT_ADDR_RANGE_END           : NATURAL                                          := RACCU_RESULT_ADDR_RANGE_BASE - (RACCU_RESULT_ADDR - 1);$/;"	c
+RACCU_RESULT_ADDR_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT RACCU_RESULT_ADDR_VECTOR_SIZE         : NATURAL                                          := RACCU_RESULT_ADDR_RANGE_BASE - RACCU_RESULT_ADDR_RANGE_END + 1;$/;"	c
+RACCU_instr_type	isa.vhd	/^    TYPE RACCU_instr_type IS RECORD$/;"	t
+RAC_MODE_ADD	top_consts_types_package.vhd	/^  CONSTANT RAC_MODE_ADD                          : INTEGER                                          := 1;                         --! Add of two signed values $/;"	c
+RAC_MODE_ADD_SH_L	top_consts_types_package.vhd	/^  CONSTANT RAC_MODE_ADD_SH_L                     : INTEGER                                          := 5;                         --! Shift left and add with the value of the output register (a = b << c + a)$/;"	c
+RAC_MODE_IDLE	top_consts_types_package.vhd	/^  CONSTANT RAC_MODE_IDLE                         : INTEGER                                          := 0;                         --! Idle RACCU$/;"	c
+RAC_MODE_SHFT_L	top_consts_types_package.vhd	/^  CONSTANT RAC_MODE_SHFT_L                       : INTEGER                                          := 4;                         --! Right shift$/;"	c
+RAC_MODE_SHFT_R	top_consts_types_package.vhd	/^  CONSTANT RAC_MODE_SHFT_R                       : INTEGER                                          := 3;                         --! Left shift $/;"	c
+RAC_MODE_SUB	top_consts_types_package.vhd	/^  CONSTANT RAC_MODE_SUB                          : INTEGER                                          := 2;                         --! Sub of two signed values$/;"	c
+RAC_MODE_SUB_SH_L	top_consts_types_package.vhd	/^  CONSTANT RAC_MODE_SUB_SH_L                     : INTEGER                                          := 6;                         --! Shift left and subtract with the value of the output register (a = b << c - a)$/;"	c
+RAM_ADDRESS_WIDTH	top_consts_types_package.vhd	/^  CONSTANT RAM_ADDRESS_WIDTH                     : INTEGER                                          := LOG2(RAM_DEPTH);$/;"	c
+RAM_DEPTH	top_consts_types_package.vhd	/^  CONSTANT RAM_DEPTH                             : INTEGER                                          := HW_RAM_DEPTH;$/;"	c
+RB	tb_instructions.vhd	/^    CONSTANT RB                               : INTEGER            := 3;$/;"	c
+READ_SRAM	top_consts_types_package.vhd	/^  CONSTANT READ_SRAM                             : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "1101";                                                               --! Instruction code READ_SRAM, used 13$/;"	c
+REFI	tb_instructions.vhd	/^    CONSTANT REFI                             : INTEGER            := 0;$/;"	c
+REFI	top_consts_types_package.vhd	/^  CONSTANT REFI                                  : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "0001";                                                               --! Instruction code REFI1, used 1.$/;"	c
+REFI1_INIT	top_consts_types_package.vhd	/^  CONSTANT REFI1_INIT              : Refi1_instr_ty                       := (instr_code => (OTHERS => '0'), reg_file_port => (OTHERS => '0'), subseq_instrs => (OTHERS => '0'), start_addrs_sd => '0', start_addrs => (OTHERS => '0'), no_of_addrs_sd => '0', no_of_addrs => (OTHERS => '0'), initial_delay_sd => '0', initial_delay => (OTHERS => '0'));$/;"	c
+REFI_1	tb_instructions.vhd	/^    FUNCTION REFI_1(reg_file_port, subseq_instrs, start_addrs_sd, start_addrs, no_of_addrs_sd, no_of_addrs, initial_delay_sd, initial_delay : INTEGER$/;"	f
+REFI_2	tb_instructions.vhd	/^    FUNCTION REFI_2 (step_val_sd, step_val, step_val_sign, refi_middle_delay_sd, refi_middle_delay, no_of_reps_sd, no_of_reps, rpt_step_value : INTEGER)$/;"	f
+REFI_3	tb_instructions.vhd	/^    FUNCTION REFI_3 (rpt_delay_sd, rpt_delay, mode, outp_cntrl, fft_stage, refi_middle_delay_ext, no_of_rpt_ext, rpt_step_value_ext, fft_end_stage, DiMArch_Mode, use_compr : INTEGER)$/;"	f
+REFI_instr_type	isa.vhd	/^    TYPE REFI_instr_type IS RECORD$/;"	t
+REG_ADDRESS_WIDTH	top_consts_types_package.vhd	/^  CONSTANT REG_ADDRESS_WIDTH           : INTEGER := log2(NUM_OF_REG_BLOCKS);$/;"	c
+REG_FILE_ADDR_WIDTH	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_ADDR_WIDTH         : INTEGER := 6;$/;"	c
+REG_FILE_DATA_WIDTH	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_DATA_WIDTH         : INTEGER := BITWIDTH;$/;"	c
+REG_FILE_DEPTH	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_DEPTH              : INTEGER := HW_REG_FILE_DEPTH;$/;"	c
+REG_FILE_MEM_ADDR_WIDTH	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MEM_ADDR_WIDTH     : NATURAL := REG_ADDRESS_WIDTH;$/;"	c
+REG_FILE_MEM_DATA_WIDTH	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MEM_DATA_WIDTH     : NATURAL := SRAM_WIDTH;$/;"	c
+REG_FILE_MIDDLE_DELAY	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MIDDLE_DELAY                 : NATURAL                                          := 4;$/;"	c
+REG_FILE_MIDDLE_DELAY_EXT	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MIDDLE_DELAY_EXT             : NATURAL                                          := 2;$/;"	c
+REG_FILE_MIDDLE_DELAY_EXT_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MIDDLE_DELAY_EXT_RANGE_BASE  : NATURAL                                          := FFT_STAGE_SEL_RANGE_END - 1;$/;"	c
+REG_FILE_MIDDLE_DELAY_EXT_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MIDDLE_DELAY_EXT_RANGE_END   : NATURAL                                          := REG_FILE_MIDDLE_DELAY_EXT_RANGE_BASE - (REG_FILE_MIDDLE_DELAY_EXT - 1);$/;"	c
+REG_FILE_MIDDLE_DELAY_EXT_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MIDDLE_DELAY_EXT_VECTOR_SIZE : NATURAL                                          := REG_FILE_MIDDLE_DELAY_EXT_RANGE_BASE - REG_FILE_MIDDLE_DELAY_EXT_RANGE_END + 1;$/;"	c
+REG_FILE_MIDDLE_DELAY_PORT_SIZE	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MIDDLE_DELAY_PORT_SIZE       : NATURAL                                          := REG_FILE_MIDDLE_DELAY_VECTOR_SIZE + REG_FILE_MIDDLE_DELAY_EXT_VECTOR_SIZE;$/;"	c
+REG_FILE_MIDDLE_DELAY_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MIDDLE_DELAY_RANGE_BASE      : NATURAL                                          := STEP_VALUE_SIGN_RANGE_END - 2;$/;"	c
+REG_FILE_MIDDLE_DELAY_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MIDDLE_DELAY_RANGE_END       : NATURAL                                          := REG_FILE_MIDDLE_DELAY_RANGE_BASE - (REG_FILE_MIDDLE_DELAY - 1);$/;"	c
+REG_FILE_MIDDLE_DELAY_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT REG_FILE_MIDDLE_DELAY_VECTOR_SIZE     : NATURAL                                          := REG_FILE_MIDDLE_DELAY_RANGE_BASE - REG_FILE_MIDDLE_DELAY_RANGE_END + 1;$/;"	c
+RELU	DPU/DPU_pkg.vhd	/^  CONSTANT RELU                  : INTEGER                              := 23; -- out0 = in0 if in0 > 0, else a*(in1-1) , out1 = in2 if in2 > 0, else a*(in3-1)$/;"	c
+REPT_DELAY	top_consts_types_package.vhd	/^  CONSTANT REPT_DELAY                            : NATURAL                                          := 6;$/;"	c
+REPT_DELAY_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT REPT_DELAY_RANGE_BASE                 : NATURAL                                          := INSTR_CODE_RANGE_END - 2;$/;"	c
+REPT_DELAY_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT REPT_DELAY_RANGE_END                  : NATURAL                                          := REPT_DELAY_RANGE_BASE - (REPT_DELAY - 1);$/;"	c
+REPT_DELAY_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT REPT_DELAY_VECTOR_SIZE                : NATURAL                                          := REPT_DELAY_RANGE_BASE - REPT_DELAY_RANGE_END + 1;$/;"	c
+REP_STEP_VALUE	top_consts_types_package.vhd	/^  CONSTANT REP_STEP_VALUE                        : NATURAL                                          := 4;$/;"	c
+REP_STEP_VALUE_EXT	top_consts_types_package.vhd	/^  CONSTANT REP_STEP_VALUE_EXT                    : NATURAL                                          := 2;$/;"	c
+REP_STEP_VALUE_EXT_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT REP_STEP_VALUE_EXT_RANGE_BASE         : NATURAL                                          := NUM_OF_REPT_EXT_RANGE_END - 1;$/;"	c
+REP_STEP_VALUE_EXT_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT REP_STEP_VALUE_EXT_RANGE_END          : NATURAL                                          := REP_STEP_VALUE_EXT_RANGE_BASE - (REP_STEP_VALUE_EXT - 1);$/;"	c
+REP_STEP_VALUE_EXT_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT REP_STEP_VALUE_EXT_VECTOR_SIZE        : NATURAL                                          := REP_STEP_VALUE_EXT_RANGE_BASE - REP_STEP_VALUE_EXT_RANGE_END + 1;$/;"	c
+REP_STEP_VALUE_PORT_SIZE	top_consts_types_package.vhd	/^  CONSTANT REP_STEP_VALUE_PORT_SIZE              : NATURAL                                          := REP_STEP_VALUE_VECTOR_SIZE + REP_STEP_VALUE_EXT_VECTOR_SIZE;$/;"	c
+REP_STEP_VALUE_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT REP_STEP_VALUE_RANGE_BASE             : NATURAL                                          := NUM_OF_REPT_RANGE_END - 1;$/;"	c
+REP_STEP_VALUE_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT REP_STEP_VALUE_RANGE_END              : NATURAL                                          := REP_STEP_VALUE_RANGE_BASE - (REP_STEP_VALUE - 1);$/;"	c
+REP_STEP_VALUE_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT REP_STEP_VALUE_VECTOR_SIZE            : NATURAL                                          := REP_STEP_VALUE_RANGE_BASE - REP_STEP_VALUE_RANGE_END + 1;$/;"	c
+RESET_COUNT	top_consts_types_package.vhd	/^  CONSTANT RESET_COUNT             : INTEGER RANGE 0 TO 2 ** DPU_IN_WIDTH := 6; --x"00000006";$/;"	c
+RF0	top_consts_types_package.vhd	/^  CONSTANT RF0                    : INTEGER   := 0;$/;"	c
+RF1	top_consts_types_package.vhd	/^  CONSTANT RF1                    : INTEGER   := 1;$/;"	c
+RFNODE	tb_instructions.vhd	/^    CONSTANT RFNODE                 : INTEGER := 2;$/;"	c
+RLE_WP	top_consts_types_package.vhd	/^  CONSTANT RLE_WP                      : INTEGER := 4;$/;"	c
+RLE_engine	RLE_engine/RLE_engine.vhd	/^ENTITY RLE_engine IS$/;"	e
+RLE_layer	RLE_engine/RLE_layer.vhd	/^entity RLE_layer is$/;"	e
+ROUNDED_BIT	DPU/Sat_n_round.vhd	/^  CONSTANT ROUNDED_BIT : POSITIVE := 1 + 2 * ib + fb;$/;"	c
+ROUTE	top_consts_types_package.vhd	/^  CONSTANT ROUTE                                 : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "1100";                                                               --! Instruction code ROUTE, used 12.$/;"	c
+ROUTE_instr_type	isa.vhd	/^    TYPE ROUTE_instr_type IS RECORD$/;"	t
+ROWS	top_consts_types_package.vhd	/^  CONSTANT ROWS                                  : NATURAL                                          := HW_ROWS;$/;"	c
+RaccuAndLoop	RaccuAndLoop.vhd	/^ENTITY RaccuAndLoop IS$/;"	e
+RaccuRF	RaccuRF.vhd	/^ENTITY RaccuRF IS$/;"	e
+Raccu_instr_ty	top_consts_types_package.vhd	/^  TYPE Raccu_instr_ty IS RECORD$/;"	t
+Refi1_instr_ty	top_consts_types_package.vhd	/^  TYPE Refi1_instr_ty IS RECORD$/;"	t
+Refi2_instr_ty	top_consts_types_package.vhd	/^  TYPE Refi2_instr_ty IS RECORD$/;"	t
+Refi3_instr_ty	top_consts_types_package.vhd	/^  TYPE Refi3_instr_ty IS RECORD$/;"	t
+Refi_AGU_st_ty	top_consts_types_package.vhd	/^  TYPE Refi_AGU_st_ty IS (IDLE_ST, COUNT_ST, RD_WR_ST, BIT_REVRS_ST, REPETITION_ST);$/;"	t
+Route_instr_ty	top_consts_types_package.vhd	/^  TYPE Route_instr_ty IS RECORD$/;"	t
+SAT_CONF_BITS	DPU/DPU_pkg.vhd	/^  CONSTANT SAT_CONF_BITS         : NATURAL                              := 2;$/;"	c
+SAT_IN_BITS	DPU/DPU_pkg.vhd	/^  CONSTANT SAT_IN_BITS           : NATURAL                              := 32;$/;"	c
+SAT_OUT_BITS	DPU/DPU_pkg.vhd	/^  CONSTANT SAT_OUT_BITS          : NATURAL                              := SAT_IN_BITS;$/;"	c
+SAT_SLICE_BIT_2	DPU/DPU_pkg.vhd	/^  CONSTANT SAT_SLICE_BIT_2       : NATURAL                              := SAT_OUT_BITS\/2;$/;"	c
+SAT_SLICE_BIT_4	DPU/DPU_pkg.vhd	/^  CONSTANT SAT_SLICE_BIT_4       : NATURAL                              := SAT_OUT_BITS\/4;$/;"	c
+SBunused	tb_instructions.vhd	/^    CONSTANT SBunused               : INTEGER := 21;$/;"	c
+SCALE_DW	DPU/DPU_pkg.vhd	/^  CONSTANT SCALE_DW              : INTEGER                              := 28; -- Scale down, uses the scaling factor (constant input)$/;"	c
+SCALE_UP	DPU/DPU_pkg.vhd	/^  CONSTANT SCALE_UP              : INTEGER                              := 29; -- Scale up, uses the scaling factor (constant input)$/;"	c
+SEQ	top_consts_types_package.vhd	/^  CONSTANT SEQ                    : INTEGER   := 2;$/;"	c
+SEQ_ADDRS	top_consts_types_package.vhd	/^  CONSTANT SEQ_ADDRS                             : STD_LOGIC_VECTOR(SEQ_ADDRS_WIDTH - 1 DOWNTO 0)   := (OTHERS => '0');   --! 1st address of the sequencer$/;"	c
+SEQ_ADDRS_WIDTH	top_consts_types_package.vhd	/^  CONSTANT SEQ_ADDRS_WIDTH                       : NATURAL                                          := log2(INSTR_DEPTH); --! Bits used to address the sequencer memory$/;"	c
+SEQ_COND_STATUS_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT SEQ_COND_STATUS_WIDTH : INTEGER                              := 2;$/;"	c
+SEQ_COND_STATUS_WIDTH	top_consts_types_package.vhd	/^  CONSTANT SEQ_COND_STATUS_WIDTH   : INTEGER                              := 2;$/;"	c
+SEQ_STATUS_EQ	DPU/DPU_pkg.vhd	/^  CONSTANT SEQ_STATUS_EQ         : INTEGER                              := 2;$/;"	c
+SEQ_STATUS_GT	DPU/DPU_pkg.vhd	/^  CONSTANT SEQ_STATUS_GT         : INTEGER                              := 1;$/;"	c
+SEQ_STATUS_LT	DPU/DPU_pkg.vhd	/^  CONSTANT SEQ_STATUS_LT         : INTEGER                              := 0;$/;"	c
+SET_COUNT	top_consts_types_package.vhd	/^  CONSTANT SET_COUNT               : INTEGER RANGE 0 TO 2 ** DPU_IN_WIDTH := 5; --x"00000005";$/;"	c
+SHIFT_L	DPU/DPU_pkg.vhd	/^  CONSTANT SHIFT_L               : INTEGER                              := 17; -- out0 = in0 sla in1 , out1 = in2 sla in3$/;"	c
+SHIFT_L	top_consts_types_package.vhd	/^  CONSTANT SHIFT_L                 : INTEGER                              := 18; -- out0 = in0 sla in1 , out1 = in2 sla in3$/;"	c
+SHIFT_NUM	top_consts_types_package.vhd	/^  CONSTANT SHIFT_NUM               : INTEGER                              := 2;$/;"	c
+SHIFT_R	DPU/DPU_pkg.vhd	/^  CONSTANT SHIFT_R               : INTEGER                              := 18; -- out0 = in0 sra in1 , out1 = in2 sra in3$/;"	c
+SHIFT_R	top_consts_types_package.vhd	/^  CONSTANT SHIFT_R                 : INTEGER                              := 19; -- out0 = in0 sra in1 , out1 = in2 sra in3$/;"	c
+SIGM	DPU/DPU_pkg.vhd	/^  CONSTANT SIGM                  : INTEGER                              := 19; -- out0 = sigmoid(in0) , out1 = sigmoid(in1)$/;"	c
+SIGM	top_consts_types_package.vhd	/^  CONSTANT SIGM                    : INTEGER                              := 20; -- out0 = sigmoid(in0) , out1 = sigmoid(in1)$/;"	c
+SIGNED_ONE	tb_instructions.vhd	/^    CONSTANT SIGNED_ONE                       : SIGNED(2 DOWNTO 0) := "001";$/;"	c
+SIGNED_TWO	tb_instructions.vhd	/^    CONSTANT SIGNED_TWO                       : SIGNED(2 DOWNTO 0) := "010";$/;"	c
+SIGNED_ZERO	tb_instructions.vhd	/^    CONSTANT SIGNED_ZERO                      : SIGNED(2 DOWNTO 0) := "000";$/;"	c
+SIM_END	testbench/tb_DPU_recon.vhd	/^  CONSTANT SIM_END            : INTEGER   := 10000;$/;"	c
+SIM_END	testbench/tb_nacu_recon.vhd	/^  CONSTANT SIM_END       : INTEGER                            := 10000;$/;"	c
+SLICES	DPU/DPU_pkg.vhd	/^  CONSTANT SLICES                : NATURAL                              := 2 ** select_w;$/;"	c
+SLICES	DPU/MAC_test.vhd	/^  CONSTANT SLICES       : NATURAL                        := 2 ** select_w;      --! Number of slices$/;"	c
+SLICES	testbench/MAC_test.vhd	/^  CONSTANT SLICES       : NATURAL                        := 2 ** select_w;      --! Number of slices$/;"	c
+SLICE_BITS	DPU/DPU_pkg.vhd	/^  CONSTANT SLICE_BITS            : NATURAL                              := DPU_BITWIDTH * 2\/SLICES;$/;"	c
+SLICE_BITS	DPU/MAC_test.vhd	/^  CONSTANT SLICE_BITS   : NATURAL                        := (width * 2)\/SLICES; --! Slice width for the adder$/;"	c
+SLICE_BITS	testbench/MAC_test.vhd	/^  CONSTANT SLICE_BITS   : NATURAL                        := (width * 2)\/SLICES; --! Slice width for the adder$/;"	c
+SM	DPU/DPU_pkg.vhd	/^  CONSTANT SM                    : INTEGER                              := 26; -- out0 = in0\/(acc) , out1 = none$/;"	c
+SOFTMAX_NUM	top_consts_types_package.vhd	/^  CONSTANT SOFTMAX_NUM             : INTEGER                              := 1;  --! Softmax = min(NR_OF_DPU_IN_PORTS\/2, NR_OF_DPU_IN_PORTS\/2)$/;"	c
+SOM_DIST	top_consts_types_package.vhd	/^  CONSTANT SOM_DIST                : INTEGER                              := 12; -- out0 = N\/2-|in0-N\/2|$/;"	c
+SQUASH_NUM	top_consts_types_package.vhd	/^  CONSTANT SQUASH_NUM              : INTEGER                              := 2; --! SQUASH_NUM must be <= MAC_NUM$/;"	c
+SRAMAGU_read	tb_instructions.vhd	/^    FUNCTION SRAMAGU_read ($/;"	f
+SRAMAGU_write	tb_instructions.vhd	/^    FUNCTION SRAMAGU_write ($/;"	f
+SRAM_ADDRESS_WIDTH	top_consts_types_package.vhd	/^  CONSTANT SRAM_ADDRESS_WIDTH     : INTEGER   := log2(SRAM_DEPTH);$/;"	c
+SRAM_DEPTH	top_consts_types_package.vhd	/^  CONSTANT SRAM_DEPTH                  : INTEGER := HW_RAM_DEPTH;$/;"	c
+SRAM_NumberOfInstrRegs	top_consts_types_package.vhd	/^  CONSTANT SRAM_NumberOfInstrRegs : INTEGER   := 256;$/;"	c
+SRAM_SEQUENCER_INSTRUCTIONS	top_consts_types_package.vhd	/^  CONSTANT SRAM_SEQUENCER_INSTRUCTIONS : INTEGER := 16;$/;"	c
+SRAM_WIDTH	top_consts_types_package.vhd	/^  CONSTANT SRAM_WIDTH                  : INTEGER := MEM_BLOCK_SIZE * BITWIDTH;$/;"	c
+SRAM_instr_type	isa.vhd	/^    TYPE SRAM_instr_type IS RECORD$/;"	t
+STARTING_ADDRS	top_consts_types_package.vhd	/^  CONSTANT STARTING_ADDRS                        : NATURAL                                          := 6;                                                                    --! # of bits used to specify the starting address of the pattern.$/;"	c
+STARTING_ADDRS_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT STARTING_ADDRS_RANGE_BASE             : NATURAL                                          := NR_OF_INSTRS_RANGE_END - 2;                                           --! Starting bit of the \\em STARTING_ADDRS field. (note: 1 bit right before this field is used to define if the starting address is static or dynamic)$/;"	c
+STARTING_ADDRS_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT STARTING_ADDRS_RANGE_END              : NATURAL                                          := STARTING_ADDRS_RANGE_BASE - (STARTING_ADDRS - 1);                     --! Ending bit of the \\em STARTING_ADDRS field.$/;"	c
+STARTING_ADDRS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT STARTING_ADDRS_VECTOR_SIZE            : NATURAL                                          := STARTING_ADDRS_RANGE_BASE - STARTING_ADDRS_RANGE_END + 1;             --! # of bits in the \\em STARTING_ADDRS field.$/;"	c
+START_ADDR_BIT	top_consts_types_package.vhd	/^  CONSTANT START_ADDR_BIT              : INTEGER := 27;$/;"	c
+START_ADDR_WIDTH	top_consts_types_package.vhd	/^  CONSTANT START_ADDR_WIDTH            : INTEGER := 6;$/;"	c
+START_ADDR_WIDTH_BLOCK	top_consts_types_package.vhd	/^  CONSTANT START_ADDR_WIDTH_BLOCK      : INTEGER := REG_FILE_MEM_ADDR_WIDTH;$/;"	c
+STATE_TY	DPU/scaler.vhd	/^  TYPE STATE_TY IS (IDLE, SCALE_UP_8, SCALE_UP_4, SCALE_DW_8, SCALE_DW_4);                 --! State type$/;"	t
+STEP_VALUE	top_consts_types_package.vhd	/^  CONSTANT STEP_VALUE                            : NATURAL                                          := 6;$/;"	c
+STEP_VALUE_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT STEP_VALUE_RANGE_BASE                 : NATURAL                                          := INSTR_CODE_RANGE_END - 2;$/;"	c
+STEP_VALUE_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT STEP_VALUE_RANGE_END                  : NATURAL                                          := STEP_VALUE_RANGE_BASE - (STEP_VALUE - 1);$/;"	c
+STEP_VALUE_SIGN	top_consts_types_package.vhd	/^  CONSTANT STEP_VALUE_SIGN                       : NATURAL                                          := 1;$/;"	c
+STEP_VALUE_SIGN_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT STEP_VALUE_SIGN_RANGE_BASE            : NATURAL                                          := STEP_VALUE_RANGE_END - 1;$/;"	c
+STEP_VALUE_SIGN_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT STEP_VALUE_SIGN_RANGE_END             : NATURAL                                          := STEP_VALUE_SIGN_RANGE_BASE - (STEP_VALUE_SIGN - 1);$/;"	c
+STEP_VALUE_SIGN_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT STEP_VALUE_SIGN_VECTOR_SIZE           : NATURAL                                          := STEP_VALUE_SIGN_RANGE_BASE - STEP_VALUE_SIGN_RANGE_END + 1;$/;"	c
+STEP_VALUE_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT STEP_VALUE_VECTOR_SIZE                : NATURAL                                          := STEP_VALUE_RANGE_BASE - STEP_VALUE_RANGE_END + 1;$/;"	c
+STOP_COUNT	top_consts_types_package.vhd	/^  CONSTANT STOP_COUNT              : INTEGER RANGE 0 TO 2 ** DPU_IN_WIDTH := 8; --x"00000008";$/;"	c
+ST_REGS	top_consts_types_package.vhd	/^  CONSTANT ST_REGS                 : INTEGER                              := 29; -- out0 = dpureg0 , out1 = dpureg1$/;"	c
+SUBT	DPU/DPU_pkg.vhd	/^  CONSTANT SUBT                  : INTEGER                              := 4; -- out0 = in1 - in0 , out1 = in3 - in2$/;"	c
+SUBT	top_consts_types_package.vhd	/^  CONSTANT SUBT                    : INTEGER                              := 5;  -- out0 = in1 - in0 , out1 = in3 - in2$/;"	c
+SUBT_ABS	DPU/DPU_pkg.vhd	/^  CONSTANT SUBT_ABS              : INTEGER                              := 5; -- out0 = |in1 - in0| , out1 = |in3 - in2|$/;"	c
+SUBT_ABS	top_consts_types_package.vhd	/^  CONSTANT SUBT_ABS                : INTEGER                              := 6;  -- out0 = |in1 - in0| , out1 = |in3 - in2|$/;"	c
+SUBT_ACC	top_consts_types_package.vhd	/^  CONSTANT SUBT_ACC                : INTEGER                              := 7;  -- out0 = acc0 - in0 , out1 = acc1 - in2$/;"	c
+SUM_ACC	DPU/DPU_pkg.vhd	/^  CONSTANT SUM_ACC               : INTEGER                              := 2; -- acc0 = in0 + acc0 , acc1 = in2 + acc1$/;"	c
+SWB	tb_instructions.vhd	/^    FUNCTION SWB (from_block, from_address, from_port, to_block, to_address, to_port : INTEGER)$/;"	f
+SWB	top_consts_types_package.vhd	/^  CONSTANT SWB                                   : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "0101";                                                               --! Instruction code SWB, used 5.$/;"	c
+SWB_DAV	top_consts_types_package.vhd	/^  CONSTANT SWB_DAV                               : NATURAL                                          := 1;$/;"	c
+SWB_DAV_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT SWB_DAV_RANGE_BASE                    : NATURAL                                          := INSTR_CODE_RANGE_END - 1;$/;"	c
+SWB_DAV_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT SWB_DAV_RANGE_END                     : NATURAL                                          := SWB_DAV_RANGE_BASE - (SWB_DAV - 1);$/;"	c
+SWB_DAV_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT SWB_DAV_VECTOR_SIZE                   : NATURAL                                          := SWB_DAV_RANGE_BASE - SWB_DAV_RANGE_END + 1;$/;"	c
+SWB_HB_INDEX	top_consts_types_package.vhd	/^  CONSTANT SWB_HB_INDEX                          : NATURAL                                          := 3;$/;"	c
+SWB_HB_INDEX_BASE	top_consts_types_package.vhd	/^  CONSTANT SWB_HB_INDEX_BASE                     : NATURAL                                          := SWB_SRC_OUTPUT_NR_END - 1;$/;"	c
+SWB_HB_INDEX_END	top_consts_types_package.vhd	/^  CONSTANT SWB_HB_INDEX_END                      : NATURAL                                          := SWB_HB_INDEX_BASE - (SWB_HB_INDEX - 1);$/;"	c
+SWB_HB_INDEX_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT SWB_HB_INDEX_VECTOR_SIZE              : NATURAL                                          := SWB_HB_INDEX_BASE - SWB_HB_INDEX_END + 1;$/;"	c
+SWB_INSTR_PORT_SIZE	top_consts_types_package.vhd	/^  CONSTANT SWB_INSTR_PORT_SIZE                   : NATURAL                                          := SWB_DAV + SWB_SRC_ADDR_ROW + SWB_SRC_DPU_REFI + SWB_SRC_OUTPUT_NR + SWB_HB_INDEX + SWB_SEND_TO_OTHER_ROW + SWB_V_INDEX;$/;"	c
+SWB_INSTR_WIDTH	top_consts_types_package.vhd	/^  CONSTANT SWB_INSTR_WIDTH                       : NATURAL                                          := SWB_DAV + SWB_SRC_ADDR_ROW + SWB_SRC_DPU_REFI + SWB_SRC_OUTPUT_NR + SWB_HB_INDEX + SWB_SEND_TO_OTHER_ROW + SWB_V_INDEX;$/;"	c
+SWB_SEND_TO_OTHER_ROW	top_consts_types_package.vhd	/^  CONSTANT SWB_SEND_TO_OTHER_ROW                 : NATURAL                                          := 1;$/;"	c
+SWB_SEND_TO_OTHER_ROW_BASE	top_consts_types_package.vhd	/^  CONSTANT SWB_SEND_TO_OTHER_ROW_BASE            : NATURAL                                          := SWB_HB_INDEX_END - 1;$/;"	c
+SWB_SEND_TO_OTHER_ROW_END	top_consts_types_package.vhd	/^  CONSTANT SWB_SEND_TO_OTHER_ROW_END             : NATURAL                                          := SWB_SEND_TO_OTHER_ROW_BASE - (SWB_SEND_TO_OTHER_ROW - 1);$/;"	c
+SWB_SEND_TO_OTHER_ROW_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT SWB_SEND_TO_OTHER_ROW_VECTOR_SIZE     : NATURAL                                          := SWB_SEND_TO_OTHER_ROW_BASE - SWB_SEND_TO_OTHER_ROW_END + 1;$/;"	c
+SWB_SRC_ADDR_ROW	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_ADDR_ROW                      : NATURAL                                          := 1;$/;"	c
+SWB_SRC_ADDR_ROW_BASE	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_ADDR_ROW_BASE                 : NATURAL                                          := SWB_DAV_RANGE_END - 1;$/;"	c
+SWB_SRC_ADDR_ROW_END	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_ADDR_ROW_END                  : NATURAL                                          := SWB_SRC_ADDR_ROW_BASE - (SWB_SRC_ADDR_ROW - 1);$/;"	c
+SWB_SRC_ADDR_ROW_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_ADDR_ROW_VECTOR_SIZE          : NATURAL                                          := SWB_SRC_ADDR_ROW_BASE - SWB_SRC_ADDR_ROW_END + 1;$/;"	c
+SWB_SRC_DPU_REFI	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_DPU_REFI                      : NATURAL                                          := 1;$/;"	c
+SWB_SRC_DPU_REFI_BASE	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_DPU_REFI_BASE                 : NATURAL                                          := SWB_SRC_ADDR_ROW_END - 1;$/;"	c
+SWB_SRC_DPU_REFI_END	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_DPU_REFI_END                  : NATURAL                                          := SWB_SRC_DPU_REFI_BASE - (SWB_SRC_DPU_REFI - 1);$/;"	c
+SWB_SRC_DPU_REFI_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_DPU_REFI_VECTOR_SIZE          : NATURAL                                          := SWB_SRC_DPU_REFI_BASE - SWB_SRC_DPU_REFI_END + 1;$/;"	c
+SWB_SRC_OUTPUT_NR	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_OUTPUT_NR                     : NATURAL                                          := 1;$/;"	c
+SWB_SRC_OUTPUT_NR_BASE	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_OUTPUT_NR_BASE                : NATURAL                                          := SWB_SRC_DPU_REFI_END - 1;$/;"	c
+SWB_SRC_OUTPUT_NR_END	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_OUTPUT_NR_END                 : NATURAL                                          := SWB_SRC_OUTPUT_NR_BASE - (SWB_SRC_OUTPUT_NR - 1);$/;"	c
+SWB_SRC_OUTPUT_NR_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT SWB_SRC_OUTPUT_NR_VECTOR_SIZE         : NATURAL                                          := SWB_SRC_OUTPUT_NR_BASE - SWB_SRC_OUTPUT_NR_END + 1;$/;"	c
+SWB_UNUSED	top_consts_types_package.vhd	/^  CONSTANT SWB_UNUSED                            : NATURAL                                          := 3;$/;"	c
+SWB_UNUSED_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT SWB_UNUSED_RANGE_BASE                 : NATURAL                                          := SWB_V_INDEX_END - 1;$/;"	c
+SWB_UNUSED_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT SWB_UNUSED_RANGE_END                  : NATURAL                                          := SWB_UNUSED_RANGE_BASE - (SWB_UNUSED - 1);$/;"	c
+SWB_UNUSED_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT SWB_UNUSED_VECTOR_SIZE                : NATURAL                                          := SWB_UNUSED_RANGE_BASE - SWB_UNUSED_RANGE_END + 1;$/;"	c
+SWB_V_INDEX	top_consts_types_package.vhd	/^  CONSTANT SWB_V_INDEX                           : NATURAL                                          := 3;$/;"	c
+SWB_V_INDEX_BASE	top_consts_types_package.vhd	/^  CONSTANT SWB_V_INDEX_BASE                      : NATURAL                                          := SWB_SEND_TO_OTHER_ROW_END - 1;$/;"	c
+SWB_V_INDEX_END	top_consts_types_package.vhd	/^  CONSTANT SWB_V_INDEX_END                       : NATURAL                                          := SWB_V_INDEX_BASE - (SWB_V_INDEX - 1);$/;"	c
+SWB_V_INDEX_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT SWB_V_INDEX_VECTOR_SIZE               : NATURAL                                          := SWB_V_INDEX_BASE - SWB_V_INDEX_END + 1;$/;"	c
+SWB_instr_type	isa.vhd	/^    TYPE SWB_instr_type IS RECORD$/;"	t
+S_ACC	DPU/DPU_pkg.vhd	/^  CONSTANT S_ACC                 : INTEGER                              := 8;$/;"	c
+S_ADD	DPU/DPU_pkg.vhd	/^  CONSTANT S_ADD                 : INTEGER                              := 7;$/;"	c
+S_DIV	DPU/DPU_pkg.vhd	/^  CONSTANT S_DIV                 : INTEGER                              := 10;$/;"	c
+S_DPU_CFG_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT S_DPU_CFG_WIDTH       : NATURAL                              := 4;$/;"	c
+S_DPU_IN_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT S_DPU_IN_WIDTH        : NATURAL                              := DPU_BITWIDTH;$/;"	c
+S_DPU_OUT_WIDTH	DPU/DPU_pkg.vhd	/^  CONSTANT S_DPU_OUT_WIDTH       : NATURAL                              := 2 * DPU_BITWIDTH;$/;"	c
+S_EXPON	DPU/DPU_pkg.vhd	/^  CONSTANT S_EXPON               : INTEGER                              := 4;$/;"	c
+S_IDLE	DPU/DPU_pkg.vhd	/^  CONSTANT S_IDLE                : INTEGER                              := 0;$/;"	c
+S_LD_ACC	DPU/DPU_pkg.vhd	/^  CONSTANT S_LD_ACC              : INTEGER                              := 9;$/;"	c
+S_MAC	DPU/DPU_pkg.vhd	/^  CONSTANT S_MAC                 : INTEGER                              := 1;$/;"	c
+S_MAX	DPU/DPU_pkg.vhd	/^  CONSTANT S_MAX                 : INTEGER                              := 13;$/;"	c
+S_MIN	DPU/DPU_pkg.vhd	/^  CONSTANT S_MIN                 : INTEGER                              := 14;$/;"	c
+S_MUL	DPU/DPU_pkg.vhd	/^  CONSTANT S_MUL                 : INTEGER                              := 6;$/;"	c
+S_SHIFT_L	DPU/DPU_pkg.vhd	/^  CONSTANT S_SHIFT_L             : INTEGER                              := 11;$/;"	c
+S_SHIFT_R	DPU/DPU_pkg.vhd	/^  CONSTANT S_SHIFT_R             : INTEGER                              := 12;$/;"	c
+S_SIGM	DPU/DPU_pkg.vhd	/^  CONSTANT S_SIGM                : INTEGER                              := 2;$/;"	c
+S_SM	DPU/DPU_pkg.vhd	/^  CONSTANT S_SM                  : INTEGER                              := 5;$/;"	c
+S_TANHYP	DPU/DPU_pkg.vhd	/^  CONSTANT S_TANHYP              : INTEGER                              := 3;$/;"	c
+Sat_n_round	DPU/Sat_n_round.vhd	/^ENTITY Sat_n_round IS$/;"	e
+Saturation_Unit	DPU/Saturation_Unit.vhd	/^ENTITY Saturation_Unit IS$/;"	e
+Shift_Unit	DPU/Shift_Unit.vhd	/^ENTITY Shift_Unit IS$/;"	e
+Silago_bot	Silago_bot.vhd	/^ENTITY Silago_bot IS$/;"	e
+Silago_bot_left_corner	Silago_bot_left_corner.vhd	/^ENTITY Silago_bot_left_corner IS$/;"	e
+Silago_bot_right_corner	Silago_bot_right_corner.vhd	/^ENTITY Silago_bot_right_corner IS$/;"	e
+Silago_top	Silago_top.vhd	/^ENTITY Silago_top IS$/;"	e
+Silago_top_left_corner	Silago_top_left_corner.vhd	/^ENTITY Silago_top_left_corner IS$/;"	e
+Silago_top_right_corner	Silago_top_right_corner.vhd	/^ENTITY Silago_top_right_corner IS$/;"	e
+SkipPoint	tb_instructions.vhd	/^    CONSTANT SkipPoint              : INTEGER := 1;$/;"	c
+SourceCol	tb_instructions.vhd	/^    CONSTANT SourceCol              : INTEGER := COLUMN_WIDTH;$/;"	c
+SourceRow	tb_instructions.vhd	/^    CONSTANT SourceRow              : INTEGER := DiMArch_Row_Width;$/;"	c
+Squash_Unit	DPU/Squash_Unit.vhd	/^ENTITY Squash_Unit IS$/;"	e
+Sram_instr_ty	top_consts_types_package.vhd	/^  TYPE Sram_instr_ty IS RECORD$/;"	t
+State_ty	top_consts_types_package.vhd	/^  TYPE State_ty IS (IDLE_ST, SEQ_LOADING_ST, INSTR_DECODE_ST);$/;"	t
+Swb_instr_ty	top_consts_types_package.vhd	/^  TYPE Swb_instr_ty IS RECORD$/;"	t
+TANHYP	DPU/DPU_pkg.vhd	/^  CONSTANT TANHYP                : INTEGER                              := 20; -- out0 = tanh(in0) , out1 = tanh(in1)$/;"	c
+TANHYP	top_consts_types_package.vhd	/^  CONSTANT TANHYP                  : INTEGER                              := 21; -- out0 = tanh(in0) , out1 = tanh(in1)$/;"	c
+TB	testbench/tb_DPU_recon.vhd	/^ENTITY TB IS$/;"	e
+TB	testbench/tb_nacu_recon.vhd	/^ENTITY TB IS$/;"	e
+TB_MAC_MAX_VALUE	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_MAC_MAX_VALUE    : signed(bit_width * 2 - 1 DOWNTO 0) := "01111111111111111111111111111111";$/;"	c
+TB_MAC_MAX_VALUE_0	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_MAC_MAX_VALUE_0  : signed(bit_width - 1 DOWNTO 0)     := "0111111111111111";$/;"	c
+TB_MAC_MAX_VALUE_00	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_MAC_MAX_VALUE_00 : signed(bit_width \/ 2 - 1 DOWNTO 0) := "01111111";$/;"	c
+TB_MAC_MIN_VALUE	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_MAC_MIN_VALUE    : signed(bit_width * 2 - 1 DOWNTO 0) := "10000000000000000000000000000000";$/;"	c
+TB_MAC_MIN_VALUE_0	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_MAC_MIN_VALUE_0  : signed(bit_width - 1 DOWNTO 0)     := "1000000000000000";$/;"	c
+TB_MAC_MIN_VALUE_00	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_MAC_MIN_VALUE_00 : signed(bit_width \/ 2 - 1 DOWNTO 0) := "10000000";$/;"	c
+TB_OUT_MAX_VALUE	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_OUT_MAX_VALUE    : signed(bit_width - 1 DOWNTO 0)     := "0111111111111111";$/;"	c
+TB_OUT_MAX_VALUE_0	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_OUT_MAX_VALUE_0  : signed(bit_width\/2 - 1 DOWNTO 0)   := "01111111";$/;"	c
+TB_OUT_MAX_VALUE_00	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_OUT_MAX_VALUE_00 : signed(bit_width\/4 - 1 DOWNTO 0)   := "0111";$/;"	c
+TB_OUT_MIN_VALUE	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_OUT_MIN_VALUE    : signed(bit_width - 1 DOWNTO 0)     := "1000000000000000";$/;"	c
+TB_OUT_MIN_VALUE_0	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_OUT_MIN_VALUE_0  : signed(bit_width\/2 - 1 DOWNTO 0)   := "10000000";$/;"	c
+TB_OUT_MIN_VALUE_00	testbench/tb_pkg_dpu.vhd	/^  CONSTANT TB_OUT_MIN_VALUE_00 : signed(bit_width\/4 - 1 DOWNTO 0)   := "1000";$/;"	c
+TRISTATE_SEL	top_consts_types_package.vhd	/^  CONSTANT TRISTATE_SEL                : NATURAL := 5;$/;"	c
+TRUE_ADDRS_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT TRUE_ADDRS_RANGE_BASE                 : NATURAL                                          := INSTR_CODE_RANGE_END - 1;$/;"	c
+TRUE_ADDRS_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT TRUE_ADDRS_RANGE_END                  : NATURAL                                          := TRUE_ADDRS_RANGE_BASE - (TRUE_ADDRS_SIZE - 1);$/;"	c
+TRUE_ADDRS_SIZE	top_consts_types_package.vhd	/^  CONSTANT TRUE_ADDRS_SIZE                       : NATURAL                                          := PC_SIZE;                                                      --log2(INSTR_DEPTH);$/;"	c
+TRUE_ADDRS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT TRUE_ADDRS_VECTOR_SIZE                : NATURAL                                          := TRUE_ADDRS_RANGE_BASE - TRUE_ADDRS_RANGE_END + 1;$/;"	c
+Tb_State_ty	top_consts_types_package.vhd	/^  TYPE Tb_State_ty IS (TB_IDLE_ST, TB_INIT_ST, TB_LOAD_ST);$/;"	t
+UNION_PORT_NR	tb_instructions.vhd	/^    CONSTANT UNION_PORT_NR          : INTEGER := 2;$/;"	c
+UNSEL	top_consts_types_package.vhd	/^  CONSTANT UNSEL                  : INTEGER   := 3;$/;"	c
+UNUSED_15	top_consts_types_package.vhd	/^  CONSTANT UNUSED_15                             : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "1111";                                                               --! Unused instruction code, unused 15.$/;"	c
+UNUSED_2	top_consts_types_package.vhd	/^  CONSTANT UNUSED_2                              : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "0010";                                                               --! Instruction code REFI2, used 2.$/;"	c
+UNUSED_3	top_consts_types_package.vhd	/^  CONSTANT UNUSED_3                              : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "0011";                                                               --! Instruction code REFI3, used 3.$/;"	c
+UP_COUNT	top_consts_types_package.vhd	/^  CONSTANT UP_COUNT                : INTEGER RANGE 0 TO 2 ** DPU_IN_WIDTH := 7; --x"00000007";$/;"	c
+USE_COMPR	top_consts_types_package.vhd	/^  CONSTANT USE_COMPR                             : NATURAL                                          := 1; -- changed from 2 to 1 for sram_interface$/;"	c
+USE_COMPR_RANGE_BASE	top_consts_types_package.vhd	/^  CONSTANT USE_COMPR_RANGE_BASE                  : NATURAL                                          := DIMARCH_MODE_BIT - 1;$/;"	c
+USE_COMPR_RANGE_END	top_consts_types_package.vhd	/^  CONSTANT USE_COMPR_RANGE_END                   : NATURAL                                          := USE_COMPR_RANGE_BASE - (USE_COMPR - 1);$/;"	c
+USE_COMPR_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT USE_COMPR_VECTOR_SIZE                 : NATURAL                                          := USE_COMPR_RANGE_BASE - USE_COMPR_RANGE_END + 1;$/;"	c
+VACANT_BITS_BASE	top_consts_types_package.vhd	/^  CONSTANT VACANT_BITS_BASE                      : NATURAL                                          := JUMP_INSTR_ADDRESS_END - 1;$/;"	c
+VACANT_BITS_END	top_consts_types_package.vhd	/^  CONSTANT VACANT_BITS_END                       : NATURAL                                          := 0;$/;"	c
+VACANT_BITS_REMAIN	top_consts_types_package.vhd	/^  CONSTANT VACANT_BITS_REMAIN                    : NATURAL                                          := INSTR_WIDTH - ((INCREMENT_VECTOR_SIZE + 1) + (OUTPORT_VECTOR_SIZE + 1) + (JUMP_INSTR_ADDRESS_VECTOR_SIZE + 1));$/;"	c
+VACANT_BITS_VECTOR_SIZE	top_consts_types_package.vhd	/^  CONSTANT VACANT_BITS_VECTOR_SIZE               : NATURAL                                          := VACANT_BITS_BASE - VACANT_BITS_END;$/;"	c
+WA	tb_instructions.vhd	/^    CONSTANT WA                               : INTEGER            := 0;$/;"	c
+WAIT_instr_type	isa.vhd	/^    TYPE WAIT_instr_type IS RECORD$/;"	t
+WB	tb_instructions.vhd	/^    CONSTANT WB                               : INTEGER            := 1;$/;"	c
+WIDTH_00	DPU/conf_mul_Beh.vhd	/^  CONSTANT WIDTH_00   : NATURAL := 2 * (WIDTH_L + 1);             --! Constant value for width of the 00 partial product (plus 1 for the sign extension)$/;"	c
+WIDTH_01	DPU/conf_mul_Beh.vhd	/^  CONSTANT WIDTH_01   : NATURAL := WIDTH_L + 1 + WIDTH_H;         --! Constant value for width of the 01 partial product$/;"	c
+WIDTH_10	DPU/conf_mul_Beh.vhd	/^  CONSTANT WIDTH_10   : NATURAL := WIDTH_L + 1 + WIDTH_H;         --! Constant value for width of the 10 partial product$/;"	c
+WIDTH_11	DPU/conf_mul_Beh.vhd	/^  CONSTANT WIDTH_11   : NATURAL := 2 * WIDTH_H;                   --! Constant value for width of the 11 partial product$/;"	c
+WIDTH_2L	testbench/tb_nacu_recon.vhd	/^  CONSTANT WIDTH_2L      : NATURAL                            := divDown(bit_width, 4);$/;"	c
+WIDTH_2L	testbench/tb_pkg_dpu.vhd	/^  CONSTANT WIDTH_2L            : NATURAL                            := divDown(bit_width, 4);$/;"	c
+WIDTH_H	DPU/conf_mul_Beh.vhd	/^  CONSTANT WIDTH_H    : NATURAL := divUp(WIDTH, 2);               --! Constant value for Width of the lower half$/;"	c
+WIDTH_H	testbench/tb_nacu_recon.vhd	/^  CONSTANT WIDTH_H       : NATURAL                            := divUp(bit_width, 2);   --! Constant value for Width of the lower half$/;"	c
+WIDTH_H	testbench/tb_pkg_dpu.vhd	/^  CONSTANT WIDTH_H             : NATURAL                            := divUp(bit_width, 2);   --! Constant value for Width of the lower half$/;"	c
+WIDTH_L	DPU/conf_mul_Beh.vhd	/^  CONSTANT WIDTH_L    : NATURAL := divDown(WIDTH, 2);             --! Constant value for Width of the upper half$/;"	c
+WIDTH_L	testbench/tb_nacu_recon.vhd	/^  CONSTANT WIDTH_L       : NATURAL                            := divDown(bit_width, 2); --! Constant value for Width of the upper half$/;"	c
+WIDTH_L	testbench/tb_pkg_dpu.vhd	/^  CONSTANT WIDTH_L             : NATURAL                            := divDown(bit_width, 2); --! Constant value for Width of the upper half$/;"	c
+WORDS_PER_BLOCK	top_consts_types_package.vhd	/^  CONSTANT WORDS_PER_BLOCK             : INTEGER := MEM_BLOCK_SIZE;$/;"	c
+WRITE_SRAM	top_consts_types_package.vhd	/^  CONSTANT WRITE_SRAM                            : STD_LOGIC_VECTOR(NR_OF_INSTR_TYPES - 1 DOWNTO 0) := "1110";                                                               --! Instruction code WRITE_SRAM,    used 14$/;"	c
+abnormal	tb_instructions.vhd	/^    CONSTANT abnormal               : INTEGER := 1;$/;"	c
+acc_clear	isa.vhd	/^        acc_clear : STD_LOGIC_VECTOR(8 - 1 DOWNTO 0);$/;"	r
+active	top_consts_types_package.vhd	/^    active        : STD_LOGIC;                                           --! Active loop$/;"	r
+adder_array_inOut_ty	DPU/DPU_pkg.vhd	/^  TYPE adder_array_inOut_ty IS ARRAY (NATURAL RANGE <>) OF STD_LOGIC_VECTOR(SLICE_BITS - 1 DOWNTO 0);$/;"	t
+adder_nbits	DPU/adder_nbits.vhd	/^ENTITY adder_nbits IS$/;"	e
+addr_assign	addr_assign.vhd	/^entity addr_assign is$/;"	e
+addr_assign_drra_top_l_corner	addr_assign_drra_top_l_corner.vhd	/^entity addr_assign_drra_top_l_corner is$/;"	e
+addrs_range	tb_instructions.vhd	/^    CONSTANT addrs_range                      : INTEGER            := 2;$/;"	c
+addsub15	tb_instructions.vhd	/^    CONSTANT addsub15               : INTEGER := 1;$/;"	c
+all_hc_in_bus_ty	top_consts_types_package.vhd	/^  TYPE all_hc_in_bus_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(HC_OUT_BITS - 1 DOWNTO 0);$/;"	t
+array_frac_part	DPU/Q_format_n_to_one.vhd	/^  TYPE array_frac_part IS ARRAY(frac_part_range) OF signed(out_fp - 1 DOWNTO 0);$/;"	t
+array_int_part_satin	DPU/Q_format_n_to_one.vhd	/^  TYPE array_int_part_satin IS ARRAY(frac_part_range) OF signed(Nb - 1 DOWNTO 0);$/;"	t
+array_output	DPU/Q_format_one_to_n.vhd	/^  TYPE array_output IS ARRAY(frac_part_range) OF signed(Nb - 1 DOWNTO 0);$/;"	t
+autoloop	autoloop.vhd	/^ENTITY autoloop IS$/;"	e
+barrel_shifter_rle	RLE_engine/barrel_shifter_rle.vhd	/^entity barrel_shifter_rle is$/;"	e
+bit_to_int	InputMux.vhd	/^    FUNCTION bit_to_int (in_bit : std_logic)$/;"	f
+bit_width	testbench/tb_nacu_recon.vhd	/^  CONSTANT bit_width     : INTEGER                            := DPU_pkg.DPU_bitwidth;$/;"	c
+bit_width	testbench/tb_pkg_dpu.vhd	/^  CONSTANT bit_width           : INTEGER                            := DPU_bitwidth;$/;"	c
+bits_cmp_type	RLE_engine/trail_zeros_cnt.vhd	/^	type bits_cmp_type is array(1 to Nb) of std_logic_vector(Nb-1 downto 0);$/;"	t
+brnch_false_addr	top_consts_types_package.vhd	/^    brnch_false_addr : STD_LOGIC_VECTOR(BR_FALSE_ADDRS_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+brnch_mode	top_consts_types_package.vhd	/^    brnch_mode       : STD_LOGIC_VECTOR(BR_MODE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+brnch_unused	top_consts_types_package.vhd	/^    brnch_unused     : STD_LOGIC_VECTOR(BR_UNUSED_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+bus_selector	bus_selector.vhd	/^entity bus_selector is$/;"	e
+cell_config_swb	cell_config_swb.vhd	/^ENTITY cell_config_swb IS$/;"	e
+clk_period	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  CONSTANT clk_period  : TIME      := 5 ns;                                      --! Full clock period$/;"	c
+clk_period	testbench/tb_DPU_recon.vhd	/^  CONSTANT clk_period         : TIME      := 5 ns;$/;"	c
+clk_period	testbench/tb_nacu_recon.vhd	/^  CONSTANT clk_period    : TIME                               := 5 ns;$/;"	c
+complete9	tb_instructions.vhd	/^    CONSTANT complete9              : INTEGER := 1;$/;"	c
+compress	isa.vhd	/^        compress : STD_LOGIC;$/;"	r
+conf_mul_Beh	DPU/conf_mul_Beh.vhd	/^ENTITY conf_mul_Beh IS$/;"	e
+conf_zero	top_consts_types_package.vhd	/^  CONSTANT conf_zero : For_conf_ty :=$/;"	c
+const_array	DPU/Squash_Unit.vhd	/^  TYPE const_array IS ARRAY(11 DOWNTO 0) OF INTEGER;$/;"	t
+control	isa.vhd	/^        control : STD_LOGIC_VECTOR(2 - 1 DOWNTO 0);$/;"	r
+cycle	isa.vhd	/^        cycle : STD_LOGIC_VECTOR(15 - 1 DOWNTO 0);$/;"	r
+cycle_sd	isa.vhd	/^        cycle_sd : STD_LOGIC;$/;"	r
+d_in_array_type	RLE_engine/RLE_layer.vhd	/^	type d_in_array_type is array(0 to Nw-1) of std_logic_vector(Nb-1 downto 0);$/;"	t
+data	testbench/tb_pkg_dpu.vhd	/^    data     : signed(bit_width - 1 DOWNTO 0);$/;"	r
+data_0	testbench/tb_pkg_dpu.vhd	/^    data_0   : signed(WIDTH_L - 1 DOWNTO 0);$/;"	r
+data_00	testbench/tb_pkg_dpu.vhd	/^    data_00  : signed(WIDTH_2L - 1 DOWNTO 0);$/;"	r
+data_01	testbench/tb_pkg_dpu.vhd	/^    data_01  : signed(WIDTH_2L - 1 DOWNTO 0);$/;"	r
+data_1	testbench/tb_pkg_dpu.vhd	/^    data_1   : signed(WIDTH_H - 1 DOWNTO 0);$/;"	r
+data_10	testbench/tb_pkg_dpu.vhd	/^    data_10  : signed(WIDTH_2L - 1 DOWNTO 0);$/;"	r
+data_11	testbench/tb_pkg_dpu.vhd	/^    data_11  : signed(WIDTH_2H - 1 DOWNTO 0);$/;"	r
+data_array_ty	top_consts_types_package.vhd	/^  TYPE data_array_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF signed(BITWIDTH - 1 DOWNTO 0);$/;"	t
+data_layers_type	RLE_engine/RLE_engine.vhd	/^  TYPE data_layers_type IS ARRAY(0 TO Wp) OF STD_LOGIC_VECTOR(data_len - 1 DOWNTO 0);$/;"	t
+data_len	RLE_engine/RLE_engine.vhd	/^  CONSTANT data_len  : INTEGER := Nw * Nb;$/;"	c
+data_selector	data_selector.vhd	/^entity data_selector is$/;"	e
+dav	tb_instructions.vhd	/^    CONSTANT dav                    : INTEGER := 1;$/;"	c
+default_step	top_consts_types_package.vhd	/^    default_step  : STD_LOGIC;                                           --! Use of default step value (1)$/;"	r
+del_cycles	top_consts_types_package.vhd	/^    del_cycles    : STD_LOGIC_VECTOR(DLY_CYCLES_VECTOR_SIZE DOWNTO 0);$/;"	r
+del_cycles_sd	top_consts_types_package.vhd	/^    del_cycles_sd : STD_LOGIC;$/;"	r
+del_unused	top_consts_types_package.vhd	/^    del_unused    : STD_LOGIC_VECTOR(DLY_UNUSED_BITS_VECTOR_SIZE DOWNTO 0);$/;"	r
+dimarch	isa.vhd	/^        dimarch : STD_LOGIC;$/;"	r
+dimarch_mode	top_consts_types_package.vhd	/^    dimarch_mode          : STD_LOGIC;$/;"	r
+direction	isa.vhd	/^        direction : STD_LOGIC;$/;"	r
+direction	top_consts_types_package.vhd	/^    direction       : STD_LOGIC;$/;"	r
+div	testbench/tb_nacu_recon.vhd	/^  CONSTANT div           : NATURAL                            := 0;$/;"	c
+divDown	util_package.vhd	/^  FUNCTION divDown (m : INTEGER; n : INTEGER) RETURN INTEGER IS$/;"	f
+divUp	util_package.vhd	/^  FUNCTION divUp (m : INTEGER; n : INTEGER) RETURN INTEGER IS$/;"	f
+div_n_squash_0	DPU/DPU_pkg.vhd	/^  CONSTANT div_n_squash_0        : NATURAL                              := 1;$/;"	c
+div_n_squash_1	DPU/DPU_pkg.vhd	/^  CONSTANT div_n_squash_1        : NATURAL                              := 0;$/;"	c
+div_range	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  SUBTYPE div_range IS NATURAL RANGE 2 * DPU_BITWIDTH - 1 DOWNTO 0;              --! Divider input\/output bit range$/;"	T
+divider_pipe	DPU/divider_pipe.vhd	/^ENTITY divider_pipe IS$/;"	e
+dpu_acc_clear	top_consts_types_package.vhd	/^    dpu_acc_clear     : STD_LOGIC_VECTOR(DPU_ACC_CLEAR_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+dpu_acc_clear_rst	top_consts_types_package.vhd	/^    dpu_acc_clear_rst : STD_LOGIC;$/;"	r
+dpu_acc_clear_sd	top_consts_types_package.vhd	/^    dpu_acc_clear_sd  : STD_LOGIC;$/;"	r
+dpu_acc_clear_ty	top_consts_types_package.vhd	/^  TYPE dpu_acc_clear_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(DPU_ACC_CLEAR_WIDTH DOWNTO 0);$/;"	t
+dpu_cfg_mode_type	top_consts_types_package.vhd	/^  SUBTYPE dpu_cfg_mode_type IS STD_LOGIC_VECTOR(DPU_MODE_CFG_WIDTH - 1 DOWNTO 0);$/;"	T
+dpu_cfg_ty	top_consts_types_package.vhd	/^  TYPE dpu_cfg_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(DPU_MODE_SEL_VECTOR_SIZE DOWNTO 0);$/;"	t
+dpu_ctrl_out_type	top_consts_types_package.vhd	/^  SUBTYPE dpu_ctrl_out_type IS STD_LOGIC_VECTOR(DPU_CTRL_OUT_WIDTH - 1 DOWNTO 0);$/;"	T
+dpu_in_type	top_consts_types_package.vhd	/^  SUBTYPE dpu_in_type IS signed(DPU_IN_WIDTH - 1 DOWNTO 0);$/;"	T
+dpu_instruction_width	tb_instructions.vhd	/^    CONSTANT dpu_instruction_width            : INTEGER            :=$/;"	c
+dpu_mode	top_consts_types_package.vhd	/^    dpu_mode          : STD_LOGIC_VECTOR(DPU_MODE_SEL_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+dpu_out_a	top_consts_types_package.vhd	/^    dpu_out_a         : STD_LOGIC_VECTOR(DPU_OUTP_A_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+dpu_out_b	top_consts_types_package.vhd	/^    dpu_out_b         : STD_LOGIC_VECTOR(DPU_OUTP_B_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+dpu_output_ctrl_ty	top_consts_types_package.vhd	/^  TYPE dpu_output_ctrl_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(DPU_CTRL_OUT_WIDTH - 1 DOWNTO 0);$/;"	t
+dpu_process_inout	top_consts_types_package.vhd	/^    dpu_process_inout : STD_LOGIC_VECTOR(DPU_PROCESS_INOUT_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+dpu_sat_ctrl_ty	top_consts_types_package.vhd	/^  TYPE dpu_sat_ctrl_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(DPU_SAT_CTRL_WIDTH - 1 DOWNTO 0);$/;"	t
+dpu_saturation	top_consts_types_package.vhd	/^    dpu_saturation    : STD_LOGIC_VECTOR(DPU_SATURAT_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+dpuunused12	tb_instructions.vhd	/^    CONSTANT dpuunused12 : INTEGER := INSTR_WIDTH - dpu_instruction_width;$/;"	c
+end_fft_stage	top_consts_types_package.vhd	/^    end_fft_stage         : STD_LOGIC_VECTOR(FFT_END_STAGE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+end_pc	top_consts_types_package.vhd	/^    end_pc        : unsigned(FOR_END_PC - 1 DOWNTO 0);                   --! End PC label$/;"	r
+end_pc	top_consts_types_package.vhd	/^    end_pc     : unsigned(FOR_END_PC - 1 DOWNTO 0);                           -- 6$/;"	r
+end_stage	tb_instructions.vhd	/^    CONSTANT end_stage                        : INTEGER            := 1;$/;"	c
+endpc	isa.vhd	/^        endpc : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+endstage	tb_instructions.vhd	/^    CONSTANT endstage                         : INTEGER            := 3;$/;"	c
+exp_fp11	testbench/Non_linear/exp_pkg.vhd	/^    FUNCTION exp_fp11($/;"	f
+exp_pkg	testbench/Non_linear/exp_pkg.vhd	/^PACKAGE BODY exp_pkg IS$/;"	P
+exp_pkg	testbench/Non_linear/exp_pkg.vhd	/^PACKAGE exp_pkg IS$/;"	P
+extend	top_consts_types_package.vhd	/^    extend     : STD_LOGIC;                                                   -- 1$/;"	r
+extra	isa.vhd	/^        extra : STD_LOGIC;$/;"	r
+extra	isa.vhd	/^        extra : STD_LOGIC_VECTOR(2 - 1 DOWNTO 0);$/;"	r
+fabric_dimarch	SilagoNN_dimarch.vhd	/^ENTITY fabric_dimarch IS$/;"	e
+false_pc	isa.vhd	/^        false_pc : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+fb	DPU/DPU_pkg.vhd	/^  CONSTANT fb                    : NATURAL                              := DPU_BITWIDTH - 1 - ib;$/;"	c
+fft_mode	tb_instructions.vhd	/^    CONSTANT fft_mode                         : INTEGER            := 1;$/;"	c
+fft_stage	top_consts_types_package.vhd	/^    fft_stage             : STD_LOGIC_VECTOR(FFT_STAGE_SEL_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+finish_array	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  TYPE finish_array IS ARRAY(0 TO max_lat) OF STD_LOGIC_VECTOR(0 DOWNTO 0);      --! Array of signals for finish delay line$/;"	t
+for_instr_zero	top_consts_types_package.vhd	/^  CONSTANT for_instr_zero : For_instr_ty :=$/;"	c
+frac_part_lut	DPU/Squash_Unit.vhd	/^  CONSTANT frac_part_lut                                                            : INTEGER     := 11;$/;"	c
+frac_part_range	DPU/Q_format_n_to_one.vhd	/^  SUBTYPE frac_part_range IS INTEGER RANGE 0 TO Nb - 1;$/;"	T
+frac_part_range	DPU/Q_format_one_to_n.vhd	/^  SUBTYPE frac_part_range IS INTEGER RANGE 0 TO Nb - 1;$/;"	T
+frac_part_range	DPU/divider_pipe.vhd	/^  SUBTYPE frac_part_range IS INTEGER RANGE 0 TO (DIV_I_W\/2) - 1;$/;"	T
+from_block	top_consts_types_package.vhd	/^    from_block        : STD_LOGIC_VECTOR(SWB_SRC_DPU_REFI_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+from_destination	tb_instructions.vhd	/^    CONSTANT from_destination                 : std_logic          := '1';$/;"	c
+from_port	top_consts_types_package.vhd	/^    from_port         : STD_LOGIC_VECTOR(SWB_SRC_OUTPUT_NR_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+from_source	tb_instructions.vhd	/^    CONSTANT from_source                      : std_logic          := '0';$/;"	c
+get_max_val	util_package.vhd	/^  FUNCTION get_max_val (BITWIDTH : NATURAL)$/;"	f
+get_min_val	util_package.vhd	/^  FUNCTION get_min_val (BITWIDTH : NATURAL)$/;"	f
+h_bus_seg_ty	top_consts_types_package.vhd	/^  TYPE h_bus_seg_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF signed(BITWIDTH - 1 DOWNTO 0);$/;"	t
+h_bus_ty	top_consts_types_package.vhd	/^  TYPE h_bus_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF signed(BITWIDTH - 1 DOWNTO 0);$/;"	t
+half_period	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  CONSTANT half_period : TIME      := 2.5 ns;                                    --! Half clock period$/;"	c
+halt	tb_instructions.vhd	/^    CONSTANT halt                             : INTEGER            := 2;$/;"	c
+hb_index	isa.vhd	/^        hb_index : STD_LOGIC_VECTOR(3 - 1 DOWNTO 0);$/;"	r
+hb_index	top_consts_types_package.vhd	/^    hb_index          : STD_LOGIC_VECTOR(SWB_HB_INDEX_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+hbindex	tb_instructions.vhd	/^    CONSTANT hbindex                : INTEGER := 3;$/;"	c
+hc_in_bus_ty	top_consts_types_package.vhd	/^  TYPE hc_in_bus_ty IS ARRAY (NATURAL RANGE <>) OF STD_LOGIC_VECTOR(HC_OUT_BITS - 1 DOWNTO 0);$/;"	t
+hc_out_w_ty	top_consts_types_package.vhd	/^  TYPE hc_out_w_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(HC_OUT_BITS - 1 DOWNTO 0);$/;"	t
+hops	isa.vhd	/^        hops : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+hops	top_consts_types_package.vhd	/^    hops          : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+horizontal_dir	isa.vhd	/^        horizontal_dir : STD_LOGIC;$/;"	r
+horizontal_dir	top_consts_types_package.vhd	/^    horizontal_dir  : STD_LOGIC;$/;"	r
+horizontal_hops	isa.vhd	/^        horizontal_hops : STD_LOGIC_VECTOR(3 - 1 DOWNTO 0);$/;"	r
+horizontal_hops	top_consts_types_package.vhd	/^    horizontal_hops : STD_LOGIC_VECTOR(3 - 1 DOWNTO 0);$/;"	r
+hw_setting	DPU/hw_setting.vhd	/^PACKAGE hw_setting IS$/;"	P
+i	testbench/tb_priorityMux.vhd	/^    CONSTANT i      : NATURAL := 2;$/;"	c
+ib	DPU/DPU_pkg.vhd	/^  CONSTANT ib                    : NATURAL                              := 4;$/;"	c
+in_ip	DPU/Q_format_one_to_n.vhd	/^  CONSTANT in_ip : INTEGER := Nb - in_fp;$/;"	c
+in_out_data	testbench/tb_pkg_dpu.vhd	/^  TYPE in_out_data IS RECORD$/;"	t
+in_range	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  SUBTYPE in_range IS NATURAL RANGE DPU_BITWIDTH - 1 DOWNTO 0;                   --! Input bit range$/;"	T
+inc_dec	tb_instructions.vhd	/^    CONSTANT inc_dec                          : INTEGER            := 1;$/;"	c
+inc_dec_val	tb_instructions.vhd	/^    CONSTANT inc_dec_val                      : INTEGER            := 2;$/;"	c
+incr	tb_instructions.vhd	/^    CONSTANT incr                             : INTEGER            := 1;$/;"	c
+incr9	tb_instructions.vhd	/^    CONSTANT incr9                  : INTEGER := 1;$/;"	c
+incr_val	tb_instructions.vhd	/^    CONSTANT incr_val                         : INTEGER            := 2;$/;"	c
+incrementor_reg_ty	top_consts_types_package.vhd	/^  TYPE incrementor_reg_ty IS ARRAY (MAX_NO_OF_LOOPS - 1 DOWNTO 0) OF unsigned(FOR_ITER - 1 DOWNTO 0); --! Type definition of the loop iterator registers $/;"	t
+incrvalue9	tb_instructions.vhd	/^    CONSTANT incrvalue9             : INTEGER := 5;$/;"	c
+infinite_loop	tb_instructions.vhd	/^    CONSTANT infinite_loop                    : INTEGER            := 1;$/;"	c
+init_addr	isa.vhd	/^        init_addr : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+init_addr	isa.vhd	/^        init_addr : STD_LOGIC_VECTOR(7 - 1 DOWNTO 0);$/;"	r
+init_addr	top_consts_types_package.vhd	/^    init_addr     : STD_LOGIC_VECTOR(7 - 1 DOWNTO 0);$/;"	r
+init_addr_sd	isa.vhd	/^        init_addr_sd : STD_LOGIC;$/;"	r
+init_addr_sd	top_consts_types_package.vhd	/^    init_addr_sd  : STD_LOGIC;$/;"	r
+init_delay	isa.vhd	/^        init_delay : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+init_delay	isa.vhd	/^        init_delay : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+init_delay	top_consts_types_package.vhd	/^    init_delay    : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+init_delay_sd	isa.vhd	/^        init_delay_sd : STD_LOGIC;$/;"	r
+init_delay_sd	top_consts_types_package.vhd	/^    init_delay_sd : STD_LOGIC;$/;"	r
+initalpoint	tb_instructions.vhd	/^    CONSTANT initalpoint            : INTEGER := 2;$/;"	c
+initial_delay	top_consts_types_package.vhd	/^    initial_delay    : STD_LOGIC_VECTOR(INIT_DELAY_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+initial_delay_sd	top_consts_types_package.vhd	/^    initial_delay_sd : STD_LOGIC;$/;"	r
+initialdelay	tb_instructions.vhd	/^    CONSTANT initialdelay                     : INTEGER            := 6;$/;"	c
+initialdelay9	tb_instructions.vhd	/^    CONSTANT initialdelay9          : INTEGER := 6;$/;"	c
+instr_code	isa.vhd	/^        instr_code : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code            : STD_LOGIC_VECTOR(INSTR_CODE_RANGE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code           : STD_LOGIC_VECTOR(INSTR_CODE_RANGE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code         : STD_LOGIC_VECTOR(INSTR_CODE_RANGE_VECTOR_SIZE - 1 DOWNTO 0);  --! 4 bits$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code        : STD_LOGIC_VECTOR(INSTR_CODE_RANGE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code       : STD_LOGIC_VECTOR(INSTR_CODE_RANGE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code      : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code    : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code    : STD_LOGIC_VECTOR(INSTR_CODE_RANGE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code  : STD_LOGIC_VECTOR(INSTR_CODE_RANGE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+instr_code	top_consts_types_package.vhd	/^    instr_code : STD_LOGIC_VECTOR(INSTR_CODE_RANGE_VECTOR_SIZE - 1 DOWNTO 0); -- 4$/;"	r
+instrcode	tb_instructions.vhd	/^    CONSTANT instrcode              : INTEGER := 4;$/;"	c
+instruction_complete	tb_instructions.vhd	/^    CONSTANT instruction_complete             : INTEGER            := 1;$/;"	c
+int_part_lut	DPU/Squash_Unit.vhd	/^  CONSTANT int_part_lut                                                             : INTEGER     := 5;$/;"	c
+int_part_lut	DPU/offset_gen.vhd	/^  CONSTANT int_part_lut                                             : INTEGER := Nb - frac_part_lut;$/;"	c
+intermCol	tb_instructions.vhd	/^    CONSTANT intermCol              : INTEGER := COLUMN_WIDTH;$/;"	c
+intermRow	tb_instructions.vhd	/^    CONSTANT intermRow              : INTEGER := DiMArch_Row_Width;$/;"	c
+intermediate	tb_instructions.vhd	/^    CONSTANT intermediate           : INTEGER := 1;$/;"	c
+io_change	isa.vhd	/^        io_change : STD_LOGIC_VECTOR(2 - 1 DOWNTO 0);$/;"	r
+isa_package	isa.vhd	/^PACKAGE BODY isa_package IS$/;"	P
+isa_package	isa.vhd	/^PACKAGE isa_package IS$/;"	P
+iter	isa.vhd	/^        iter : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+iter	top_consts_types_package.vhd	/^    iter          : unsigned(FOR_ITER - 1 DOWNTO 0);                     --! Num. of iterations value$/;"	r
+iter	top_consts_types_package.vhd	/^    iter       : unsigned(FOR_ITER - 1 DOWNTO 0);                             -- 6$/;"	r
+iter_sd	isa.vhd	/^        iter_sd : STD_LOGIC;$/;"	r
+iter_sd	top_consts_types_package.vhd	/^    iter_sd       : STD_LOGIC;                                           --! Dynamic or static num. of iterations value$/;"	r
+iter_sd	top_consts_types_package.vhd	/^    iter_sd    : STD_LOGIC;                                                   -- 1$/;"	r
+jump_unused	top_consts_types_package.vhd	/^    jump_unused : STD_LOGIC_VECTOR(JUMP_UNUSED_BITS_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+l1_delay	isa.vhd	/^        l1_delay : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+l1_delay	isa.vhd	/^        l1_delay : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+l1_delay	top_consts_types_package.vhd	/^    l1_delay      : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+l1_delay_ext	isa.vhd	/^        l1_delay_ext : STD_LOGIC_VECTOR(2 - 1 DOWNTO 0);$/;"	r
+l1_delay_sd	isa.vhd	/^        l1_delay_sd : STD_LOGIC;$/;"	r
+l1_delay_sd	top_consts_types_package.vhd	/^    l1_delay_sd   : STD_LOGIC;$/;"	r
+l1_iter	isa.vhd	/^        l1_iter : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+l1_iter	isa.vhd	/^        l1_iter : STD_LOGIC_VECTOR(7 - 1 DOWNTO 0);$/;"	r
+l1_iter	top_consts_types_package.vhd	/^    l1_iter       : STD_LOGIC_VECTOR(7 - 1 DOWNTO 0);$/;"	r
+l1_iter_sd	isa.vhd	/^        l1_iter_sd : STD_LOGIC;$/;"	r
+l1_iter_sd	top_consts_types_package.vhd	/^    l1_iter_sd    : STD_LOGIC;$/;"	r
+l1_step	isa.vhd	/^        l1_step : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+l1_step	isa.vhd	/^        l1_step : STD_LOGIC_VECTOR(8 - 1 DOWNTO 0);$/;"	r
+l1_step	top_consts_types_package.vhd	/^    l1_step       : STD_LOGIC_VECTOR(8 - 1 DOWNTO 0);$/;"	r
+l1_step_sd	isa.vhd	/^        l1_step_sd : STD_LOGIC;$/;"	r
+l1_step_sd	top_consts_types_package.vhd	/^    l1_step_sd    : STD_LOGIC;$/;"	r
+l1_step_sign	isa.vhd	/^        l1_step_sign : STD_LOGIC;$/;"	r
+l2_delay	isa.vhd	/^        l2_delay : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+l2_delay	top_consts_types_package.vhd	/^    l2_delay      : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+l2_delay_sd	isa.vhd	/^        l2_delay_sd : STD_LOGIC;$/;"	r
+l2_delay_sd	top_consts_types_package.vhd	/^    l2_delay_sd   : STD_LOGIC;$/;"	r
+l2_iter	isa.vhd	/^        l2_iter : STD_LOGIC_VECTOR(5 - 1 DOWNTO 0);$/;"	r
+l2_iter	isa.vhd	/^        l2_iter : STD_LOGIC_VECTOR(7 - 1 DOWNTO 0);$/;"	r
+l2_iter	top_consts_types_package.vhd	/^    l2_iter       : STD_LOGIC_VECTOR(7 - 1 DOWNTO 0);$/;"	r
+l2_iter_ext	isa.vhd	/^        l2_iter_ext : STD_LOGIC;$/;"	r
+l2_iter_sd	isa.vhd	/^        l2_iter_sd : STD_LOGIC;$/;"	r
+l2_iter_sd	top_consts_types_package.vhd	/^    l2_iter_sd    : STD_LOGIC;$/;"	r
+l2_step	isa.vhd	/^        l2_step : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+l2_step	isa.vhd	/^        l2_step : STD_LOGIC_VECTOR(8 - 1 DOWNTO 0);$/;"	r
+l2_step	top_consts_types_package.vhd	/^    l2_step       : STD_LOGIC_VECTOR(8 - 1 DOWNTO 0);$/;"	r
+l2_step_ext	isa.vhd	/^        l2_step_ext : STD_LOGIC_VECTOR(2 - 1 DOWNTO 0);$/;"	r
+l2_step_sd	isa.vhd	/^        l2_step_sd : STD_LOGIC;$/;"	r
+l2_step_sd	top_consts_types_package.vhd	/^    l2_step_sd    : STD_LOGIC;$/;"	r
+l_output_array_type	RLE_engine/RLE_engine.vhd	/^  TYPE l_output_array_type IS ARRAY(0 TO Nw - Wp - 1) OF STD_LOGIC_VECTOR(Nb - 1 DOWNTO 0);$/;"	t
+lat_array	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  TYPE lat_array IS ARRAY(0 TO 5) OF INTEGER;                                    --! Array of latency values for each operation$/;"	t
+latency	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  CONSTANT latency     : lat_array := ($/;"	c
+lcc_elements_ty	top_consts_types_package.vhd	/^  TYPE lcc_elements_ty IS ARRAY (COLUMNS - 1 DOWNTO 0) OF STD_LOGIC_VECTOR(COLUMNS + ROWS + CONFIG_WIDTH DOWNTO 0);$/;"	t
+linear_mode	tb_instructions.vhd	/^    CONSTANT linear_mode                      : INTEGER            := 0;$/;"	c
+link	isa.vhd	/^        link : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+log2	misc.vhd	/^    FUNCTION log2(i : NATURAL) RETURN INTEGER IS$/;"	f
+log2	util_package.vhd	/^  FUNCTION log2(N : NATURAL) RETURN POSITIVE IS$/;"	f
+log2_ceil	misc.vhd	/^    FUNCTION log2_ceil(N : NATURAL) RETURN POSITIVE IS$/;"	f
+loop_config_reg_ty	top_consts_types_package.vhd	/^  TYPE loop_config_reg_ty IS ARRAY (MAX_NO_OF_LOOPS - 1 DOWNTO 0) OF For_conf_ty;                     --! Type definition of the loop configuration registers$/;"	t
+loop_id	top_consts_types_package.vhd	/^    loop_id       : unsigned(FOR_LOOP_ID - 1 DOWNTO 0);                  --! Loop ID$/;"	r
+loop_id	top_consts_types_package.vhd	/^    loop_id    : unsigned(FOR_LOOP_ID - 1 DOWNTO 0);                          -- 2$/;"	r
+loop_iterators_ty	top_consts_types_package.vhd	/^  TYPE loop_iterators_ty IS ARRAY (MAX_NO_OF_LOOPS - 1 DOWNTO 0) OF STD_LOGIC_VECTOR(RACCU_REG_BITWIDTH - 1 DOWNTO 0);    --! Type for the registers used to store the values for the loop iterators $/;"	t
+loopid	isa.vhd	/^        loopid : STD_LOGIC_VECTOR(2 - 1 DOWNTO 0);$/;"	r
+lut_array	DPU/Squash_Unit.vhd	/^  TYPE lut_array IS ARRAY(INTEGER RANGE <>) OF signed(Nb - 1 DOWNTO 0);$/;"	t
+mac_int	testbench/Non_linear/mac_pkg.vhd	/^  FUNCTION mac_int($/;"	f
+mac_pipe	DPU/DPU_pkg.vhd	/^  CONSTANT mac_pipe              : NATURAL                              := 0;$/;"	c
+mac_pipe	testbench/tb_nacu_recon.vhd	/^  CONSTANT mac_pipe      : NATURAL                            := 0;$/;"	c
+mac_pkg	testbench/Non_linear/mac_pkg.vhd	/^PACKAGE BODY mac_pkg IS$/;"	P
+mac_pkg	testbench/Non_linear/mac_pkg.vhd	/^PACKAGE mac_pkg IS$/;"	P
+max_integer	DPU/twos_compl.vhd	/^  CONSTANT max_integer : INTEGER                      := 2 ** (b_width - 1) - 1;$/;"	c
+max_lat	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  CONSTANT max_lat : INTEGER := 8;$/;"	c
+max_num	DPU/divider_pipe.vhd	/^  CONSTANT max_num                     : INTEGER   := 2 ** (DIV_I_W - 1) - 1;$/;"	c
+max_num_out	DPU/Q_format_n_to_one.vhd	/^  CONSTANT max_num_out : INTEGER := 2 ** (out_ip - 1) - 1;$/;"	c
+max_num_out	DPU/twos_compl.vhd	/^  CONSTANT max_num_out : signed(b_width - 1 DOWNTO 0) := to_signed(max_integer, b_width);$/;"	c
+mdpuacccount12	tb_instructions.vhd	/^    CONSTANT mdpuacccount12                   : INTEGER            := 11;$/;"	c
+mdpumode12	tb_instructions.vhd	/^    CONSTANT mdpumode12                       : INTEGER            := 5;$/;"	c
+mdpusaturation12	tb_instructions.vhd	/^    CONSTANT mdpusaturation12                 : INTEGER            := 2;$/;"	c
+memendaddress_sd	tb_instructions.vhd	/^    CONSTANT memendaddress_sd                 : INTEGER            := 1;$/;"	c
+meminitialdelay_sd	tb_instructions.vhd	/^    CONSTANT meminitialdelay_sd               : INTEGER            := 1;$/;"	c
+memstartaddress_sd	tb_instructions.vhd	/^    CONSTANT memstartaddress_sd               : INTEGER            := 1;$/;"	c
+memwothers	tb_instructions.vhd	/^    CONSTANT memwothers                       : INTEGER            := 17;$/;"	c
+middledelay	tb_instructions.vhd	/^    CONSTANT middledelay                      : INTEGER            := 9;$/;"	c
+min_num	DPU/divider_pipe.vhd	/^  CONSTANT min_num                     : INTEGER   := - 2 ** (DIV_I_W - 1);$/;"	c
+min_num_out	DPU/Q_format_n_to_one.vhd	/^  CONSTANT min_num_out : INTEGER := - 2 ** (out_ip - 1);$/;"	c
+min_val	misc.vhd	/^    FUNCTION min_val (left, right : INTEGER)$/;"	f
+min_val	util_package.vhd	/^  FUNCTION min_val (left, right : INTEGER)$/;"	f
+minus	tb_instructions.vhd	/^    CONSTANT minus                            : std_logic          := '0';$/;"	c
+misc	misc.vhd	/^PACKAGE BODY misc IS$/;"	P
+misc	misc.vhd	/^PACKAGE misc IS$/;"	P
+mmiddledelay_sd	tb_instructions.vhd	/^    CONSTANT mmiddledelay_sd                  : INTEGER            := 1;$/;"	c
+mnrofrpt_sd	tb_instructions.vhd	/^    CONSTANT mnrofrpt_sd                      : INTEGER            := 1;$/;"	c
+mode	isa.vhd	/^        mode : STD_LOGIC_VECTOR(2 - 1 DOWNTO 0);$/;"	r
+mode	isa.vhd	/^        mode : STD_LOGIC_VECTOR(3 - 1 DOWNTO 0);$/;"	r
+mode	isa.vhd	/^        mode : STD_LOGIC_VECTOR(5 - 1 DOWNTO 0);$/;"	r
+mode	top_consts_types_package.vhd	/^    mode                  : STD_LOGIC_VECTOR(MODE_SEL_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+mode_width	tb_instructions.vhd	/^    CONSTANT mode_width             : INTEGER := 1;$/;"	c
+mrptdelay_sd	tb_instructions.vhd	/^    CONSTANT mrptdelay_sd                     : INTEGER            := 1;$/;"	c
+mrptincrvalue_sd	tb_instructions.vhd	/^    CONSTANT mrptincrvalue_sd                 : INTEGER            := 1;$/;"	c
+mux_in_array	DPU/Squash_Unit.vhd	/^  TYPE mux_in_array IS ARRAY(15 DOWNTO 0) OF signed(Nb - 1 DOWNTO 0);$/;"	t
+no_of_addrs	top_consts_types_package.vhd	/^    no_of_addrs      : STD_LOGIC_VECTOR(NR_OF_ADDRS_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+no_of_addrs_sd	top_consts_types_package.vhd	/^    no_of_addrs_sd   : STD_LOGIC;$/;"	r
+no_of_rep	tb_instructions.vhd	/^    CONSTANT no_of_rep                        : INTEGER            := 9;$/;"	c
+no_of_reps	top_consts_types_package.vhd	/^    no_of_reps           : STD_LOGIC_VECTOR(NUM_OF_REPT_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+no_of_reps_sd	top_consts_types_package.vhd	/^    no_of_reps_sd        : STD_LOGIC;$/;"	r
+no_of_rpt_ext	top_consts_types_package.vhd	/^    no_of_rpt_ext         : STD_LOGIC_VECTOR(NUM_OF_REPT_EXT_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+null_field	tb_instructions.vhd	/^    CONSTANT null_field                       : INTEGER            := 2;$/;"	c
+num_in_lut_array	DPU/Squash_Unit.vhd	/^  CONSTANT num_in_lut_array                                                         : const_array := (9, 8, 8, 7, 7, 7, 6, 3, 1, 1, 1, 10); -- Values come from linear interpreter. algorithm$/;"	c
+num_steps	RLE_engine/RLE_engine.vhd	/^  CONSTANT num_steps : INTEGER := INTEGER(ceil(real(Nw)\/real(Wp)));$/;"	c
+numberOfAdr9	tb_instructions.vhd	/^    CONSTANT numberOfAdr9           : INTEGER := 6;$/;"	c
+number_of_sram_instruction_parts	tb_instructions.vhd	/^    CONSTANT number_of_sram_instruction_parts : INTEGER            := ((sram_instruction_size)\/INSTR_WIDTH) + 1;$/;"	c
+numofrept10	tb_instructions.vhd	/^    CONSTANT numofrept10            : INTEGER := 6;$/;"	c
+offset_gen	DPU/offset_gen.vhd	/^ENTITY offset_gen IS$/;"	e
+opc_range	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  SUBTYPE opc_range IS NATURAL RANGE S_DPU_CFG_WIDTH - 1 DOWNTO 0;      --! Opcode bit range$/;"	T
+oper	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  CONSTANT oper        : INTEGER   := S_TANHYP;                                  --! Selected operation to simulate$/;"	c
+operand1	isa.vhd	/^        operand1 : STD_LOGIC_VECTOR(7 - 1 DOWNTO 0);$/;"	r
+operand1_sd	isa.vhd	/^        operand1_sd : STD_LOGIC;$/;"	r
+operand2	isa.vhd	/^        operand2 : STD_LOGIC_VECTOR(7 - 1 DOWNTO 0);$/;"	r
+operand2_sd	isa.vhd	/^        operand2_sd : STD_LOGIC;$/;"	r
+originnode	tb_instructions.vhd	/^    CONSTANT originnode             : INTEGER := 1;$/;"	c
+out_decoded_type	RLE_engine/RLE_engine.vhd	/^  TYPE out_decoded_type IS ARRAY(0 TO Wp - 1) OF STD_LOGIC_VECTOR(Nb - 1 DOWNTO 0);$/;"	t
+out_ip	DPU/Q_format_n_to_one.vhd	/^  CONSTANT out_ip      : INTEGER := Nb - out_fp;$/;"	c
+outa12	tb_instructions.vhd	/^    CONSTANT outa12                           : INTEGER            := 2;$/;"	c
+outb12	tb_instructions.vhd	/^    CONSTANT outb12                           : INTEGER            := 2;$/;"	c
+outindex	tb_instructions.vhd	/^    CONSTANT outindex               : INTEGER := 1;$/;"	c
+outp_cntrl	top_consts_types_package.vhd	/^    outp_cntrl            : STD_LOGIC_VECTOR(OUTPUT_CONTROL_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+output_frac_gt_input_frac_range	DPU/Q_format_one_to_n.vhd	/^  SUBTYPE output_frac_gt_input_frac_range IS INTEGER RANGE in_fp + 1 TO Nb - 1;$/;"	T
+outputcontrol	tb_instructions.vhd	/^    CONSTANT outputcontrol                    : INTEGER            := 2;$/;"	c
+outputcontrol9	tb_instructions.vhd	/^    CONSTANT outputcontrol9         : INTEGER := 2;$/;"	c
+pc	isa.vhd	/^        pc : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+pipe_type	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  TYPE pipe_type IS ARRAY(0 TO max_lat) OF SIGNED(S_DPU_OUT_WIDTH - 1 DOWNTO 0); --! Array of signals for delay line$/;"	t
+pipeline_type	DPU/divider_pipe.vhd	/^  TYPE pipeline_type IS ARRAY(0 TO div_pipe_num) OF signed(DIV_I_W - 1 DOWNTO 0);$/;"	t
+plus	tb_instructions.vhd	/^    CONSTANT plus                             : std_logic          := '1';$/;"	c
+populate_in_out_rec	testbench/tb_pkg_dpu.vhd	/^  FUNCTION populate_in_out_rec (value : INTEGER; op : STD_LOGIC_VECTOR) RETURN in_out_data IS$/;"	f
+populate_in_out_rec	testbench/tb_pkg_dpu.vhd	/^  FUNCTION populate_in_out_rec (value : STD_LOGIC_VECTOR; op : STD_LOGIC_VECTOR) RETURN in_out_data IS$/;"	f
+populate_in_out_rec	testbench/tb_pkg_dpu.vhd	/^  FUNCTION populate_in_out_rec (value_1 : INTEGER; value_0 : INTEGER) RETURN in_out_data IS$/;"	f
+populate_in_out_rec	testbench/tb_pkg_dpu.vhd	/^  FUNCTION populate_in_out_rec (value_11 : INTEGER; value_10 : INTEGER; value_01 : INTEGER; value_00 : INTEGER) RETURN in_out_data IS$/;"	f
+port_no	isa.vhd	/^        port_no : STD_LOGIC_VECTOR(2 - 1 DOWNTO 0);$/;"	r
+print_mac	testbench/tb_pkg_dpu.vhd	/^  PROCEDURE print_mac (mac, input0, input1 : IN INTEGER) IS$/;"	p
+priorityComponent	priorityComponent.vhd	/^ENTITY priorityComponent IS$/;"	e
+priorityMux	priorityMux.vhd	/^ENTITY priorityMux IS$/;"	e
+priority_input_ty	top_consts_types_package.vhd	/^  TYPE priority_input_ty IS ARRAY (NATURAL RANGE <>) OF unsigned(FOR_LOOP_ID - 1 DOWNTO 0); --! Input type for the priority mux$/;"	t
+raccu_mode	top_consts_types_package.vhd	/^    raccu_mode         : STD_LOGIC_VECTOR(RACCU_MODE_SEL_VECTOR_SIZE - 1 DOWNTO 0);    --! 3 bits$/;"	r
+raccu_op1	top_consts_types_package.vhd	/^    raccu_op1          : STD_LOGIC_VECTOR(RACCU_OPERAND1_VECTOR_SIZE - 1 DOWNTO 0);    --! 7 bits$/;"	r
+raccu_op1_sd	top_consts_types_package.vhd	/^    raccu_op1_sd       : STD_LOGIC;                                                    --! 1 bit$/;"	r
+raccu_op2	top_consts_types_package.vhd	/^    raccu_op2          : STD_LOGIC_VECTOR(RACCU_OPERAND2_VECTOR_SIZE - 1 DOWNTO 0);    --! 7 bits$/;"	r
+raccu_op2_sd	top_consts_types_package.vhd	/^    raccu_op2_sd       : STD_LOGIC;                                                    --! 1 bit$/;"	r
+raccu_reg_out_ty	top_consts_types_package.vhd	/^  TYPE raccu_reg_out_ty IS ARRAY (RACCU_REGFILE_DEPTH - 1 DOWNTO 0) OF STD_LOGIC_VECTOR(RACCU_REG_BITWIDTH - 1 DOWNTO 0); --! Type for the RACCU registers$/;"	t
+raccu_result_addrs	top_consts_types_package.vhd	/^    raccu_result_addrs : STD_LOGIC_VECTOR(RACCU_RESULT_ADDR_VECTOR_SIZE - 1 DOWNTO 0); --! 4 bits$/;"	r
+range_offs	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  CONSTANT range_offs : real    := REAL(2 ** (DPU_BITWIDTH - 1) + 1);   --! Subtracted to 'repr_range' to obtain repr. range in 2's complement$/;"	c
+refi_middle_delay	top_consts_types_package.vhd	/^    refi_middle_delay    : STD_LOGIC_VECTOR(REG_FILE_MIDDLE_DELAY_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+refi_middle_delay_ext	top_consts_types_package.vhd	/^    refi_middle_delay_ext : STD_LOGIC_VECTOR(REG_FILE_MIDDLE_DELAY_EXT_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+refi_middle_delay_sd	top_consts_types_package.vhd	/^    refi_middle_delay_sd : STD_LOGIC;$/;"	r
+reg_fft_stage_ty	top_consts_types_package.vhd	/^  TYPE reg_fft_stage_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(FFT_STAGE_SEL_VECTOR_SIZE DOWNTO 0);$/;"	t
+reg_file_port	top_consts_types_package.vhd	/^    reg_file_port    : STD_LOGIC_VECTOR(NR_OF_REG_FILE_PORTS_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+reg_file_type	register_file.vhd	/^    TYPE reg_file_type IS ARRAY (0 TO REG_FILE_DEPTH - 1) OF signed(REG_FILE_DATA_WIDTH - 1 DOWNTO 0);$/;"	t
+reg_in_array_type	RLE_engine/RLE_engine.vhd	/^  TYPE reg_in_array_type IS ARRAY(0 TO Nw - 1) OF STD_LOGIC_VECTOR(Nb - 1 DOWNTO 0);$/;"	t
+reg_initial_delay_ty	top_consts_types_package.vhd	/^  TYPE reg_initial_delay_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(INIT_DELAY_VECTOR_SIZE DOWNTO 0);$/;"	t
+reg_instr_start_ty	top_consts_types_package.vhd	/^  TYPE reg_instr_start_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC;$/;"	t
+reg_middle_delay_ty	top_consts_types_package.vhd	/^  TYPE reg_middle_delay_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(REG_FILE_MIDDLE_DELAY_PORT_SIZE DOWNTO 0);$/;"	t
+reg_mode_ty	top_consts_types_package.vhd	/^  TYPE reg_mode_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(MODE_SEL_VECTOR_SIZE DOWNTO 0);$/;"	t
+reg_n	RLE_engine/reg_n.vhd	/^entity reg_n is $/;"	e
+reg_no_of_addrs_ty	top_consts_types_package.vhd	/^  TYPE reg_no_of_addrs_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(NR_OF_ADDRS_VECTOR_SIZE DOWNTO 0);$/;"	t
+reg_no_of_rpts_ty	top_consts_types_package.vhd	/^  TYPE reg_no_of_rpts_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(NUM_OF_REPT_PORT_SIZE DOWNTO 0);$/;"	t
+reg_outp_cntrl_ty	top_consts_types_package.vhd	/^  TYPE reg_outp_cntrl_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(OUTPUT_CONTROL_VECTOR_SIZE DOWNTO 0);$/;"	t
+reg_port_type_ty	top_consts_types_package.vhd	/^  TYPE reg_port_type_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(NR_OF_REG_FILE_PORTS_VECTOR_SIZE DOWNTO 0);$/;"	t
+reg_rpt_delay_ty	top_consts_types_package.vhd	/^  TYPE reg_rpt_delay_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(REPT_DELAY_VECTOR_SIZE DOWNTO 0);$/;"	t
+reg_rpt_step_value_ty	top_consts_types_package.vhd	/^  TYPE reg_rpt_step_value_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(REP_STEP_VALUE_PORT_SIZE DOWNTO 0);$/;"	t
+reg_start_addrs_ty	top_consts_types_package.vhd	/^  TYPE reg_start_addrs_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(STARTING_ADDRS_VECTOR_SIZE DOWNTO 0);$/;"	t
+reg_step_val_sign_ty	top_consts_types_package.vhd	/^  TYPE reg_step_val_sign_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(STEP_VALUE_SIGN_VECTOR_SIZE DOWNTO 0);$/;"	t
+reg_step_val_ty	top_consts_types_package.vhd	/^  TYPE reg_step_val_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(STEP_VALUE_VECTOR_SIZE DOWNTO 0);$/;"	t
+register_file	register_file.vhd	/^ENTITY register_file IS$/;"	e
+register_file_top	register_file_top.vhd	/^ENTITY register_file_top IS$/;"	e
+register_row	register_row.vhd	/^entity register_row is$/;"	e
+related_loops	top_consts_types_package.vhd	/^    related_loops : STD_LOGIC_VECTOR(FOR_EX_RELATED_LOOPS - 1 DOWNTO 0); --! 4 bits that when active they signify that the corresponding loop has the same end-PC$/;"	r
+related_loops	top_consts_types_package.vhd	/^    related_loops : STD_LOGIC_VECTOR(FOR_EX_RELATED_LOOPS - 1 DOWNTO 0);$/;"	r
+rep_delay	tb_instructions.vhd	/^    CONSTANT rep_delay                        : INTEGER            := 9;$/;"	c
+repr_range	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^  CONSTANT repr_range : real    := REAL(2 ** (DPU_BITWIDTH));           --! Representation range in unsigned format$/;"	c
+reset_in_out_rec	testbench/tb_pkg_dpu.vhd	/^  FUNCTION reset_in_out_rec RETURN in_out_data IS$/;"	f
+result	isa.vhd	/^        result : STD_LOGIC_VECTOR(4 - 1 DOWNTO 0);$/;"	r
+rf_end_addr	tb_instructions.vhd	/^    CONSTANT rf_end_addr                      : INTEGER            := 2;$/;"	c
+rf_start_addr	tb_instructions.vhd	/^    CONSTANT rf_start_addr                    : INTEGER            := 2;$/;"	c
+rfdothers	tb_instructions.vhd	/^    CONSTANT rfdothers                        : INTEGER            := 2;$/;"	c
+rfmiddledelay10	tb_instructions.vhd	/^    CONSTANT rfmiddledelay10        : INTEGER := 7;$/;"	c
+rfmode	tb_instructions.vhd	/^    CONSTANT rfmode                           : INTEGER            := 1;$/;"	c
+rfport9	tb_instructions.vhd	/^    CONSTANT rfport9                : INTEGER := 2;$/;"	c
+rfvalid9	tb_instructions.vhd	/^    CONSTANT rfvalid9               : INTEGER := 1;$/;"	c
+route	tb_instructions.vhd	/^    FUNCTION route (Source_Row, Source_Col, Destination_Row, Destination_Col, DRRA_SEL, Union_Flag, Union_Port : INTEGER; origIn : std_logic)$/;"	f
+routeExtras	tb_instructions.vhd	/^    CONSTANT routeExtras                      : INTEGER            := INSTR_WIDTH - route_instruction_size;$/;"	c
+route_instruction_size	tb_instructions.vhd	/^    CONSTANT route_instruction_size : NATURAL :=$/;"	c
+row_sel_ty	top_consts_types_package.vhd	/^  TYPE row_sel_ty IS ARRAY (0 TO COLUMNS) OF STD_LOGIC_VECTOR(ROWS DOWNTO 0);$/;"	t
+rowindex	tb_instructions.vhd	/^    CONSTANT rowindex               : INTEGER := 2;$/;"	c
+rpt_delay	top_consts_types_package.vhd	/^    rpt_delay             : STD_LOGIC_VECTOR(REPT_DELAY_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+rpt_delay_sd	top_consts_types_package.vhd	/^    rpt_delay_sd          : STD_LOGIC;$/;"	r
+rpt_step_value	top_consts_types_package.vhd	/^    rpt_step_value       : STD_LOGIC_VECTOR(REP_STEP_VALUE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+rpt_step_value_ext	top_consts_types_package.vhd	/^    rpt_step_value_ext    : STD_LOGIC_VECTOR(REP_STEP_VALUE_EXT_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+rptdelay10	tb_instructions.vhd	/^    CONSTANT rptdelay10             : INTEGER := 6;$/;"	c
+rptincr10	tb_instructions.vhd	/^    CONSTANT rptincr10              : INTEGER := 1;$/;"	c
+rptincrvalue10	tb_instructions.vhd	/^    CONSTANT rptincrvalue10         : INTEGER := 5;$/;"	c
+rw	isa.vhd	/^        rw : STD_LOGIC;$/;"	r
+rw	top_consts_types_package.vhd	/^    rw            : STD_LOGIC;$/;"	r
+s_bus_out_ty	top_consts_types_package.vhd	/^  TYPE s_bus_out_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(SWB_INSTR_PORT_SIZE - 1 DOWNTO 0); --$/;"	t
+s_bus_switchbox_2d_ty	top_consts_types_package.vhd	/^  TYPE s_bus_switchbox_2d_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF s_bus_switchbox_ty; --$/;"	t
+s_bus_switchbox_ty	top_consts_types_package.vhd	/^  TYPE s_bus_switchbox_ty IS ARRAY (0 TO NR_OF_COL_INPS\/2 - 1) OF STD_LOGIC_VECTOR(5 DOWNTO 0);   --5) OF --std_logic_vector (NR_OF_COL_INPS_ONE_CELL-1 DOWNTO 0);--NR_OF_COL_INPS-1) OF std_logic_vector (5 DOWNTO 0);  --$/;"	t
+s_bus_switchbox_ty_array	top_consts_types_package.vhd	/^  TYPE s_bus_switchbox_ty_array IS ARRAY (NATURAL RANGE <>) OF s_bus_switchbox_ty;$/;"	t
+saturation	util_package.vhd	/^  FUNCTION saturation(A : INTEGER; MAX_VALUE : signed; MIN_VALUE : signed) RETURN signed IS$/;"	f
+saturation	util_package.vhd	/^  FUNCTION saturation(A : signed; MAX_VALUE : signed; MIN_VALUE : signed) RETURN signed IS$/;"	f
+scaler	DPU/scaler.vhd	/^ENTITY scaler IS$/;"	e
+select_drra_row	isa.vhd	/^        select_drra_row : STD_LOGIC;$/;"	r
+select_drra_row	top_consts_types_package.vhd	/^    select_drra_row : STD_LOGIC;$/;"	r
+select_w	DPU/DPU_pkg.vhd	/^  CONSTANT select_w              : NATURAL                              := 2;$/;"	c
+send_to_other_row	isa.vhd	/^        send_to_other_row : STD_LOGIC;$/;"	r
+send_to_other_row	top_consts_types_package.vhd	/^    send_to_other_row : STD_LOGIC_VECTOR(SWB_SEND_TO_OTHER_ROW_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+seq_cond_status_ty	top_consts_types_package.vhd	/^  TYPE seq_cond_status_ty IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF STD_LOGIC_VECTOR(SEQ_COND_STATUS_WIDTH - 1 DOWNTO 0);$/;"	t
+seq_functions_package	seq_functions_package.vhd	/^PACKAGE BODY seq_functions_package IS$/;"	P
+seq_functions_package	seq_functions_package.vhd	/^PACKAGE seq_functions_package IS$/;"	P
+seq_instr	tb_instructions.vhd	/^    CONSTANT seq_instr                        : INTEGER            := 4;$/;"	c
+sequencer	sequencer.vhd	/^ENTITY sequencer IS$/;"	e
+shadowReg	shadowReg.vhd	/^ENTITY shadowReg IS$/;"	e
+shadowReg_AGU	shadowReg_AGU.vhd	/^ENTITY shadowReg_AGU IS$/;"	e
+sigmoid_fp11	testbench/Non_linear/sigmoid_pkg.vhd	/^    FUNCTION sigmoid_fp11($/;"	f
+sigmoid_pkg	testbench/Non_linear/sigmoid_pkg.vhd	/^PACKAGE BODY sigmoid_pkg IS$/;"	P
+sigmoid_pkg	testbench/Non_linear/sigmoid_pkg.vhd	/^PACKAGE sigmoid_pkg IS$/;"	P
+silagonn	silagonn.vhd	/^entity silagonn is$/;"	e
+silagonn	silagonn_top.vhd	/^entity silagonn is$/;"	e
+silego	silego.vhd	/^ENTITY silego IS$/;"	e
+size_of_sram_instruction_regs	tb_instructions.vhd	/^    CONSTANT size_of_sram_instruction_regs    : NATURAL            := number_of_sram_instruction_parts * INSTR_WIDTH;$/;"	c
+slice_0	DPU/scaler.vhd	/^  CONSTANT slice_0         : INTEGER := 2;$/;"	c
+slice_00	DPU/scaler.vhd	/^  CONSTANT slice_00        : INTEGER := 4;$/;"	c
+slope_offs_array	DPU/Squash_Unit.vhd	/^  TYPE slope_offs_array IS ARRAY(11 DOWNTO 0) OF signed(Nb - 1 DOWNTO 0);$/;"	t
+squash_pipe	DPU/DPU_pkg.vhd	/^  CONSTANT squash_pipe           : NATURAL                              := 0;$/;"	c
+squash_pipe	testbench/tb_nacu_recon.vhd	/^  CONSTANT squash_pipe   : NATURAL                            := 0;$/;"	c
+sr_Initial_address_sd	top_consts_types_package.vhd	/^  CONSTANT sr_Initial_address_sd                 : INTEGER                                          := sr_loop2_delay_e + 1;$/;"	c
+sr_Loop1_delay_sd	top_consts_types_package.vhd	/^  CONSTANT sr_Loop1_delay_sd                     : INTEGER                                          := sr_initial_delay_sd + 1;$/;"	c
+sr_Loop1_increment_sd	top_consts_types_package.vhd	/^  CONSTANT sr_Loop1_increment_sd                 : INTEGER                                          := sr_Loop2_delay_sd + 1;$/;"	c
+sr_Loop1_iteration_sd	top_consts_types_package.vhd	/^  CONSTANT sr_Loop1_iteration_sd                 : INTEGER                                          := sr_Initial_address_sd + 1;$/;"	c
+sr_Loop2_delay_sd	top_consts_types_package.vhd	/^  CONSTANT sr_Loop2_delay_sd                     : INTEGER                                          := sr_Loop1_delay_sd + 1;$/;"	c
+sr_Loop2_increment_sd	top_consts_types_package.vhd	/^  CONSTANT sr_Loop2_increment_sd                 : INTEGER                                          := sr_Loop1_increment_sd + 1;$/;"	c
+sr_Loop2_iteration_sd	top_consts_types_package.vhd	/^  CONSTANT sr_Loop2_iteration_sd                 : INTEGER                                          := sr_Loop1_iteration_sd + 1;$/;"	c
+sr_delays	top_consts_types_package.vhd	/^  CONSTANT sr_delays                             : INTEGER                                          := 6;$/;"	c
+sr_en_e	top_consts_types_package.vhd	/^  CONSTANT sr_en_e                               : INTEGER                                          := sr_en_width + sr_en_s - 1;$/;"	c
+sr_en_s	top_consts_types_package.vhd	/^  CONSTANT sr_en_s                               : INTEGER                                          := 1;$/;"	c
+sr_en_width	top_consts_types_package.vhd	/^  CONSTANT sr_en_width                           : INTEGER                                          := 1; -- this is send from the tile itself$/;"	c
+sr_hops_e	top_consts_types_package.vhd	/^  CONSTANT sr_hops_e                             : INTEGER                                          := sr_hops_width + sr_hops_s - 1;$/;"	c
+sr_hops_s	top_consts_types_package.vhd	/^  CONSTANT sr_hops_s                             : INTEGER                                          := sr_mode_e + 1;$/;"	c
+sr_hops_width	top_consts_types_package.vhd	/^  CONSTANT sr_hops_width                         : INTEGER                                          := log2_ceil(15);$/;"	c
+sr_initial_address_e	top_consts_types_package.vhd	/^  CONSTANT sr_initial_address_e                  : INTEGER                                          := sr_initial_address_width + sr_initial_address_s - 1;$/;"	c
+sr_initial_address_s	top_consts_types_package.vhd	/^  CONSTANT sr_initial_address_s                  : INTEGER                                          := sr_hops_e + 1; -- changed to sr_hops_e$/;"	c
+sr_initial_address_width	top_consts_types_package.vhd	/^  CONSTANT sr_initial_address_width              : INTEGER                                          := RAM_ADDRESS_WIDTH;$/;"	c
+sr_initial_delay_e	top_consts_types_package.vhd	/^  CONSTANT sr_initial_delay_e                    : INTEGER                                          := sr_initial_delay_width + sr_initial_delay_s - 1;$/;"	c
+sr_initial_delay_s	top_consts_types_package.vhd	/^  CONSTANT sr_initial_delay_s                    : INTEGER                                          := sr_initial_address_e + 1;$/;"	c
+sr_initial_delay_sd	top_consts_types_package.vhd	/^  CONSTANT sr_initial_delay_sd                   : INTEGER                                          := sr_Loop2_iteration_sd + 1;$/;"	c
+sr_initial_delay_width	top_consts_types_package.vhd	/^  CONSTANT sr_initial_delay_width                : INTEGER                                          := 4;$/;"	c
+sr_loop1_delay_e	top_consts_types_package.vhd	/^  CONSTANT sr_loop1_delay_e                      : INTEGER                                          := sr_loop1_delay_width + sr_loop1_delay_s - 1;$/;"	c
+sr_loop1_delay_s	top_consts_types_package.vhd	/^  CONSTANT sr_loop1_delay_s                      : INTEGER                                          := sr_loop1_increment_e + 1;$/;"	c
+sr_loop1_delay_width	top_consts_types_package.vhd	/^  CONSTANT sr_loop1_delay_width                  : INTEGER                                          := sr_delays;$/;"	c
+sr_loop1_increment_e	top_consts_types_package.vhd	/^  CONSTANT sr_loop1_increment_e                  : INTEGER                                          := sr_loop1_increment_width + sr_loop1_increment_s - 1;$/;"	c
+sr_loop1_increment_s	top_consts_types_package.vhd	/^  CONSTANT sr_loop1_increment_s                  : INTEGER                                          := sr_loop1_iteration_e + 1;$/;"	c
+sr_loop1_increment_width	top_consts_types_package.vhd	/^  CONSTANT sr_loop1_increment_width              : INTEGER                                          := RAM_ADDRESS_WIDTH + 1;$/;"	c
+sr_loop1_iteration_e	top_consts_types_package.vhd	/^  CONSTANT sr_loop1_iteration_e                  : INTEGER                                          := sr_loop1_iteration_width + sr_loop1_iteration_s - 1;$/;"	c
+sr_loop1_iteration_s	top_consts_types_package.vhd	/^  CONSTANT sr_loop1_iteration_s                  : INTEGER                                          := sr_initial_delay_e + 1;$/;"	c
+sr_loop1_iteration_width	top_consts_types_package.vhd	/^  CONSTANT sr_loop1_iteration_width              : INTEGER                                          := RAM_ADDRESS_WIDTH;$/;"	c
+sr_loop2_delay_e	top_consts_types_package.vhd	/^  CONSTANT sr_loop2_delay_e                      : INTEGER                                          := sr_loop2_delay_width + sr_loop2_delay_s - 1;$/;"	c
+sr_loop2_delay_s	top_consts_types_package.vhd	/^  CONSTANT sr_loop2_delay_s                      : INTEGER                                          := sr_loop2_increment_e + 1;$/;"	c
+sr_loop2_delay_width	top_consts_types_package.vhd	/^  CONSTANT sr_loop2_delay_width                  : INTEGER                                          := sr_delays;$/;"	c
+sr_loop2_increment_e	top_consts_types_package.vhd	/^  CONSTANT sr_loop2_increment_e                  : INTEGER                                          := sr_loop2_increment_width + sr_loop2_increment_s - 1;$/;"	c
+sr_loop2_increment_s	top_consts_types_package.vhd	/^  CONSTANT sr_loop2_increment_s                  : INTEGER                                          := sr_loop2_iteration_e + 1;$/;"	c
+sr_loop2_increment_width	top_consts_types_package.vhd	/^  CONSTANT sr_loop2_increment_width              : INTEGER                                          := RAM_ADDRESS_WIDTH + 1;$/;"	c
+sr_loop2_iteration_e	top_consts_types_package.vhd	/^  CONSTANT sr_loop2_iteration_e                  : INTEGER                                          := sr_loop2_iteration_width + sr_loop2_iteration_s - 1;$/;"	c
+sr_loop2_iteration_s	top_consts_types_package.vhd	/^  CONSTANT sr_loop2_iteration_s                  : INTEGER                                          := sr_loop1_delay_e + 1;$/;"	c
+sr_loop2_iteration_width	top_consts_types_package.vhd	/^  CONSTANT sr_loop2_iteration_width              : INTEGER                                          := RAM_ADDRESS_WIDTH;$/;"	c
+sr_mode_e	top_consts_types_package.vhd	/^  CONSTANT sr_mode_e                             : INTEGER                                          := sr_mode_width + sr_mode_s - 1;$/;"	c
+sr_mode_s	top_consts_types_package.vhd	/^  CONSTANT sr_mode_s                             : INTEGER                                          := sr_en_e + 1;$/;"	c
+sr_mode_width	top_consts_types_package.vhd	/^  CONSTANT sr_mode_width                         : INTEGER                                          := 1;$/;"	c
+sr_rw	top_consts_types_package.vhd	/^  CONSTANT sr_rw                                 : INTEGER                                          := sr_loop2_delay_e + 1; -- static and dynamic bits are  used by sequencer and read write information is appended at the end. $/;"	c
+sram_agu_width	top_consts_types_package.vhd	/^  CONSTANT sram_agu_width                        : INTEGER                                          := sr_rw;$/;"	c
+sram_instruction_size	tb_instructions.vhd	/^    CONSTANT sram_instruction_size            : INTEGER            := sram_tb_instr_width + instrcode;$/;"	c
+sram_raccu_flags	top_consts_types_package.vhd	/^  CONSTANT sram_raccu_flags                      : INTEGER                                          := sr_Loop2_increment_sd - sr_loop2_delay_e;$/;"	c
+sram_tb_instr_width	top_consts_types_package.vhd	/^  CONSTANT sram_tb_instr_width                   : INTEGER                                          := sr_Loop2_increment_sd - sr_en_width;$/;"	c
+src_addr_row	top_consts_types_package.vhd	/^    src_addr_row      : STD_LOGIC_VECTOR(SWB_SRC_ADDR_ROW_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+src_block	isa.vhd	/^        src_block : STD_LOGIC;$/;"	r
+src_port	isa.vhd	/^        src_port : STD_LOGIC;$/;"	r
+src_row	isa.vhd	/^        src_row : STD_LOGIC;$/;"	r
+start	isa.vhd	/^        start : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+start	tb_instructions.vhd	/^    CONSTANT start                            : INTEGER            := 1;$/;"	c
+start	top_consts_types_package.vhd	/^    start         : signed(FOR_START - 1 DOWNTO 0);                      --! Start value$/;"	r
+start	top_consts_types_package.vhd	/^    start      : signed(FOR_START - 1 DOWNTO 0);                              -- 6$/;"	r
+start_addrs	top_consts_types_package.vhd	/^    start_addrs      : STD_LOGIC_VECTOR(STARTING_ADDRS_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+start_addrs_sd	top_consts_types_package.vhd	/^    start_addrs_sd   : STD_LOGIC;$/;"	r
+start_pc	top_consts_types_package.vhd	/^    start_pc      : unsigned(FOR_END_PC - 1 DOWNTO 0);                   --! Start PC label$/;"	r
+start_pc	top_consts_types_package.vhd	/^    start_pc      : unsigned(PC_SIZE - 1 DOWNTO 0);                      --! Start PC label$/;"	r
+start_sd	isa.vhd	/^        start_sd : STD_LOGIC;$/;"	r
+start_sd	top_consts_types_package.vhd	/^    start_sd      : STD_LOGIC;                                           --! Dynamic or static start value$/;"	r
+start_sd	top_consts_types_package.vhd	/^    start_sd   : STD_LOGIC;                                                   -- 1$/;"	r
+start_stage	tb_instructions.vhd	/^    CONSTANT start_stage                      : INTEGER            := 1;$/;"	c
+startaddress9	tb_instructions.vhd	/^    CONSTANT startaddress9          : INTEGER := 6;$/;"	c
+startstage	tb_instructions.vhd	/^    CONSTANT startstage                       : INTEGER            := 3;$/;"	c
+state_type	AGU.vhd	/^  TYPE state_type IS (IDLE_ST, INITIAL_DELAY_ST, LINEAR_ST, RPT_DELAY_ST , RPT_ST);$/;"	t
+state_type	AGU_RFblock.vhd	/^    TYPE state_type IS (IDLE_ST, INITIAL_DELAY_ST, LINEAR_ST, RPT_DELAY_ST, RPT_ST);$/;"	t
+static_1	tb_instructions.vhd	/^    CONSTANT static_1                         : INTEGER            := 1;$/;"	c
+step	isa.vhd	/^        step : STD_LOGIC_VECTOR(6 - 1 DOWNTO 0);$/;"	r
+step	top_consts_types_package.vhd	/^    step          : signed(FOR_EX_STEP - 1 DOWNTO 0);                    --! Step value$/;"	r
+step	top_consts_types_package.vhd	/^    step          : signed(FOR_EX_STEP - 1 DOWNTO 0);$/;"	r
+step_sd	isa.vhd	/^        step_sd : STD_LOGIC;$/;"	r
+step_sd	top_consts_types_package.vhd	/^    step_sd       : STD_LOGIC;                                           --! Dynamic or static step value$/;"	r
+step_sd	top_consts_types_package.vhd	/^    step_sd       : STD_LOGIC;$/;"	r
+step_val	top_consts_types_package.vhd	/^    step_val             : STD_LOGIC_VECTOR(STEP_VALUE_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+step_val_sd	top_consts_types_package.vhd	/^    step_val_sd          : STD_LOGIC;$/;"	r
+step_val_sign	top_consts_types_package.vhd	/^    step_val_sign        : STD_LOGIC_VECTOR(STEP_VALUE_SIGN_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+subseq_instrs	top_consts_types_package.vhd	/^    subseq_instrs    : STD_LOGIC_VECTOR(NR_OF_INSTRS_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+sum_00_ty	DPU/DPU_pkg.vhd	/^  TYPE sum_00_ty IS ARRAY (NATURAL RANGE <>) OF signed (SLICE_BITS DOWNTO 0);$/;"	t
+sum_00_ty	DPU/MAC_test.vhd	/^  TYPE sum_00_ty IS ARRAY (NATURAL RANGE <>) OF signed (SLICE_BITS DOWNTO 0);$/;"	t
+sum_00_ty	testbench/MAC_test.vhd	/^  TYPE sum_00_ty IS ARRAY (NATURAL RANGE <>) OF signed (SLICE_BITS DOWNTO 0);$/;"	t
+sum_0_ty	DPU/DPU_pkg.vhd	/^  TYPE sum_0_ty IS ARRAY (NATURAL RANGE <>) OF signed (SLICE_BITS * 2 DOWNTO 0);$/;"	t
+sum_0_ty	DPU/MAC_test.vhd	/^  TYPE sum_0_ty IS ARRAY (NATURAL RANGE <>) OF signed (SLICE_BITS * 2 DOWNTO 0);$/;"	t
+sum_0_ty	testbench/MAC_test.vhd	/^  TYPE sum_0_ty IS ARRAY (NATURAL RANGE <>) OF signed (SLICE_BITS * 2 DOWNTO 0);$/;"	t
+swb_dav	top_consts_types_package.vhd	/^    swb_dav           : STD_LOGIC_VECTOR(SWB_DAV_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+swb_unused	top_consts_types_package.vhd	/^    swb_unused        : STD_LOGIC_VECTOR(SWB_UNUSED_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+switchbox	switchbox.vhd	/^ENTITY switchbox IS$/;"	e
+tanh_fp11	testbench/Non_linear/tanh_pkg.vhd	/^    FUNCTION tanh_fp11($/;"	f
+tanh_pkg	testbench/Non_linear/tanh_pkg.vhd	/^PACKAGE BODY tanh_pkg IS$/;"	P
+tanh_pkg	testbench/Non_linear/tanh_pkg.vhd	/^PACKAGE tanh_pkg IS$/;"	P
+tb_instructions	tb_instructions.vhd	/^PACKAGE BODY tb_instructions IS$/;"	P
+tb_instructions	tb_instructions.vhd	/^PACKAGE tb_instructions IS$/;"	P
+tb_pkg_dpu	testbench/tb_pkg_dpu.vhd	/^PACKAGE BODY tb_pkg_dpu IS$/;"	P
+tb_pkg_dpu	testbench/tb_pkg_dpu.vhd	/^PACKAGE tb_pkg_dpu IS$/;"	P
+tb_union_flag_width	tb_instructions.vhd	/^    CONSTANT tb_union_flag_width    : INTEGER := 1;$/;"	c
+testbench	testbench/Non_linear/tb_DPU_nonlinear.vhd	/^ENTITY testbench IS$/;"	e
+testbench	testbench/tb_priorityMux.vhd	/^ENTITY testbench IS$/;"	e
+tmp_00_ty	DPU/Sat_n_round.vhd	/^  TYPE tmp_00_ty IS ARRAY (NATURAL RANGE <>) OF signed (SAT_SLICE_BIT_4 - 1 DOWNTO 0);$/;"	t
+tmp_00_ty	DPU/scaler.vhd	/^  TYPE tmp_00_ty IS ARRAY (NATURAL RANGE <>) OF signed (OUT_SLICE_BIT_4 - 1 DOWNTO 0);$/;"	t
+tmp_0_ty	DPU/Sat_n_round.vhd	/^  TYPE tmp_0_ty IS ARRAY (NATURAL RANGE <>) OF signed (SAT_SLICE_BIT_2 - 1 DOWNTO 0);$/;"	t
+tmp_0_ty	DPU/scaler.vhd	/^  TYPE tmp_0_ty IS ARRAY (NATURAL RANGE <>) OF signed (OUT_SLICE_BIT_2 - 1 DOWNTO 0);$/;"	t
+top_consts_types_package	top_consts_types_package.vhd	/^PACKAGE top_consts_types_package IS$/;"	P
+trail_zeros_cnt	RLE_engine/trail_zeros_cnt.vhd	/^entity trail_zeros_cnt is$/;"	e
+true_addrs	top_consts_types_package.vhd	/^    true_addrs  : STD_LOGIC_VECTOR(TRUE_ADDRS_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+twos_compl	DPU/twos_compl.vhd	/^ENTITY twos_compl IS$/;"	e
+type_array_dividend	DPU/divider_pipe.vhd	/^  TYPE type_array_dividend IS ARRAY(frac_part_range) OF signed(DIV_I_W - 1 DOWNTO 0);$/;"	t
+unpack_HALT_record	isa.vhd	/^    FUNCTION unpack_HALT_record(arg : std_logic_vector(27 - 1 DOWNTO 0)) RETURN HALT_instr_type IS$/;"	f
+unpack_for_basic_record	seq_functions_package.vhd	/^    FUNCTION unpack_for_basic_record(arg : std_logic_vector(INSTR_WIDTH - 1 DOWNTO 0)) RETURN For_basic_instr_ty IS$/;"	f
+unused	top_consts_types_package.vhd	/^    unused        : STD_LOGIC_VECTOR(FOR_EX_UNUSED - 1 DOWNTO 0);$/;"	r
+use_compr	top_consts_types_package.vhd	/^    use_compr             : STD_LOGIC; --std_logic_vector(USE_COMPR_VECTOR_SIZE - 1 downto 0);$/;"	r
+util_package	util_package.vhd	/^PACKAGE BODY util_package IS$/;"	P
+util_package	util_package.vhd	/^PACKAGE util_package IS$/;"	P
+v_bus_signal_ty	top_consts_types_package.vhd	/^  TYPE v_bus_signal_ty IS ARRAY (COLUMNS - 1 DOWNTO 0) OF STD_LOGIC_VECTOR(INSTR_WIDTH + 1 DOWNTO 0);$/;"	t
+v_bus_ty	top_consts_types_package.vhd	/^  TYPE v_bus_ty IS ARRAY (0 TO NR_OF_COL_INPS\/2 - 1) OF signed(BITWIDTH - 1 DOWNTO 0);$/;"	t
+v_bus_ty_2d	top_consts_types_package.vhd	/^  TYPE v_bus_ty_2d IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF v_bus_ty;$/;"	t
+v_bus_ty_array	top_consts_types_package.vhd	/^  TYPE v_bus_ty_array IS ARRAY (NATURAL RANGE <>) OF v_bus_ty;$/;"	t
+v_index	isa.vhd	/^        v_index : STD_LOGIC_VECTOR(3 - 1 DOWNTO 0);$/;"	r
+v_index	top_consts_types_package.vhd	/^    v_index           : STD_LOGIC_VECTOR(SWB_V_INDEX_VECTOR_SIZE - 1 DOWNTO 0);$/;"	r
+v_lane_ty	top_consts_types_package.vhd	/^  TYPE v_lane_ty IS ARRAY (NATURAL RANGE <>) OF v_bus_ty;$/;"	t
+vertical_dir	isa.vhd	/^        vertical_dir : STD_LOGIC;$/;"	r
+vertical_dir	top_consts_types_package.vhd	/^    vertical_dir    : STD_LOGIC;$/;"	r
+vertical_hops	isa.vhd	/^        vertical_hops : STD_LOGIC_VECTOR(3 - 1 DOWNTO 0);$/;"	r
+vertical_hops	top_consts_types_package.vhd	/^    vertical_hops   : STD_LOGIC_VECTOR(3 - 1 DOWNTO 0);$/;"	r
+vindex	tb_instructions.vhd	/^    CONSTANT vindex                 : INTEGER := 4;$/;"	c
+width_2H	testbench/tb_nacu_recon.vhd	/^  CONSTANT width_2H      : NATURAL                            := divUp(bit_width, 4);$/;"	c
+width_2H	testbench/tb_pkg_dpu.vhd	/^  CONSTANT width_2H            : NATURAL                            := divUp(bit_width, 4);$/;"	c

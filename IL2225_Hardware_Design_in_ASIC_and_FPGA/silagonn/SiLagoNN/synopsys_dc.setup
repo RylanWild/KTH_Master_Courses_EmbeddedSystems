@@ -1,0 +1,28 @@
+set designer "Tom Cruise"
+set company "KTH"
+
+
+set SynopsysHome /afs/ict.kth.se/pkg/synopsys/designcompiler/J-2014.09
+set search_path "/afs/ict.kth.se/pkg/synopsys/designcompiler/J-2014.09/libraries/syn\
+                 /afs/it.kth.se/pkg/synopsys/extra_libraries/standard_cell/TSMC/tcbn90g_110a/Front_End/timing_power/tcbn90g_110a/"
+
+set cache_read "/tmp";
+set cache_write "/tmp";
+
+# SYNTH VHDL FILE DEFAULTS
+set view_read_file_suffix 		"db sdb edif sedif vhd vhdl st script"
+set view_analyze_file_suffix 		"v vhd vhdl"
+set template_parameter_style 		"%d"; # Limits the lenght of comp. names
+
+set link_path 				${search_path}
+set target_library 			"tcbn90gtc.db"
+set symbol_library 			"tcbn90g.sdb"
+
+set synthetic_library 			"standard.sldb\
+					 dw_foundation.sldb";
+
+set link_library 			"* ${target_library}"
+
+define_design_lib 			WORK -path "./WORK"
+
+

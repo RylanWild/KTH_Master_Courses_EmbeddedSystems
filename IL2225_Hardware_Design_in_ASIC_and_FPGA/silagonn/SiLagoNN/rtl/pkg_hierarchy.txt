@@ -1,0 +1,11 @@
+./hw_setting.vhd
+mtrf/misc.vhd
+mtrf/top_consts_types_package.vhd
+mtrf/util_package.vhd
+functions.vhd
+mtrf/tb_instructions.vhd
+dimarch/noc_types_n_constants.vhd
+dimarch/crossbar_types_n_constants.vhd
+mtrf/DPU/DPU_pkg.vhd
+mtrf/isa.vhd
+mtrf/seq_functions_package.vhd

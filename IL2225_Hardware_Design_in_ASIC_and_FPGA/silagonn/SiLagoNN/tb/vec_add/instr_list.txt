@@ -1,0 +1,18 @@
+0_0
+REFI	(port_no=w0, extra=1, init_addr_sd=s, init_addr=32, l1_iter=15, init_delay=18, l1_iter_sd=s, init_delay_sd=s, unused_0=2, l1_step_sd=s, l1_step=1, l1_step_sign=+, l1_delay_sd=s, l1_delay=0, l2_iter_sd=s, l2_iter=0, l2_step=0)
+REFI	(port_no=r0, extra=1, init_addr_sd=s, init_addr=0, l1_iter=15, init_delay=16, l1_iter_sd=s, init_delay_sd=s, unused_0=2, l1_step_sd=s, l1_step=1, l1_step_sign=+, l1_delay_sd=s, l1_delay=0, l2_iter_sd=s, l2_iter=0, l2_step=0)
+ROUTE	(horizontal_dir=e, horizontal_hops=0, vertical_dir=n, vertical_hops=0, direction=r, select_drra_row=0)
+SRAM	(rw=r, init_addr=1, init_delay=0, l1_iter=0, l1_step=1, l1_delay=0, l2_iter=0, l2_step=0, l2_delay=0, init_addr_sd=s, l1_iter_sd=s, l2_iter_sd=s, init_delay_sd=s, l1_delay_sd=s, l2_delay_sd=s, l1_step_sd=s, l2_step_sd=s, hops=0)
+REFI	(port_no=w0, extra=2, init_addr_sd=s, init_addr=1, l1_iter=0, init_delay=4, l1_iter_sd=s, init_delay_sd=s, unused_0=2, l1_step_sd=s, l1_step=1, l1_step_sign=+, l1_delay_sd=s, l1_delay=0, l2_iter_sd=s, l2_iter=0, l2_step=0, unused_1=3, l2_delay_sd=s, l2_delay=0, unused_2=0, l1_delay_ext=0, l2_iter_ext=0, l2_step_ext=0, unused_3=0, dimarch=y, compress=n)
+REFI	(port_no=r1, extra=1, init_addr_sd=s, init_addr=16, l1_iter=15, init_delay=12, l1_iter_sd=s, init_delay_sd=s, unused_0=2, l1_step_sd=s, l1_step=1, l1_step_sign=+, l1_delay_sd=s, l1_delay=0, l2_iter_sd=s, l2_iter=0, l2_step=0)
+SWB	(unused0=1, src_row=0, src_block=dpu, src_port=0, hb_index=2, send_to_other_row=y, v_index=0)
+SWB	(unused0=1, src_row=0, src_block=rf, src_port=2, hb_index=2, send_to_other_row=y, v_index=2)
+SWB	(unused0=1, src_row=0, src_block=rf, src_port=3, hb_index=2, send_to_other_row=y, v_index=3)
+REFI	(port_no=w0, extra=2, init_addr_sd=s, init_addr=0, l1_iter=0, init_delay=7, l1_iter_sd=s, init_delay_sd=s, unused_0=2, l1_step_sd=s, l1_step=1, l1_step_sign=+, l1_delay_sd=s, l1_delay=0, l2_iter_sd=s, l2_iter=0, l2_step=0, unused_1=3, l2_delay_sd=s, l2_delay=0, unused_2=0, l1_delay_ext=0, l2_iter_ext=0, l2_step_ext=0, unused_3=0, dimarch=y, compress=n)
+ROUTE	(horizontal_dir=e, horizontal_hops=0, vertical_dir=n, vertical_hops=0, direction=r, select_drra_row=0)
+SRAM	(rw=r, init_addr=0, init_delay=0, l1_iter=0, l1_step=1, l1_delay=0, l2_iter=0, l2_step=0, l2_delay=0, init_addr_sd=s, l1_iter_sd=s, l2_iter_sd=s, init_delay_sd=s, l1_delay_sd=s, l2_delay_sd=s, l1_step_sd=s, l2_step_sd=s, hops=0)
+WAIT	(cycle_sd=s, cycle=3)
+DPU	(mode=add, control=sat_int, unused_0=2, acc_clear=127, io_change=no_change)
+WAIT	(cycle_sd=s, cycle=16)
+HALT	()
+

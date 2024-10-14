@@ -1,0 +1,4 @@
+DW/DW01_add.vhd
+DW/DW_Foundation_comp_arith.vhd
+DW/DW_foundation_comp.vhd
+DW/DWpackages.vhd
