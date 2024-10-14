@@ -1,0 +1,1382 @@
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of MAC.sv was successful with warnings.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv failed with 2 errors.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.sigmoid_tb
+# vsim -gui work.sigmoid_tb 
+# Start time: 11:20:07 on Nov 24,2023
+# Loading sv_std.std
+# Loading work.sigmoid_tb
+# Loading work.sigmoid_activation
+add wave -position end  sim:/sigmoid_tb/input_data
+add wave -position end  sim:/sigmoid_tb/output_data
+run
+# Compile of MAC.sv failed with 1 errors.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv failed with 4 errors.
+# 11 compiles, 2 failed with 5 errors.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv failed with 4 errors.
+# 11 compiles, 1 failed with 4 errors.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.MAC_tb
+# End time: 18:25:03 on Nov 26,2023, Elapsed time: 55:04:56
+# Errors: 0, Warnings: 15
+# vsim -gui work.MAC_tb 
+# Start time: 18:25:03 on Nov 26,2023
+# Loading sv_std.std
+# Loading work.MAC_tb
+# Loading work.MAC
+# ** Error: (vsim-8378) Port size (32) does not match connection size (8) for implicit .name connection port 'weight'. The port definition is at: W:/Lab 2 modelsim/MAC.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /MAC_tb/DUT File: W:/Lab 2 modelsim/MAC_tb.sv Line: 13
+# ** Error: (vsim-8378) Port size (32) does not match connection size (8) for implicit .name connection port 'data_in'. The port definition is at: W:/Lab 2 modelsim/MAC.sv(15).
+#    Time: 0 ps  Iteration: 0  Instance: /MAC_tb/DUT File: W:/Lab 2 modelsim/MAC_tb.sv Line: 13
+# ** Error: (vsim-8378) Port size (32) does not match connection size (8) for implicit .name connection port 'prev_result'. The port definition is at: W:/Lab 2 modelsim/MAC.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /MAC_tb/DUT File: W:/Lab 2 modelsim/MAC_tb.sv Line: 13
+# ** Error: (vsim-8378) Port size (32) does not match connection size (8) for implicit .name connection port 'MAC_output'. The port definition is at: W:/Lab 2 modelsim/MAC.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /MAC_tb/DUT File: W:/Lab 2 modelsim/MAC_tb.sv Line: 13
+# Error loading design
+# End time: 18:25:03 on Nov 26,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 1
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.MAC_tb
+# vsim -gui work.MAC_tb 
+# Start time: 18:26:05 on Nov 26,2023
+# Loading sv_std.std
+# Loading work.MAC_tb
+# Loading work.MAC
+add wave -position end  sim:/MAC_tb/MAC_output
+add wave -position end  sim:/MAC_tb/data_in
+add wave -position end  sim:/MAC_tb/weight
+add wave -position end  sim:/MAC_tb/prev_result
+run
+add wave -position end  sim:/MAC_tb/DUT/intermediate_mult
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of MAC.sv failed with 1 errors.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of MAC.sv failed with 1 errors.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of MAC.sv failed with 1 errors.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of MAC.sv failed with 1 errors.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of MAC.sv failed with 1 errors.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of MAC.sv failed with 1 errors.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of MAC.sv failed with 1 errors.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# WARNING: No extended dataflow license exists
+noforce sim:/MAC_tb/MAC_output
+# WARNING: No extended dataflow license exists
+add list \
+sim:/MAC_tb/MAC_output 
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv failed with 1 errors.
+# 11 compiles, 1 failed with 1 error.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv failed with 1 errors.
+# 11 compiles, 1 failed with 1 error.
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$print' is not defined.
+#    Time: 0 ps  Iteration: 0  Instance: /MAC_tb File: W:/Lab 2 modelsim/MAC_tb.sv Line: 22
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$print'
+#    Time: 10 ns  Iteration: 0  Process: /MAC_tb/#INITIAL#16 File: W:/Lab 2 modelsim/MAC_tb.sv Line: 22
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 01000000
+# Compile of MAC.sv failed with 1 errors.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 1 failed with 1 error.
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 01000000
+# A time value could not be extracted from the current line
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 01000000
+add wave -position end  sim:/MAC_tb/DUT/temp
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+restart
+# Loading work.MAC
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 01000000
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 01000000
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 00011000
+# Compile of MAC.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 00011000
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 01011000
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 01011000
+# Compile of MAC_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 00011000
+# Compile of MAC.sv was successful.
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 00011000
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC_tb.sv was successful.
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 1101011000000000
+# Compile of MAC.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 1101011000000000
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 1101011000000000
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 1101011000000000
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 1001111000000000
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 1101011000000000
+# Compile of MAC.sv failed with 1 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 1101011000000000
+# Compile of MAC.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0100011000000000
+# Compile of MAC.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+# Loading work.MAC
+add wave -position end  sim:/MAC_tb/DUT/temp2
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 00100011
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 00100011
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC.sv failed with 2 errors.
+# Compile of MAC.sv failed with 2 errors.
+# Compile of MAC.sv failed with 2 errors.
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 0000000100011000
+# Compile of MAC_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 00100011
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Ouptut 00100011
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.serial_implementation_tb
+# End time: 10:43:45 on Nov 27,2023, Elapsed time: 16:17:40
+# Errors: 0, Warnings: 2
+# vsim -gui work.serial_implementation_tb 
+# Start time: 10:43:45 on Nov 27,2023
+# Loading sv_std.std
+# Loading work.serial_implementation_tb
+# Loading work.serial_implementation
+# Loading work.MAC
+# Loading work.ReLU_activation
+add wave -position end  sim:/serial_implementation_tb/weights
+add wave -position end  sim:/serial_implementation_tb/x
+add wave -position end  sim:/serial_implementation_tb/output_result
+run
+# Testbench starting
+# Testbench complete
+add wave -position end  sim:/serial_implementation_tb/DUT/MAC_module/intermediate_mult
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+add wave -position 0  sim:/serial_implementation_tb/clk
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+add wave -position end  sim:/serial_implementation_tb/DUT/temp_MAC_data
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+add wave -position end  sim:/serial_implementation_tb/DUT/MAC_module/MAC_output2
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of MAC.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MAC
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+# Loading work.serial_implementation
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of sigmoid_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of sigmoid_activation_v2.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.sigmoid_tb
+# End time: 09:13:34 on Nov 29,2023, Elapsed time: 46:29:49
+# Errors: 0, Warnings: 3
+# vsim -gui work.sigmoid_tb 
+# Start time: 09:13:34 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.sigmoid_tb
+# Loading work.sigmoid_activation
+run
+# ** Error: Excpected 8'b00010000, got 00001111
+#    Time: 40 ns  Scope: sigmoid_tb File: W:/Lab 2 modelsim/sigmoid_tb.sv Line: 33
+# ** Error: Excpected 8'b00011111, got 00010000
+#    Time: 50 ns  Scope: sigmoid_tb File: W:/Lab 2 modelsim/sigmoid_tb.sv Line: 39
+add wave -position end  sim:/sigmoid_tb/input_data
+add wave -position end  sim:/sigmoid_tb/output_data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Error: Excpected 8'b00010000, got 00001111
+#    Time: 40 ns  Scope: sigmoid_tb File: W:/Lab 2 modelsim/sigmoid_tb.sv Line: 33
+# ** Error: Excpected 8'b00011111, got 00010000
+#    Time: 50 ns  Scope: sigmoid_tb File: W:/Lab 2 modelsim/sigmoid_tb.sv Line: 39
+# Compile of sigmoid_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sigmoid_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Error: Excpected 8'b00011111, got 00010000
+#    Time: 60 ns  Scope: sigmoid_tb File: W:/Lab 2 modelsim/sigmoid_tb.sv Line: 40
+# Compile of sigmoid_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sigmoid_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of sigmoid_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sigmoid_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.serial_implementation_tb
+# End time: 10:02:06 on Nov 29,2023, Elapsed time: 0:48:32
+# Errors: 0, Warnings: 3
+# vsim -gui work.serial_implementation_tb 
+# Start time: 10:02:06 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.serial_implementation_tb
+# Loading work.serial_implementation
+# Loading work.MAC
+# Loading work.ReLU_activation
+add wave -position end  sim:/serial_implementation_tb/bias
+add wave -position end  sim:/serial_implementation_tb/weights
+add wave -position end  sim:/serial_implementation_tb/x
+add wave -position end  sim:/serial_implementation_tb/output_result
+run
+# Testbench starting
+# Testbench complete
+add wave -position 0  sim:/serial_implementation_tb/clk
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# ** Error: Excpected 16'b000110_0000000001, got 0000000000000000
+#    Time: 30 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 45
+# ** Error: Excpected 16'b000101_1100000011, got 0001100000000001
+#    Time: 70 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 64
+# Testbench complete
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation_tb.sv failed with 2 errors.
+# Compile of serial_implementation_tb.sv failed with 2 errors.
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# ** Error: Excpected 16'b000101_1100000011, got 0001100000000001
+#    Time: 61 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 65
+# Testbench complete
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation_tb.sv failed with 2 errors.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+run
+# Testbench complete
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# ** Error: Excpected 16'b000110_0000000001, got 0000100000000000
+#    Time: 61 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 62
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Compile of serial_implementation.sv was successful with warnings.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration
+# new iteration
+# Compile of serial_implementation.sv was successful with warnings.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# ** Error: Excpected 16'b000110_0000000001, got 0000100000000000
+#    Time: 66 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 62
+# new iteration, time                   70
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+add wave -position end  sim:/serial_implementation_tb/DUT/temp_MAC_data
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+# Compile of serial_implementation.sv was successful with warnings.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+# ** Error: Excpected 16'b000110_0000000001, got 0001000000000001
+#    Time: 71 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 62
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# ** Error: Excpected 16'b000110_0000000001, got 0000000000000000
+#    Time: 70 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 62
+# new iteration, time                   70
+# Compile of serial_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+# ** Error: Excpected 16'b000110_0000000001, got 0001000000000001
+#    Time: 71 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 62
+run
+# new iteration, time                  110
+# ** Error: Excpected 16'b000101_1100000011, got 0000111100000011
+#    Time: 111 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 66
+# Testbench complete
+# new iteration, time                  150
+# new iteration, time                  190
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+# ** Error: Excpected 16'b000110_0000000001, got 0001000000000001
+#    Time: 71 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 62
+run
+# new iteration, time                  110
+# ** Error: Excpected 16'b000101_1100000011, got 0000111100000011
+#    Time: 111 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 66
+# Testbench complete
+# new iteration, time                  150
+# new iteration, time                  190
+# Compile of serial_implementation.sv was successful with warnings.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+# ** Error: Excpected 16'b000110_0000000001, got 0001000000000001
+#    Time: 71 ns  Scope: serial_implementation_tb File: W:/Lab 2 modelsim/serial_implementation_tb.sv Line: 62
+# Compile of serial_implementation.sv was successful with warnings.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.serial_implementation
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+run
+# new iteration, time                  110
+# Testbench complete
+# new iteration, time                  150
+# new iteration, time                  190
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# new iteration, time                   30
+# new iteration, time                   70
+# new iteration, time                  110
+# Testbench complete
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.parallel_implementation_tb
+# End time: 10:37:13 on Nov 29,2023, Elapsed time: 0:35:07
+# Errors: 0, Warnings: 2
+# vsim -gui work.parallel_implementation_tb 
+# Start time: 10:37:13 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.parallel_implementation_tb
+# Loading work.parallel_implementation
+# Loading work.ReLU_activation
+# Loading work.MAC
+add wave -position end  sim:/parallel_implementation_tb/clk
+add wave -position end  sim:/parallel_implementation_tb/bias
+add wave -position end  sim:/parallel_implementation_tb/weights
+add wave -position end  sim:/parallel_implementation_tb/x
+add wave -position end  sim:/parallel_implementation_tb/output_result
+run
+# Testbench starting
+# Testbench complete
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.parallel_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of parallel_implementation.sv failed with 2 errors.
+# Compile of parallel_implementation.sv failed with 2 errors.
+# Compile of parallel_implementation.sv was successful with warnings.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.parallel_implementation
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of parallel_implementation.sv was successful with warnings.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.parallel_implementation
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.parallel_implementation_tb
+# Loading work.parallel_implementation
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of parallel_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.parallel_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete
+# Compile of MAC.sv was successful.
+# Compile of serial_implementation.sv was successful with warnings.
+# Compile of serial_implementation_tb.sv was successful.
+# Compile of parallel_implementation.sv was successful with warnings.
+# Compile of semi_parallel_implementation.sv was successful with warnings.
+# Compile of parallel_implementation_tb.sv was successful.
+# Compile of semi_parallel_implementation_tb.sv was successful.
+# Compile of ReLu_activation.sv was successful.
+# Compile of sigmoid_tb.sv was successful.
+# Compile of MAC_tb.sv was successful.
+# Compile of sigmoid_activation_v2.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.parallel_implementation_tb
+# Loading work.parallel_implementation
+# Loading work.ReLU_activation
+# Loading work.MAC
+vsim -gui work.semi_parallel_implementation_tb
+# End time: 10:44:12 on Nov 29,2023, Elapsed time: 0:06:59
+# Errors: 0, Warnings: 1
+# vsim -gui work.semi_parallel_implementation_tb 
+# Start time: 10:44:12 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.semi_parallel_implementation_tb
+# Loading work.semi_parallel_implementation
+# Loading work.MAC
+# Loading work.ReLU_activation
+add wave -position end  sim:/semi_parallel_implementation_tb/clk
+add wave -position end  sim:/semi_parallel_implementation_tb/bias
+add wave -position end  sim:/semi_parallel_implementation_tb/weights
+add wave -position end  sim:/semi_parallel_implementation_tb/x
+add wave -position end  sim:/semi_parallel_implementation_tb/output_result
+run
+# Testbench starting
+# Testbench complete
+# Compile of semi_parallel_implementation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.semi_parallel_implementation_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Testbench starting
+# Testbench complete

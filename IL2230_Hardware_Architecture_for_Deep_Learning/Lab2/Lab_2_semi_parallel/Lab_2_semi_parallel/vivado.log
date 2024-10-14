@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Nov 30 10:39:13 2023
+# Process ID: 46864
+# Current directory: D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab_2_semi_parallel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49576 D:\G\Y1S1P2\IL2230\lab2\Lab_2_semi_parallel\Lab_2_semi_parallel\Lab_2_semi_parallel.xpr
+# Log file: D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab_2_semi_parallel/vivado.log
+# Journal file: D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab_2_semi_parallel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab_2_semi_parallel/Lab_2_semi_parallel.xpr
+INFO: [Project 1-313] Project file moved from 'W:/Lab_2_semi_parallel' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab 2 modelsim/MAC.sv', nor could it be found using path 'W:/Lab 2 modelsim/MAC.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab 2 modelsim/ReLu_activation.sv', nor could it be found using path 'W:/Lab 2 modelsim/ReLu_activation.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab 2 modelsim/semi_parallel_implementation.sv', nor could it be found using path 'W:/Lab 2 modelsim/semi_parallel_implementation.sv'.
+ERROR: [Project 1-208] No val for DA Elab Attr
+ERROR: [Runs 36-378] The checkpoint 'D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab_2_semi_parallel/Lab_2_semi_parallel.srcs/utils_1/imports/synth_1/semi_parallel_implementation.dcp' was created with 'Vivado v2023.1.1 (64-bit)', and cannot be opened in this version.
+open_project D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab_2_semi_parallel/Lab_2_semi_parallel.xpr
+INFO: [Project 1-313] Project file moved from 'W:/Lab_2_semi_parallel' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab 2 modelsim/MAC.sv', nor could it be found using path 'W:/Lab 2 modelsim/MAC.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab 2 modelsim/ReLu_activation.sv', nor could it be found using path 'W:/Lab 2 modelsim/ReLu_activation.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab 2 modelsim/semi_parallel_implementation.sv', nor could it be found using path 'W:/Lab 2 modelsim/semi_parallel_implementation.sv'.
+ERROR: [Project 1-208] No val for DA Elab Attr
+ERROR: [Runs 36-378] The checkpoint 'D:/G/Y1S1P2/IL2230/lab2/Lab_2_semi_parallel/Lab_2_semi_parallel/Lab_2_semi_parallel.srcs/utils_1/imports/synth_1/semi_parallel_implementation.dcp' was created with 'Vivado v2023.1.1 (64-bit)', and cannot be opened in this version.
+create_project semi_parallel_kevin D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+add_files -norecurse {{D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/sigmoid_tb.sv} {D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/semi_parallel_implementation.sv} {D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/MAC_tb.sv} {D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/ReLu_activation.sv} {D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/step_activation.sv} {D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/sigmoid_activation_v2.sv} {D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/MAC.sv} {D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/semi_parallel_implementation_tb.sv}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/MAC_tb.sv}}] -no_script -reset -force -quiet
+remove_files  {{D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/MAC_tb.sv}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/semi_parallel_implementation_tb.sv}}] -no_script -reset -force -quiet
+remove_files  {{D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/semi_parallel_implementation_tb.sv}}
+export_ip_user_files -of_objects  [get_files {{D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/sigmoid_tb.sv}}] -no_script -reset -force -quiet
+remove_files  {{D:/G/Y1S1P2/IL2230/lab2/Lab 2 modelsim/Lab 2 modelsim/sigmoid_tb.sv}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 10:53:42 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7vx485tffg1157-1
+INFO: [Netlist 29-17] Analyzing 441 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'semi_parallel_implementation' is not ideal for floorplanning, since the cellview 'semi_parallel_implementation' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1304.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1493.582 ; gain = 590.020
+create_report_config -report_name synth_1_synth_report_timing_0 -step synth_design -report_type report_timing -run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 11:02:31 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 13:34:03 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+create_report_config -report_name synth_1_synth_report_power_0 -step synth_design -report_type report_power -run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 13:36:21 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 13:38:23 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 13:39:58 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 13:43:06 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2321.418 ; gain = 239.426
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 13:45:28 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 13:49:06 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 30 13:51:56 2023] Launched synth_1...
+Run output will be captured here: D:/G/Y1S1P2/IL2230/lab2/semi_parallel_kevin/semi_parallel_kevin.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 22:16:41 2023...

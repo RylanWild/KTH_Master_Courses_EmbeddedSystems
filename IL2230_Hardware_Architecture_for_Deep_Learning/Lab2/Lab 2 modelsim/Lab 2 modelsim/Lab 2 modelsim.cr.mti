@@ -1,0 +1,68 @@
+{W:/Lab 2 modelsim/parallel_implementation_tb.sv} {1 {vlog -work work -sv -stats=none {W:/Lab 2 modelsim/parallel_implementation_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module parallel_implementation_tb
+
+Top level modules:
+	parallel_implementation_tb
+
+} {} {}} {W:/Lab 2 modelsim/ReLu_activation.sv} {1 {vlog -work work -sv -stats=none {W:/Lab 2 modelsim/ReLu_activation.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ReLU_activation
+
+Top level modules:
+	ReLU_activation
+
+} {} {}} {W:/Lab 2 modelsim/sigmoid_tb.sv} {1 {vlog -work work -sv -stats=none {W:/Lab 2 modelsim/sigmoid_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sigmoid_tb
+
+Top level modules:
+	sigmoid_tb
+
+} {} {}} {W:/Lab 2 modelsim/MAC.sv} {1 {vlog -work work -sv -stats=none {W:/Lab 2 modelsim/MAC.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MAC
+
+Top level modules:
+	MAC
+
+} {} {}} {W:/Lab 2 modelsim/parallel_implementation.sv} {2 {vlog -work work -sv -stats=none {W:/Lab 2 modelsim/parallel_implementation.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module parallel_implementation
+** Warning: W:/Lab 2 modelsim/parallel_implementation.sv(15): (vlog-13314) Defaulting port 'weights' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: W:/Lab 2 modelsim/parallel_implementation.sv(16): (vlog-13314) Defaulting port 'x' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	parallel_implementation
+
+} {} {}} {W:/Lab 2 modelsim/serial_implementation_tb.sv} {1 {vlog -work work -sv -stats=none {W:/Lab 2 modelsim/serial_implementation_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module serial_implementation_tb
+
+Top level modules:
+	serial_implementation_tb
+
+} {} {}} {W:/Lab 2 modelsim/sigmoid_activation_v2.sv} {1 {vlog -work work -sv -stats=none {W:/Lab 2 modelsim/sigmoid_activation_v2.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sigmoid_activation
+
+Top level modules:
+	sigmoid_activation
+
+} {} {}} {W:/Lab 2 modelsim/MAC_tb.sv} {1 {vlog -work work -sv -stats=none {W:/Lab 2 modelsim/MAC_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MAC_tb
+
+Top level modules:
+	MAC_tb
+
+} {} {}} {W:/Lab 2 modelsim/serial_implementation.sv} {2 {vlog -work work -sv -stats=none {W:/Lab 2 modelsim/serial_implementation.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module serial_implementation
+** Warning: W:/Lab 2 modelsim/serial_implementation.sv(15): (vlog-13314) Defaulting port 'weights' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: W:/Lab 2 modelsim/serial_implementation.sv(16): (vlog-13314) Defaulting port 'x' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	serial_implementation
+
+} {} {}}
