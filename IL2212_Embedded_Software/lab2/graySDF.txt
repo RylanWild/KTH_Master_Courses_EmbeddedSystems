@@ -1,0 +1,15 @@
+double rgb_to_gray(unsigned int r, unsigned int g, unsigned int b) {
+    return (double)(0.3125 * r + 0.5625 * g + 0.125 * b); // Luminosity method
+}
+
+void graysdf(int dimX, int dimY, int* rgb_data, double* gray_data){
+
+    // split into arrays of 3 [rgb]
+    // apply conversion of each array
+    // re-combine all arrays into single array
+    // return an array of doubles
+
+    for (int i = 0; i < dimX*dimY*3; i += 3){
+       gray_data[i / 3] = rgb_to_gray(rgb_data[i], rgb_data[i + 1], rgb_data[i + 2]);
+    }
+}

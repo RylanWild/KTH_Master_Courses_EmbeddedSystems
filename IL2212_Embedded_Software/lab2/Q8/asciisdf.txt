@@ -1,0 +1,17 @@
+char asciiLevels[] = {' ', '.', ':', '-', '=', '+', '/', 't', 'z', 'U', 'w', '*', '0', '#', '%', '@'};
+int nLevels = sizeof(asciiLevels) / sizeof(asciiLevels[0]) - 1;
+
+char num2char(double n) {
+    int level = (int)(nLevels * (n / 255.0));
+    return asciiLevels[level];
+}
+
+void toAsciiArt(int dimX, int dimY,double *pixels, char *ascii) {
+    for (int i = 0; i < dimX * dimY; ++i) {
+        ascii[i] = num2char(pixels[i]);
+    }
+}
+
+void asciiSDF(int dimX, int dimY, double *pix, char *ascii) {
+    toAsciiArt(dimX,dimY,pix,ascii);
+}

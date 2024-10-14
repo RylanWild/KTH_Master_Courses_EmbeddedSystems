@@ -1,0 +1,17 @@
+node BooleanLogic(set, reset: bool) returns (y: bool);
+var
+  prev_y: bool;
+let
+  -- Initialize prev_y to false at time 0
+  prev_y = false -> pre false;
+
+  -- Define the behavior of y based on set and reset inputs
+  y = if (set and (not reset))
+      then
+        true
+      else if ((not set) and reset)
+      then
+        false
+      else
+        prev_y;
+tellv6 

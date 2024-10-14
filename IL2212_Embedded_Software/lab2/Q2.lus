@@ -1,0 +1,7 @@
+node Q2(x: int) returns (y: int);
+var
+  b: bool;       -- binary value, true on even cycles
+let
+  b = false -> not pre(b);    
+  y = x + (0->(current(x when b)));
+tel

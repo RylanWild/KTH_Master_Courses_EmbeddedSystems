@@ -1,0 +1,33 @@
+node VendingMachine(coin5, coin10: bool) returns (bottle, return_coin: bool);
+var
+  sum: int;
+  aftersum: int;  -- New variable to hold the updated counter value
+let
+  -- Forbidden: coin5 and coin10 shall not be active at the same time
+  assert(not (coin5 and coin10));
+
+  -- The internal counter keeps track of the total amount inserted
+  sum =               if (coin5 and (not coin10))then
+                        (0->pre(aftersum))+5
+                      else if (coin10 and (not coin5)) then
+                        (0->pre(aftersum))+10
+                      else
+                        (0->pre(aftersum));
+
+  -- The output bottle is active if at least 10 SEK are inserted
+  bottle = sum >= 10;
+
+  -- The output return_coin is active if 15 SEK have been inserted
+  return_coin = sum >= 15;
+
+  -- Update the internal counter based on the outputs
+  aftersum = if (bottle and (not return_coin)) then
+                sum-10
+             else if (bottle and return_coin) then
+                sum-15
+             else
+                sum;
+
+tel
+
+
