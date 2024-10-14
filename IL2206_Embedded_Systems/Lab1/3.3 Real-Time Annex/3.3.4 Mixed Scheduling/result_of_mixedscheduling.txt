@@ -1,0 +1,86 @@
+Task 1- Release:  0.100, Completion:  0.195, Response: 0.095, WCRT: 0.095, Next Release:  0.400
+Task 2- Release:  0.100, Completion:  0.289, Response: 0.189, WCRT: 0.189, Next Release:  0.500
+Task 3- Release:  0.100, Completion:  0.382, Response: 0.282, WCRT: 0.282, Next Release:  0.700
+Task 1- Release:  0.400, Completion:  0.492, Response: 0.092, WCRT: 0.095, Next Release:  0.700
+Task 2- Release:  0.500, Completion:  0.595, Response: 0.095, WCRT: 0.189, Next Release:  0.900
+Background Task3- Release:  0.100, Completion:  0.664
+Task 1- Release:  0.700, Completion:  0.796, Response: 0.096, WCRT: 0.096, Next Release:  1.000
+Task 3- Release:  0.700, Completion:  0.889, Response: 0.189, WCRT: 0.282, Next Release:  1.300
+Task 2- Release:  0.900, Completion:  0.994, Response: 0.094, WCRT: 0.189, Next Release:  1.300
+Task 1- Release:  1.000, Completion:  1.095, Response: 0.095, WCRT: 0.096, Next Release:  1.300
+Background Task2- Release:  0.100, Completion:  1.132
+Background Task1- Release:  0.100, Completion:  1.230
+
+Task 1- Release:  1.300, Completion:  1.396, Response: 0.096, WCRT: 0.096, Next Release:  1.600
+Task 2- Release:  1.300, Completion:  1.490, Response: 0.190, WCRT: 0.190, Next Release:  1.700
+Task 3- Release:  1.300, Completion:  1.582, Response: 0.282, WCRT: 0.282, Next Release:  1.900
+Task 1- Release:  1.600, Completion:  1.708, Response: 0.108, WCRT: 0.108, Next Release:  1.900
+Task 2- Release:  1.700, Completion:  1.801, Response: 0.101, WCRT: 0.190, Next Release:  2.100
+Background Task3- Release:  0.200, Completion:  1.827
+Task 1- Release:  1.900, Completion:  1.994, Response: 0.094, WCRT: 0.108, Next Release:  2.200
+Task 3- Release:  1.900, Completion:  2.087, Response: 0.187, WCRT: 0.282, Next Release:  2.500
+Task 2- Release:  2.100, Completion:  2.194, Response: 0.094, WCRT: 0.190, Next Release:  2.500
+Background Task2- Release:  0.200, Completion:  2.200
+Task 1- Release:  2.200, Completion:  2.294, Response: 0.094, WCRT: 0.108, Next Release:  2.500
+Background Task1- Release:  0.200, Completion:  2.365
+
+Task 1- Release:  2.500, Completion:  2.593, Response: 0.093, WCRT: 0.108, Next Release:  2.800
+Task 2- Release:  2.500, Completion:  2.689, Response: 0.189, WCRT: 0.190, Next Release:  2.900
+Task 3- Release:  2.500, Completion:  2.784, Response: 0.284, WCRT: 0.284, Next Release:  3.100
+Background Task3- Release:  0.300, Completion:  2.795
+Task 1- Release:  2.800, Completion:  2.894, Response: 0.094, WCRT: 0.108, Next Release:  3.100
+Task 2- Release:  2.900, Completion:  3.001, Response: 0.101, WCRT: 0.190, Next Release:  3.300
+Background Task2- Release:  0.300, Completion:  3.067
+Task 1- Release:  3.100, Completion:  3.193, Response: 0.093, WCRT: 0.108, Next Release:  3.400
+Task 3- Release:  3.100, Completion:  3.289, Response: 0.189, WCRT: 0.284, Next Release:  3.700
+Task 2- Release:  3.300, Completion:  3.396, Response: 0.096, WCRT: 0.190, Next Release:  3.700
+Task 1- Release:  3.400, Completion:  3.496, Response: 0.096, WCRT: 0.108, Next Release:  3.700
+Background Task1- Release:  0.300, Completion:  3.498
+Background Task3- Release:  0.400, Completion:  3.675
+
+Task 1- Release:  3.700, Completion:  3.796, Response: 0.096, WCRT: 0.108, Next Release:  4.000
+Task 2- Release:  3.700, Completion:  3.891, Response: 0.191, WCRT: 0.191, Next Release:  4.100
+Task 3- Release:  3.700, Completion:  3.989, Response: 0.289, WCRT: 0.289, Next Release:  4.300
+Task 1- Release:  4.000, Completion:  4.096, Response: 0.096, WCRT: 0.108, Next Release:  4.300
+Task 2- Release:  4.100, Completion:  4.196, Response: 0.096, WCRT: 0.191, Next Release:  4.500
+Background Task2- Release:  0.400, Completion:  4.219
+Background Task1- Release:  0.400, Completion:  4.263
+Task 1- Release:  4.300, Completion:  4.400, Response: 0.100, WCRT: 0.108, Next Release:  4.600
+Task 3- Release:  4.300, Completion:  4.496, Response: 0.196, WCRT: 0.289, Next Release:  4.900
+Task 2- Release:  4.500, Completion:  4.596, Response: 0.096, WCRT: 0.191, Next Release:  4.900
+Task 1- Release:  4.600, Completion:  4.698, Response: 0.098, WCRT: 0.108, Next Release:  4.900
+
+Background Task3- Release:  0.500, Completion:  4.843
+Background Task2- Release:  0.500, Completion:  4.895
+Task 1- Release:  4.900, Completion:  4.997, Response: 0.097, WCRT: 0.108, Next Release:  5.200
+Task 2- Release:  4.900, Completion:  5.094, Response: 0.194, WCRT: 0.194, Next Release:  5.300
+Task 3- Release:  4.900, Completion:  5.188, Response: 0.288, WCRT: 0.289, Next Release:  5.500
+Task 1- Release:  5.200, Completion:  5.295, Response: 0.095, WCRT: 0.108, Next Release:  5.500
+Task 2- Release:  5.300, Completion:  5.397, Response: 0.097, WCRT: 0.194, Next Release:  5.700
+Background Task1- Release:  0.500, Completion:  5.404
+Task 1- Release:  5.500, Completion:  5.596, Response: 0.096, WCRT: 0.108, Next Release:  5.800
+Task 3- Release:  5.500, Completion:  5.691, Response: 0.191, WCRT: 0.289, Next Release:  6.100
+Task 2- Release:  5.700, Completion:  5.798, Response: 0.098, WCRT: 0.194, Next Release:  6.100
+Task 1- Release:  5.800, Completion:  5.894, Response: 0.094, WCRT: 0.108, Next Release:  6.100
+
+Background Task3- Release:  0.600, Completion:  6.005
+Background Task2- Release:  0.600, Completion:  6.042
+Background Task1- Release:  0.600, Completion:  6.066
+Task 1- Release:  6.100, Completion:  6.199, Response: 0.099, WCRT: 0.108, Next Release:  6.400
+Task 2- Release:  6.100, Completion:  6.293, Response: 0.193, WCRT: 0.194, Next Release:  6.500
+Task 3- Release:  6.100, Completion:  6.389, Response: 0.289, WCRT: 0.289, Next Release:  6.700
+Task 1- Release:  6.400, Completion:  6.497, Response: 0.097, WCRT: 0.108, Next Release:  6.700
+Task 2- Release:  6.500, Completion:  6.596, Response: 0.096, WCRT: 0.194, Next Release:  6.900
+Task 1- Release:  6.700, Completion:  6.801, Response: 0.101, WCRT: 0.108, Next Release:  7.000
+Task 3- Release:  6.700, Completion:  6.896, Response: 0.196, WCRT: 0.289, Next Release:  7.300
+Task 1- Release:  7.000, Completion:  7.092, Response: 0.092, WCRT: 0.108, Next Release:  7.300
+Task 2- Release:  6.900, Completion:  7.092, Response: 0.192, WCRT: 0.194, Next Release:  7.300
+Background Task3- Release:  0.700, Completion:  7.172
+Background Task2- Release:  0.700, Completion:  7.199
+Background Task1- Release:  0.700, Completion:  7.216
+
+Task 1- Release:  7.300, Completion:  7.393, Response: 0.093, WCRT: 0.108, Next Release:  7.600
+Task 2- Release:  7.300, Completion:  7.489, Response: 0.189, WCRT: 0.194, Next Release:  7.700
+Task 3- Release:  7.300, Completion:  7.585, Response: 0.285, WCRT: 0.289, Next Release:  7.900
+Task 1- Release:  7.600, Completion:  7.705, Response: 0.105, WCRT: 0.108, Next Release:  7.900
+

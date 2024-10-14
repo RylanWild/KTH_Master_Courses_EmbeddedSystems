@@ -1,0 +1,176 @@
+//Hyperperiod 1 Right
+Task 1- Release:  0.100, Completion:  0.195, Response: 0.095, WCRT: 0.095, Next Release:  0.400
+Task 2- Release:  0.100, Completion:  0.277, Response: 0.177, WCRT: 0.177, Next Release:  0.500
+Task 3- Release:  0.100, Completion:  0.360, Response: 0.260, WCRT: 0.260, Next Release:  0.700
+Task 1- Release:  0.400, Completion:  0.492, Response: 0.092, WCRT: 0.095, Next Release:  0.700
+Task 2- Release:  0.500, Completion:  0.577, Response: 0.077, WCRT: 0.177, Next Release:  0.900
+Task 1- Release:  0.700, Completion:  0.790, Response: 0.090, WCRT: 0.095, Next Release:  1.000
+Task 3- Release:  0.700, Completion:  0.869, Response: 0.169, WCRT: 0.260, Next Release:  1.300
+Task 2- Release:  0.900, Completion:  0.986, Response: 0.086, WCRT: 0.177, Next Release:  1.300
+Task 1- Release:  1.000, Completion:  1.085, Response: 0.085, WCRT: 0.095, Next Release:  1.300
+
+//Hyperperiod 2 Right
+Task 1- Release:  1.300, Completion:  1.386, Response: 0.086, WCRT: 0.095, Next Release:  1.600
+Task 2- Release:  1.300, Completion:  1.471, Response: 0.171, WCRT: 0.177, Next Release:  1.700
+Task 3- Release:  1.300, Completion:  1.560, Response: 0.260, WCRT: 0.260, Next Release:  1.900
+Task 1- Release:  1.600, Completion:  1.687, Response: 0.087, WCRT: 0.095, Next Release:  1.900
+Task 2- Release:  1.700, Completion:  1.788, Response: 0.088, WCRT: 0.177, Next Release:  2.100
+Task 1- Release:  1.900, Completion:  1.981, Response: 0.081, WCRT: 0.095, Next Release:  2.200
+Task 3- Release:  1.900, Completion:  2.064, Response: 0.164, WCRT: 0.260, Next Release:  2.500
+Task 2- Release:  2.100, Completion:  2.186, Response: 0.086, WCRT: 0.177, Next Release:  2.500
+Task 1- Release:  2.200, Completion:  2.285, Response: 0.085, WCRT: 0.095, Next Release:  2.500
+
+//Hyperperiod 3 Right
+Task 1- Release:  2.500, Completion:  2.589, Response: 0.089, WCRT: 0.095, Next Release:  2.800
+Task 2- Release:  2.500, Completion:  2.671, Response: 0.171, WCRT: 0.177, Next Release:  2.900
+Task 3- Release:  2.500, Completion:  2.752, Response: 0.252, WCRT: 0.260, Next Release:  3.100
+Task 1- Release:  2.800, Completion:  2.884, Response: 0.084, WCRT: 0.095, Next Release:  3.100
+Task 2- Release:  2.900, Completion:  2.983, Response: 0.083, WCRT: 0.177, Next Release:  3.300
+Task 1- Release:  3.100, Completion:  3.188, Response: 0.088, WCRT: 0.095, Next Release:  3.400
+Task 3- Release:  3.100, Completion:  3.270, Response: 0.170, WCRT: 0.260, Next Release:  3.700
+Task 2- Release:  3.300, Completion:  3.382, Response: 0.081, WCRT: 0.177, Next Release:  3.700
+Task 1- Release:  3.400, Completion:  3.482, Response: 0.082, WCRT: 0.095, Next Release:  3.700
+
+//Hyperperiod 4 Right
+Task 1- Release:  3.700, Completion:  3.780, Response: 0.080, WCRT: 0.095, Next Release:  4.000
+Task 2- Release:  3.700, Completion:  3.863, Response: 0.163, WCRT: 0.177, Next Release:  4.100
+Task 3- Release:  3.700, Completion:  3.942, Response: 0.242, WCRT: 0.260, Next Release:  4.300
+Task 1- Release:  4.000, Completion:  4.079, Response: 0.079, WCRT: 0.095, Next Release:  4.300
+Task 2- Release:  4.100, Completion:  4.179, Response: 0.079, WCRT: 0.177, Next Release:  4.500
+Task 1- Release:  4.300, Completion:  4.388, Response: 0.088, WCRT: 0.095, Next Release:  4.600
+Task 3- Release:  4.300, Completion:  4.465, Response: 0.165, WCRT: 0.260, Next Release:  4.900
+Task 2- Release:  4.500, Completion:  4.591, Response: 0.091, WCRT: 0.177, Next Release:  4.900
+Task 1- Release:  4.600, Completion:  4.681, Response: 0.081, WCRT: 0.095, Next Release:  4.900
+
+//Hyperperiod 5 Right
+Task 1- Release:  4.900, Completion:  4.980, Response: 0.080, WCRT: 0.095, Next Release:  5.200
+Task 2- Release:  4.900, Completion:  5.059, Response: 0.159, WCRT: 0.177, Next Release:  5.300
+Task 3- Release:  4.900, Completion:  5.144, Response: 0.244, WCRT: 0.260, Next Release:  5.500
+Task 1- Release:  5.200, Completion:  5.279, Response: 0.079, WCRT: 0.095, Next Release:  5.500
+Task 2- Release:  5.300, Completion:  5.379, Response: 0.079, WCRT: 0.177, Next Release:  5.700
+Task 1- Release:  5.500, Completion:  5.575, Response: 0.075, WCRT: 0.095, Next Release:  5.800
+Task 3- Release:  5.500, Completion:  5.654, Response: 0.154, WCRT: 0.260, Next Release:  6.100
+Task 2- Release:  5.700, Completion:  5.779, Response: 0.079, WCRT: 0.177, Next Release:  6.100
+Task 1- Release:  5.800, Completion:  5.875, Response: 0.075, WCRT: 0.095, Next Release:  6.100
+
+//Hyperperiod 6 Right
+Task 1- Release:  6.100, Completion:  6.182, Response: 0.082, WCRT: 0.095, Next Release:  6.400
+Task 2- Release:  6.100, Completion:  6.267, Response: 0.167, WCRT: 0.177, Next Release:  6.500
+Task 3- Release:  6.100, Completion:  6.354, Response: 0.254, WCRT: 0.260, Next Release:  6.700
+Task 1- Release:  6.400, Completion:  6.481, Response: 0.081, WCRT: 0.095, Next Release:  6.700
+Task 2- Release:  6.500, Completion:  6.577, Response: 0.077, WCRT: 0.177, Next Release:  6.900
+Task 1- Release:  6.700, Completion:  6.798, Response: 0.098, WCRT: 0.098, Next Release:  7.000
+Task 3- Release:  6.700, Completion:  6.877, Response: 0.177, WCRT: 0.260, Next Release:  7.300
+Task 2- Release:  6.900, Completion:  6.993, Response: 0.093, WCRT: 0.177, Next Release:  7.300
+Task 1- Release:  7.000, Completion:  7.082, Response: 0.082, WCRT: 0.098, Next Release:  7.300
+
+//Hyperperiod 7 Right
+Task 1- Release:  7.300, Completion:  7.389, Response: 0.089, WCRT: 0.098, Next Release:  7.600
+Task 2- Release:  7.300, Completion:  7.471, Response: 0.171, WCRT: 0.177, Next Release:  7.700
+Task 3- Release:  7.300, Completion:  7.551, Response: 0.251, WCRT: 0.260, Next Release:  7.900
+Task 1- Release:  7.600, Completion:  7.678, Response: 0.078, WCRT: 0.098, Next Release:  7.900
+Task 2- Release:  7.700, Completion:  7.777, Response: 0.077, WCRT: 0.177, Next Release:  8.100
+Task 1- Release:  7.900, Completion:  7.995, Response: 0.095, WCRT: 0.098, Next Release:  8.200
+Task 3- Release:  7.900, Completion:  8.083, Response: 0.183, WCRT: 0.260, Next Release:  8.500
+Task 2- Release:  8.100, Completion:  8.186, Response: 0.086, WCRT: 0.177, Next Release:  8.500
+Task 1- Release:  8.200, Completion:  8.275, Response: 0.075, WCRT: 0.098, Next Release:  8.500
+
+//Hyperperiod 8 Right
+Task 1- Release:  8.500, Completion:  8.586, Response: 0.086, WCRT: 0.098, Next Release:  8.800
+Task 2- Release:  8.500, Completion:  8.664, Response: 0.163, WCRT: 0.177, Next Release:  8.900
+Task 3- Release:  8.500, Completion:  8.744, Response: 0.244, WCRT: 0.260, Next Release:  9.100
+Task 1- Release:  8.800, Completion:  8.888, Response: 0.088, WCRT: 0.098, Next Release:  9.100
+Task 2- Release:  8.900, Completion:  8.978, Response: 0.078, WCRT: 0.177, Next Release:  9.300
+Task 1- Release:  9.100, Completion:  9.183, Response: 0.083, WCRT: 0.098, Next Release:  9.400
+Task 3- Release:  9.100, Completion:  9.256, Response: 0.156, WCRT: 0.260, Next Release:  9.700
+Task 2- Release:  9.300, Completion:  9.378, Response: 0.078, WCRT: 0.177, Next Release:  9.700
+Task 1- Release:  9.400, Completion:  9.475, Response: 0.075, WCRT: 0.098, Next Release:  9.700
+
+//Hyperperiod 9 Right
+Task 1- Release:  9.700, Completion:  9.785, Response: 0.085, WCRT: 0.098, Next Release: 10.000
+Task 2- Release:  9.700, Completion:  9.860, Response: 0.160, WCRT: 0.177, Next Release: 10.100
+Task 3- Release:  9.700, Completion:  9.933, Response: 0.232, WCRT: 0.260, Next Release: 10.300
+Task 1- Release: 10.000, Completion: 10.081, Response: 0.081, WCRT: 0.098, Next Release: 10.300
+Task 2- Release: 10.100, Completion: 10.180, Response: 0.080, WCRT: 0.177, Next Release: 10.500
+Task 1- Release: 10.300, Completion: 10.378, Response: 0.078, WCRT: 0.098, Next Release: 10.600
+Task 3- Release: 10.300, Completion: 10.458, Response: 0.158, WCRT: 0.260, Next Release: 10.900
+Task 2- Release: 10.500, Completion: 10.583, Response: 0.083, WCRT: 0.177, Next Release: 10.900
+Task 1- Release: 10.600, Completion: 10.670, Response: 0.070, WCRT: 0.098, Next Release: 10.900
+
+//Hyperperiod 10 Right
+Task 1- Release: 10.900, Completion: 10.996, Response: 0.096, WCRT: 0.098, Next Release: 11.200
+Task 2- Release: 10.900, Completion: 11.074, Response: 0.174, WCRT: 0.177, Next Release: 11.300
+Task 3- Release: 10.900, Completion: 11.150, Response: 0.250, WCRT: 0.260, Next Release: 11.500
+Task 1- Release: 11.200, Completion: 11.281, Response: 0.081, WCRT: 0.098, Next Release: 11.500
+Task 2- Release: 11.300, Completion: 11.380, Response: 0.080, WCRT: 0.177, Next Release: 11.700
+Task 1- Release: 11.500, Completion: 11.580, Response: 0.080, WCRT: 0.098, Next Release: 11.800
+Task 3- Release: 11.500, Completion: 11.659, Response: 0.159, WCRT: 0.260, Next Release: 12.100
+Task 2- Release: 11.700, Completion: 11.779, Response: 0.079, WCRT: 0.177, Next Release: 12.100
+Task 1- Release: 11.800, Completion: 11.874, Response: 0.074, WCRT: 0.098, Next Release: 12.100
+
+//Hyperperiod 11 Right
+Task 1- Release: 12.100, Completion: 12.185, Response: 0.085, WCRT: 0.098, Next Release: 12.400
+Task 2- Release: 12.100, Completion: 12.258, Response: 0.158, WCRT: 0.177, Next Release: 12.500
+Task 3- Release: 12.100, Completion: 12.342, Response: 0.242, WCRT: 0.260, Next Release: 12.700
+Task 1- Release: 12.400, Completion: 12.479, Response: 0.079, WCRT: 0.098, Next Release: 12.700
+Task 2- Release: 12.500, Completion: 12.575, Response: 0.075, WCRT: 0.177, Next Release: 12.900
+Task 1- Release: 12.700, Completion: 12.785, Response: 0.085, WCRT: 0.098, Next Release: 13.000
+Task 3- Release: 12.700, Completion: 12.862, Response: 0.161, WCRT: 0.260, Next Release: 13.300
+Task 2- Release: 12.900, Completion: 12.976, Response: 0.075, WCRT: 0.177, Next Release: 13.300
+Task 1- Release: 13.000, Completion: 13.073, Response: 0.073, WCRT: 0.098, Next Release: 13.300
+
+//Hyperperiod 12 Right
+Task 1- Release: 13.300, Completion: 13.397, Response: 0.097, WCRT: 0.098, Next Release: 13.600
+Task 2- Release: 13.300, Completion: 13.474, Response: 0.174, WCRT: 0.177, Next Release: 13.700
+Task 3- Release: 13.300, Completion: 13.553, Response: 0.253, WCRT: 0.260, Next Release: 13.900
+Task 1- Release: 13.600, Completion: 13.678, Response: 0.078, WCRT: 0.098, Next Release: 13.900
+Task 2- Release: 13.700, Completion: 13.784, Response: 0.084, WCRT: 0.177, Next Release: 14.100
+Task 1- Release: 13.900, Completion: 13.989, Response: 0.089, WCRT: 0.098, Next Release: 14.200
+Task 3- Release: 13.900, Completion: 14.066, Response: 0.166, WCRT: 0.260, Next Release: 14.500
+Task 2- Release: 14.100, Completion: 14.182, Response: 0.082, WCRT: 0.177, Next Release: 14.500
+Task 1- Release: 14.200, Completion: 14.283, Response: 0.083, WCRT: 0.098, Next Release: 14.500
+
+//Hyperperiod 13 Right
+Task 1- Release: 14.500, Completion: 14.595, Response: 0.095, WCRT: 0.098, Next Release: 14.800
+Task 2- Release: 14.500, Completion: 14.676, Response: 0.176, WCRT: 0.177, Next Release: 14.900
+Task 3- Release: 14.500, Completion: 14.760, Response: 0.260, WCRT: 0.260, Next Release: 15.100
+Task 1- Release: 14.800, Completion: 14.881, Response: 0.081, WCRT: 0.098, Next Release: 15.100
+Task 2- Release: 14.900, Completion: 14.981, Response: 0.081, WCRT: 0.177, Next Release: 15.300
+Task 1- Release: 15.100, Completion: 15.192, Response: 0.092, WCRT: 0.098, Next Release: 15.400
+Task 3- Release: 15.100, Completion: 15.274, Response: 0.174, WCRT: 0.260, Next Release: 15.700
+Task 2- Release: 15.300, Completion: 15.383, Response: 0.083, WCRT: 0.177, Next Release: 15.700
+Task 1- Release: 15.400, Completion: 15.485, Response: 0.085, WCRT: 0.098, Next Release: 15.700
+
+//Hyperperiod 14 Right
+Task 1- Release: 15.700, Completion: 15.784, Response: 0.084, WCRT: 0.098, Next Release: 16.000
+Task 2- Release: 15.700, Completion: 15.856, Response: 0.156, WCRT: 0.177, Next Release: 16.100
+Task 3- Release: 15.700, Completion: 15.930, Response: 0.230, WCRT: 0.260, Next Release: 16.300
+Task 1- Release: 16.000, Completion: 16.088, Response: 0.088, WCRT: 0.098, Next Release: 16.300
+Task 2- Release: 16.100, Completion: 16.179, Response: 0.079, WCRT: 0.177, Next Release: 16.500
+Task 1- Release: 16.300, Completion: 16.388, Response: 0.088, WCRT: 0.098, Next Release: 16.600
+Task 3- Release: 16.300, Completion: 16.466, Response: 0.166, WCRT: 0.260, Next Release: 16.900
+Task 2- Release: 16.500, Completion: 16.579, Response: 0.079, WCRT: 0.177, Next Release: 16.900
+Task 1- Release: 16.600, Completion: 16.685, Response: 0.085, WCRT: 0.098, Next Release: 16.900
+
+//Hyperperiod 15 Right
+Task 1- Release: 16.900, Completion: 16.980, Response: 0.080, WCRT: 0.098, Next Release: 17.200
+Task 2- Release: 16.900, Completion: 17.064, Response: 0.164, WCRT: 0.177, Next Release: 17.300
+Task 3- Release: 16.900, Completion: 17.143, Response: 0.243, WCRT: 0.260, Next Release: 17.500
+Task 1- Release: 17.200, Completion: 17.281, Response: 0.081, WCRT: 0.098, Next Release: 17.500
+Task 2- Release: 17.300, Completion: 17.385, Response: 0.085, WCRT: 0.177, Next Release: 17.700
+Task 1- Release: 17.500, Completion: 17.579, Response: 0.079, WCRT: 0.098, Next Release: 17.800
+Task 3- Release: 17.500, Completion: 17.659, Response: 0.159, WCRT: 0.260, Next Release: 18.100
+Task 2- Release: 17.700, Completion: 17.788, Response: 0.088, WCRT: 0.177, Next Release: 18.100
+Task 1- Release: 17.800, Completion: 17.882, Response: 0.082, WCRT: 0.098, Next Release: 18.100
+
+//Hyperperiod 16 Right
+Task 1- Release: 18.100, Completion: 18.188, Response: 0.088, WCRT: 0.098, Next Release: 18.400
+Task 2- Release: 18.100, Completion: 18.266, Response: 0.166, WCRT: 0.177, Next Release: 18.500
+Task 3- Release: 18.100, Completion: 18.345, Response: 0.245, WCRT: 0.260, Next Release: 18.700
+Task 1- Release: 18.400, Completion: 18.478, Response: 0.078, WCRT: 0.098, Next Release: 18.700
+Task 2- Release: 18.500, Completion: 18.575, Response: 0.075, WCRT: 0.177, Next Release: 18.900
+Task 1- Release: 18.700, Completion: 18.791, Response: 0.091, WCRT: 0.098, Next Release: 19.000
+Task 3- Release: 18.700, Completion: 18.869, Response: 0.169, WCRT: 0.260, Next Release: 19.300
+Task 2- Release: 18.900, Completion: 18.989, Response: 0.089, WCRT: 0.177, Next Release: 19.300
+Task 1- Release: 19.000, Completion: 19.077, Response: 0.077, WCRT: 0.098, Next Release: 19.300
+
